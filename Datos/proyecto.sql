@@ -1,5 +1,5 @@
-CREATE DATABASE ClubDeportivo;
-USE ClubDeportivo;
+CREATE DATABASE Proyecto;
+USE Proyecto;
 
 -- Tabla para los clientes
 CREATE TABLE Cliente (
@@ -46,3 +46,23 @@ CREATE TABLE Cuota (
     formaPago VARCHAR(50),
     FOREIGN KEY (socioID) REFERENCES Socio(socioID)
 );
+
+DELIMITER //
+
+CREATE PROCEDURE IngresoLogin(
+    IN usuarioNombre VARCHAR(20),
+    IN usuarioContrasena VARCHAR(15)
+)
+BEGIN
+    /* Se selecciona el rol del usuario */
+    SELECT r.NomRol 
+    FROM usuario u
+    INNER JOIN roles r ON u.RolUsu = r.RolUsu
+    WHERE u.NombreUsu = usuarioNombre
+        AND u.PassUsu = usuarioContrasena
+        AND u.Activo = 1; /* El usuario debe estar activo */
+END //
+
+DELIMITER ;
+
+SHOW PROCEDURE STATUS WHERE Db = 'proyecto';
