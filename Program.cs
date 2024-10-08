@@ -1,5 +1,89 @@
 ﻿using System;
 using System.Collections.Generic;
+using MySql.Data.MySqlClient;
+using System.IO;
+
+public class Conexion
+{
+    private string baseDatos;
+    private string servidor;
+    private string puerto;
+    private string usuario;
+    private string clave;
+    private static Conexion? con = null;
+
+    public Conexion()
+    {
+        // Asignamos valores a las variables de la conexión
+        this.baseDatos = "proyecto";
+        this.servidor = "localhost";
+        this.puerto = "3306";
+        this.usuario = "root";
+        this.clave = "pass";
+    }
+
+    // Proceso de interacción para crear una conexión
+    public MySqlConnection CrearConexion()
+    {
+        MySqlConnection? cadena = new MySqlConnection();
+
+        try
+        {
+            // Cadena de conexión
+            cadena.ConnectionString = "datasource=" + this.servidor +
+                                      ";port=" + this.puerto +
+                                      ";username=" + this.usuario +
+                                      ";password=" + this.clave +
+                                      ";Database=" + this.baseDatos;
+        }
+        catch (Exception ex)
+        {
+            cadena = null;
+            throw;
+        }
+
+        return cadena;
+    }
+
+    public void InicializarBaseDeDatos()
+    {
+        using (var conexion = CrearConexion())
+        {
+            conexion.Open();
+
+            // Comprobar si la base de datos ya existe
+            var cmd = new MySqlCommand("SHOW DATABASES LIKE '" + baseDatos + "';", conexion);
+            var reader = cmd.ExecuteReader();
+
+            if (!reader.HasRows) // Si no existe la base de datos
+            {
+                reader.Close();
+                Console.WriteLine("Base de datos no encontrada. Creando la base de datos...");
+
+                // Leer el script SQL desde el archivo en la carpeta "datos"
+                string script = File.ReadAllText("datos/proyecto.sql");
+                var cmdCrearBD = new MySqlCommand(script, conexion);
+                cmdCrearBD.ExecuteNonQuery();
+
+                Console.WriteLine("Base de datos creada correctamente.");
+            }
+            else
+            {
+                Console.WriteLine("La base de datos ya existe.");
+            }
+        }
+    }
+
+    // Método para obtener la instancia de la conexión
+    public static Conexion getInstancia()
+    {
+        if (con == null)
+        {
+            con = new Conexion(); // Se crea una nueva instancia si no existe
+        }
+        return con;
+    }
+}
 
 // Clase Cliente (superclase de Socio y NoSocio)
 public class Cliente
@@ -110,7 +194,7 @@ public class ClubDeportivo
     }
 }
 
-public class Program
+/*public class Program
 {
     public static void Main(string[] args)
     {
@@ -190,5 +274,41 @@ public class Program
         }
 
         Console.ReadLine();
+    }
+}
+*/
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Obtener la instancia de la conexión
+        Conexion conexionBD = Conexion.getInstancia();
+
+        // Intentar crear una conexión a la base de datos
+        try
+        {
+            using (MySqlConnection conexion = conexionBD.CrearConexion())
+            {
+                conexion.Open();  // Abre la conexión
+
+                if (conexion.State == System.Data.ConnectionState.Open)
+                {
+                    Console.WriteLine("Conexión exitosa a la base de datos.");
+                }
+                else
+                {
+                    Console.WriteLine("Error al conectar a la base de datos.");
+                }
+            }
+        }
+        catch (MySqlException ex)
+        {
+            Console.WriteLine("Error de MySQL: " + ex.Message);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error general: " + ex.Message);
+        }
     }
 }

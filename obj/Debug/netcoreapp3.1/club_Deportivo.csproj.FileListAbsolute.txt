@@ -11,3 +11,46 @@ C:\Users\eien_\Documents\repos C\club_Deportivo\obj\Debug\netcoreapp3.1\club_Dep
 C:\Users\eien_\Documents\repos C\club_Deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.dll
 C:\Users\eien_\Documents\repos C\club_Deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.pdb
 C:\Users\eien_\Documents\repos C\club_Deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.genruntimeconfig.cache
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\club_Deportivo.exe
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\club_Deportivo.deps.json
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\club_Deportivo.runtimeconfig.json
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\club_Deportivo.runtimeconfig.dev.json
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\club_Deportivo.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\club_Deportivo.pdb
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\BouncyCastle.Cryptography.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\ZstdSharp.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\comerr64.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\gssapi64.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\krb5_64.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\krbcc64.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.csproj.AssemblyReference.cache
+C:\Users\eien_\Documents\GitHub\Club_deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eien_\Documents\GitHub\Club_deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.AssemblyInfoInputs.cache
+C:\Users\eien_\Documents\GitHub\Club_deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.AssemblyInfo.cs
+C:\Users\eien_\Documents\GitHub\Club_deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.csproj.CoreCompileInputs.cache
+C:\Users\eien_\Documents\GitHub\Club_deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.sourcelink.json
+C:\Users\eien_\Documents\GitHub\Club_deportivo\obj\Debug\netcoreapp3.1\club_Dep.7EFF3B59.Up2Date
+C:\Users\eien_\Documents\GitHub\Club_deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.dll
+C:\Users\eien_\Documents\GitHub\Club_deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.pdb
+C:\Users\eien_\Documents\GitHub\Club_deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.genruntimeconfig.cache
