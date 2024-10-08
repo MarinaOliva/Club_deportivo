@@ -2,88 +2,135 @@
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 using System.IO;
+using System.Data;
+using LoginClub.Datos;
 
-public class Conexion
+namespace LoginClub.Datos
 {
-    private string baseDatos;
-    private string servidor;
-    private string puerto;
-    private string usuario;
-    private string clave;
-    private static Conexion? con = null;
-
-    public Conexion()
+    public class Conexion
     {
-        // Asignamos valores a las variables de la conexión
-        this.baseDatos = "proyecto";
-        this.servidor = "localhost";
-        this.puerto = "3306";
-        this.usuario = "root";
-        this.clave = "pass";
-    }
+        private string baseDatos;
+        private string servidor;
+        private string puerto;
+        private string usuario;
+        private string clave;
+        private static Conexion? con = null;
 
-    // Proceso de interacción para crear una conexión
-    public MySqlConnection CrearConexion()
-    {
-        MySqlConnection? cadena = new MySqlConnection();
-
-        try
+        public Conexion()
         {
-            // Cadena de conexión
-            cadena.ConnectionString = "datasource=" + this.servidor +
-                                      ";port=" + this.puerto +
-                                      ";username=" + this.usuario +
-                                      ";password=" + this.clave +
-                                      ";Database=" + this.baseDatos;
-        }
-        catch (Exception ex)
-        {
-            cadena = null;
-            throw;
+            // Asignamos valores a las variables de la conexión
+            this.baseDatos = "proyecto";
+            this.servidor = "localhost";
+            this.puerto = "3306";
+            this.usuario = "root";
+            this.clave = "pass";
         }
 
-        return cadena;
-    }
-
-    public void InicializarBaseDeDatos()
-    {
-        using (var conexion = CrearConexion())
+        // Proceso de interacción para crear una conexión
+        public MySqlConnection CrearConexion()
         {
-            conexion.Open();
+            MySqlConnection? cadena = new MySqlConnection();
 
-            // Comprobar si la base de datos ya existe
-            var cmd = new MySqlCommand("SHOW DATABASES LIKE '" + baseDatos + "';", conexion);
-            var reader = cmd.ExecuteReader();
-
-            if (!reader.HasRows) // Si no existe la base de datos
+            try
             {
-                reader.Close();
-                Console.WriteLine("Base de datos no encontrada. Creando la base de datos...");
-
-                // Leer el script SQL desde el archivo en la carpeta "datos"
-                string script = File.ReadAllText("datos/proyecto.sql");
-                var cmdCrearBD = new MySqlCommand(script, conexion);
-                cmdCrearBD.ExecuteNonQuery();
-
-                Console.WriteLine("Base de datos creada correctamente.");
+                // Cadena de conexión
+                cadena.ConnectionString = "datasource=" + this.servidor +
+                                          ";port=" + this.puerto +
+                                          ";username=" + this.usuario +
+                                          ";password=" + this.clave +
+                                          ";Database=" + this.baseDatos;
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine("La base de datos ya existe.");
+                cadena = null;
+                throw;
             }
+
+            return cadena;
+        }
+
+        public void InicializarBaseDeDatos()
+        {
+            using (var conexion = CrearConexion())
+            {
+                conexion.Open();
+
+                // Comprobar si la base de datos ya existe
+                var cmd = new MySqlCommand("SHOW DATABASES LIKE '" + baseDatos + "';", conexion);
+                var reader = cmd.ExecuteReader();
+
+                if (!reader.HasRows) // Si no existe la base de datos
+                {
+                    reader.Close();
+                    Console.WriteLine("Base de datos no encontrada. Creando la base de datos...");
+
+                    // Leer el script SQL desde el archivo en la carpeta "datos"
+                    string script = File.ReadAllText("datos/proyecto.sql");
+                    var cmdCrearBD = new MySqlCommand(script, conexion);
+                    cmdCrearBD.ExecuteNonQuery();
+
+                    Console.WriteLine("Base de datos creada correctamente.");
+                }
+                else
+                {
+                    Console.WriteLine("La base de datos ya existe.");
+                }
+            }
+        }
+
+        // Método para obtener la instancia de la conexión
+        public static Conexion getInstancia()
+        {
+            if (con == null)
+            {
+                con = new Conexion(); // Se crea una nueva instancia si no existe
+            }
+            return con;
         }
     }
 
-    // Método para obtener la instancia de la conexión
-    public static Conexion getInstancia()
+    internal class Usuarios
     {
-        if (con == null)
+        // Creamos un método que retorne una tabla con la información
+        public DataTable Log_Usu(string L_Usu, string P_Usu)
         {
-            con = new Conexion(); // Se crea una nueva instancia si no existe
+            MySqlDataReader resultado; // variable de tipo datareader
+            DataTable tabla = new DataTable();
+            MySqlConnection sqlCon = new MySqlConnection();
+
+            try
+            {
+                sqlCon = Conexion.getInstancia().CrearConexion();
+                // El comando es un elemento que almacena en este caso el nombre del procedimiento almacenado y la referencia a la conexión
+                MySqlCommand comando = new MySqlCommand("IngresoLogin", sqlCon);
+                comando.CommandType = CommandType.StoredProcedure;
+                // Definimos los parámetros que tiene el procedure
+                comando.Parameters.Add("Usu", MySqlDbType.VarChar).Value = L_Usu;
+                comando.Parameters.Add("Pass", MySqlDbType.VarChar).Value = P_Usu;
+
+                // Abrimos la conexión
+                sqlCon.Open();
+                resultado = comando.ExecuteReader(); // Almacenamos el resultado en la variable
+                tabla.Load(resultado); // Cargamos la tabla con el resultado
+                return tabla;
+                // De esta forma está asociado el método con el procedure que está almacenado en MySQL
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            // Como proceso final
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
         }
-        return con;
     }
 }
+
 
 // Clase Cliente (superclase de Socio y NoSocio)
 public class Cliente
@@ -277,7 +324,7 @@ public class ClubDeportivo
     }
 }
 */
-
+// Después vamos a quitar esta parte, es para probar por ahora que esta funcionando la conexion a la base de datos nomás.
 class Program
 {
     static void Main(string[] args)
