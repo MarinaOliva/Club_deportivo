@@ -88,38 +88,33 @@ namespace LoginClub.Datos
             return con;
         }
     }
-
     internal class Usuarios
     {
-        // Creamos un método que retorne una tabla con la información
         public DataTable Log_Usu(string L_Usu, string P_Usu)
         {
-            MySqlDataReader resultado; // variable de tipo datareader
+            MySqlDataReader resultado;
             DataTable tabla = new DataTable();
             MySqlConnection sqlCon = new MySqlConnection();
 
             try
             {
                 sqlCon = Conexion.getInstancia().CrearConexion();
-                // El comando es un elemento que almacena en este caso el nombre del procedimiento almacenado y la referencia a la conexión
                 MySqlCommand comando = new MySqlCommand("IngresoLogin", sqlCon);
                 comando.CommandType = CommandType.StoredProcedure;
-                // Definimos los parámetros que tiene el procedure
-                comando.Parameters.Add("Usu", MySqlDbType.VarChar).Value = L_Usu;
-                comando.Parameters.Add("Pass", MySqlDbType.VarChar).Value = P_Usu;
 
-                // Abrimos la conexión
+                // Cambiar los nombres de los parámetros a los nuevos
+                comando.Parameters.Add("usuarioNombre", MySqlDbType.VarChar).Value = L_Usu;
+                comando.Parameters.Add("usuarioContrasena", MySqlDbType.VarChar).Value = P_Usu;
+
                 sqlCon.Open();
-                resultado = comando.ExecuteReader(); // Almacenamos el resultado en la variable
-                tabla.Load(resultado); // Cargamos la tabla con el resultado
+                resultado = comando.ExecuteReader();
+                tabla.Load(resultado);
                 return tabla;
-                // De esta forma está asociado el método con el procedure que está almacenado en MySQL
             }
             catch (Exception ex)
             {
                 throw;
             }
-            // Como proceso final
             finally
             {
                 if (sqlCon.State == ConnectionState.Open)
