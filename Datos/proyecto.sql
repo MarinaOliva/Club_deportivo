@@ -47,6 +47,12 @@ CREATE TABLE Cuota (
     FOREIGN KEY (socioID) REFERENCES Socio(socioID)
 );
 
+CREATE TABLE administrador (
+    idAdministrador INT AUTO_INCREMENT PRIMARY KEY,
+    NombreUsu VARCHAR(20),
+    PassUsu VARCHAR(15),
+    Activo BOOLEAN 
+);
 DELIMITER //
 
 CREATE PROCEDURE IngresoLogin(
@@ -54,15 +60,13 @@ CREATE PROCEDURE IngresoLogin(
     IN usuarioContrasena VARCHAR(15)
 )
 BEGIN
-    /* Se selecciona el rol del usuario */
-    SELECT r.NomRol 
-    FROM usuario u
-    INNER JOIN roles r ON u.RolUsu = r.RolUsu
-    WHERE u.NombreUsu = usuarioNombre
-        AND u.PassUsu = usuarioContrasena
-        AND u.Activo = 1; /* El usuario debe estar activo */
+    /* Se selecciona si el usuario está activo */
+    SELECT *
+    FROM administrador
+    WHERE NombreUsu = usuarioNombre
+        AND PassUsu = usuarioContrasena
+        AND Activo = 1; /* El usuario debe estar activo */
 END //
 
 DELIMITER ;
 
-SHOW PROCEDURE STATUS WHERE Db = 'proyecto';
