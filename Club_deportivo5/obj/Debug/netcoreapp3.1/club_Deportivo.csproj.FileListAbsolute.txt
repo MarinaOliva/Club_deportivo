@@ -1,0 +1,13 @@
+C:\Users\eien_\Documents\repos C\club_Deportivo\bin\Debug\netcoreapp3.1\club_Deportivo.exe
+C:\Users\eien_\Documents\repos C\club_Deportivo\bin\Debug\netcoreapp3.1\club_Deportivo.deps.json
+C:\Users\eien_\Documents\repos C\club_Deportivo\bin\Debug\netcoreapp3.1\club_Deportivo.runtimeconfig.json
+C:\Users\eien_\Documents\repos C\club_Deportivo\bin\Debug\netcoreapp3.1\club_Deportivo.runtimeconfig.dev.json
+C:\Users\eien_\Documents\repos C\club_Deportivo\bin\Debug\netcoreapp3.1\club_Deportivo.dll
+C:\Users\eien_\Documents\repos C\club_Deportivo\bin\Debug\netcoreapp3.1\club_Deportivo.pdb
+C:\Users\eien_\Documents\repos C\club_Deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eien_\Documents\repos C\club_Deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.AssemblyInfoInputs.cache
+C:\Users\eien_\Documents\repos C\club_Deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.AssemblyInfo.cs
+C:\Users\eien_\Documents\repos C\club_Deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.csproj.CoreCompileInputs.cache
+C:\Users\eien_\Documents\repos C\club_Deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.dll
+C:\Users\eien_\Documents\repos C\club_Deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.pdb
+C:\Users\eien_\Documents\repos C\club_Deportivo\obj\Debug\netcoreapp3.1\club_Deportivo.genruntimeconfig.cache
