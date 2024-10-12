@@ -77,19 +77,19 @@ CREATE TABLE Cuota (
     idCuota INT AUTO_INCREMENT PRIMARY KEY,
     socioID INT,
     fechaVencimiento DATE,
+    fechaPago DATE,
     importe DECIMAL(10, 2),
-    pagada BOOLEAN DEFAULT FALSE,
     FOREIGN KEY (socioID) REFERENCES Socio(socioID)
 );
 
 -- Insertar cuotas para socios que adeudan cuotas
-INSERT INTO Cuota (socioID, fechaVencimiento, importe, pagada)
+INSERT INTO Cuota (socioID, fechaVencimiento, fechaPago, importe)
 VALUES 
-    (1, '2024-10-31', 23000.00, FALSE),  -- Martín Aliaga (no pagada)
-    (2, '2024-10-15', 23000.00, TRUE),   -- Lucía López (pagada)
-    (4, '2024-10-28', 23000.00, FALSE),  -- Carlos Ramírez (no pagada)
-    (5, '2024-10-20', 23000.00, TRUE),   -- Ana García (pagada)
-    (6, '2024-10-25', 23000.00, FALSE);  -- Miguel Torres (no pagada)
+    (1, '2024-10-31', '2024-10-31', 23000.00),  -- Martín Aliaga 
+    (2, '2024-10-15', '2024-10-14', 23000.00),   -- Lucía López 
+    (4, '2024-10-28', NULL, 23000.00),  -- Carlos Ramírez 
+    (5, '2024-10-20', NULL, 23000.00),   -- Ana García 
+    (6, '2024-10-25', '2024-10-25', 23000.00);  -- Miguel Torres
 
 -- Tabla para los administradores
 CREATE TABLE administrador (
