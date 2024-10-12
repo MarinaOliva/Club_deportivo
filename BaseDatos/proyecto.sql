@@ -1,3 +1,4 @@
+-- Crear la base de datos y usarla
 CREATE DATABASE Proyecto;
 USE Proyecto;
 
@@ -13,14 +14,34 @@ CREATE TABLE Cliente (
     presentaAptoFisico BOOLEAN
 );
 
+-- Insertar clientes (sólo si no están ya insertados)
+INSERT INTO Cliente (nombre, apellido, tipoDoc, numDoc, telefono, email, presentaAptoFisico)
+VALUES 
+    ('Martín', 'Aliaga', 'DNI', 12345678, 11223344, 'martin.gonzalez@yahoo.com', TRUE),
+    ('Lucía', 'López', 'DNI', 87654321, 22334455, 'lucia.lopez@gmail.com', TRUE),
+    ('Pedro', 'Fernández', 'DNI', 13579246, 45566778, 'pedro.fernandez@hotmail.com', FALSE),
+    ('Sofía', 'Martínez', 'DNI', 24681357, 56677899, 'sofia.martinez@live.com', TRUE),
+    ('Javier', 'Andino', 'DNI', 98765432, 67788900, 'javier.perez@outlook.com', FALSE),
+    ('Carlos', 'Ramírez', 'DNI', 15975384, 78899001, 'carlos.ramirez@gmail.com', TRUE),  
+    ('Ana', 'García', 'DNI', 75315986, 99001122, 'ana.garcia@yahoo.com', TRUE),           
+    ('Miguel', 'Torres', 'DNI', 85236914, 90011222, 'miguel.torres@hotmail.com', TRUE);    
+
 -- Tabla para los socios (hereda de Cliente)
 CREATE TABLE Socio (
     socioID INT AUTO_INCREMENT PRIMARY KEY,
     clienteID INT,
-    adeudaCuota BOOLEAN,
-    tieneCarnet BOOLEAN,
     FOREIGN KEY (clienteID) REFERENCES Cliente(clienteID)
 );
+
+-- Insertar socios (asegúrate de que estos clienteID existan en la tabla Cliente)
+INSERT INTO Socio (clienteID)
+VALUES 
+    (1),  -- Martín Aliaga
+    (2),  -- Lucía López
+    (4),  -- Sofía Martínez
+    (6),  -- Carlos Ramírez
+    (7),  -- Ana García
+    (8);  -- Miguel Torres
 
 -- Tabla para los no socios (hereda de Cliente)
 CREATE TABLE NoSocio (
@@ -29,13 +50,27 @@ CREATE TABLE NoSocio (
     FOREIGN KEY (clienteID) REFERENCES Cliente(clienteID)
 );
 
+-- Insertar no socios
+INSERT INTO NoSocio (clienteID)
+VALUES 
+    (3),  -- Pedro Fernández
+    (5);  -- Javier Andino
+
 -- Tabla para las actividades
 CREATE TABLE Actividad (
     idActividad INT AUTO_INCREMENT PRIMARY KEY,
+    nombreActividad VARCHAR(255),
     costo DECIMAL(10, 2),
-    horario TIME,
     cuposDisponibles INT
 );
+
+INSERT INTO Actividad (nombreActividad, costo, cuposDisponibles)
+VALUES 
+    ('Musculación y Aparatos', 2000.00, NULL),
+    ('Natación', 3000.00, NULL),
+    ('Pilates', 2500.00, 25),
+    ('Yoga', 2300.00, 25),
+    ('Zumba', 2200.00, 25);
 
 -- Tabla para las cuotas
 CREATE TABLE Cuota (
@@ -43,16 +78,33 @@ CREATE TABLE Cuota (
     socioID INT,
     fechaVencimiento DATE,
     importe DECIMAL(10, 2),
-    formaPago VARCHAR(50),
+    pagada BOOLEAN DEFAULT FALSE,
     FOREIGN KEY (socioID) REFERENCES Socio(socioID)
 );
 
+-- Insertar cuotas para socios que adeudan cuotas
+INSERT INTO Cuota (socioID, fechaVencimiento, importe, pagada)
+VALUES 
+    (1, '2024-10-31', 23000.00, FALSE),  -- Martín Aliaga (no pagada)
+    (2, '2024-10-15', 23000.00, TRUE),   -- Lucía López (pagada)
+    (4, '2024-10-28', 23000.00, FALSE),  -- Carlos Ramírez (no pagada)
+    (5, '2024-10-20', 23000.00, TRUE),   -- Ana García (pagada)
+    (6, '2024-10-25', 23000.00, FALSE);  -- Miguel Torres (no pagada)
+
+-- Tabla para los administradores
 CREATE TABLE administrador (
     idAdministrador INT AUTO_INCREMENT PRIMARY KEY,
     NombreUsu VARCHAR(20),
     PassUsu VARCHAR(15),
     Activo BOOLEAN 
 );
+
+INSERT INTO administrador (NombreUsu, PassUsu, Activo)
+VALUES 
+    ('Juan_Gomez', 'Juan2024!', TRUE),
+    ('Maria_Perez', 'Maria@123', TRUE);
+
+-- Procedimiento para ingreso de login
 DELIMITER //
 
 CREATE PROCEDURE IngresoLogin(
@@ -69,4 +121,3 @@ BEGIN
 END //
 
 DELIMITER ;
-
