@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eien_\\Documents\\repos C\\club_deportivo\\club_deportivo.csproj": {}
+    "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\club_deportivo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eien_\\Documents\\repos C\\club_deportivo\\club_deportivo.csproj": {
+    "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\club_deportivo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eien_\\Documents\\repos C\\club_deportivo\\club_deportivo.csproj",
+        "projectUniqueName": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\club_deportivo.csproj",
         "projectName": "club_deportivo",
-        "projectPath": "C:\\Users\\eien_\\Documents\\repos C\\club_deportivo\\club_deportivo.csproj",
+        "projectPath": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\club_deportivo.csproj",
         "packagesPath": "C:\\Users\\eien_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eien_\\Documents\\repos C\\club_deportivo\\obj\\",
+        "outputPath": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -74,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
