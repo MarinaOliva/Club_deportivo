@@ -2,7 +2,7 @@
 using MySql.Data.MySqlClient;
 using System.Data;
 
-namespace LoginClub.Datos
+namespace club_deportivo.Datos
 {
     internal class Usuarios
     {
