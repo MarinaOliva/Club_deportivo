@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
-using club_deportivo.Datos; 
+using club_deportivo.Datos;
 
 namespace club_deportivo
 {
     public partial class FormLogin : Form
     {
-        private Usuarios usuarios; // Instancia de la clase Usuarios
+        private Administrador administrador; // Instancia de la clase Administrador
 
         public FormLogin()
         {
             InitializeComponent();
-            usuarios = new Usuarios(); // Inicializa la clase Usuarios
+            administrador = new Administrador(); // Inicializa la clase Administrador
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -22,8 +22,8 @@ namespace club_deportivo
 
             try
             {
-                // Llama al método Log_Usu para verificar credenciales
-                DataTable resultado = usuarios.Log_Usu(usuarioNombre, usuarioContrasena);
+                // Llama al método Log_Administrador para verificar credenciales
+                DataTable resultado = administrador.Log_Administrador(usuarioNombre, usuarioContrasena);
 
                 if (resultado.Rows.Count > 0) // Si hay resultados, el login fue exitoso
                 {

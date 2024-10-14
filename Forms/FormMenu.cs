@@ -16,15 +16,11 @@ namespace club_deportivo
         {
             InitializeComponent();
         }
-       
+
         private void btnVolver_Login_Click(object sender, EventArgs e)
         {
-
-            // Crea una nueva instancia del formulario de login
-            FormLogin formLogin = new FormLogin();
-            formLogin.Show(); // Muestra el formulario de login
-            this.Hide(); // Oculta el formulario de menú
-
+            new FormLogin().Show();
+            this.Hide();
         }
 
         private void btnAltaNoSocio_Click(object sender, EventArgs e)
@@ -36,10 +32,9 @@ namespace club_deportivo
         private void RegistrarCliente_Click(object sender, EventArgs e)
         {
             FormConsultaSocio formConsultaSocio = new FormConsultaSocio();
-            formConsultaSocio.Owner = this; // Asignas el FormMenu como el dueño de FormConsultaSocio
+            formConsultaSocio.Owner = this;
             formConsultaSocio.Show();
             this.Hide();
-            //formConsultaSocio.ShowDialog();
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
@@ -62,11 +57,6 @@ namespace club_deportivo
                 MessageBox.Show(resultados);
                 connection.Close(); // Cierra la conexión
             }*/
-        }
-
-        private void FormMenu_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

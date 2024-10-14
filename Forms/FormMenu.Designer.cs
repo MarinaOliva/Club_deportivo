@@ -110,7 +110,7 @@
             Margin = new Padding(4, 5, 4, 5);
             Name = "FormMenu";
             Text = "Form1";
-            Load += FormMenu_Load;
+            //Load += FormMenu_Load;
             ResumeLayout(false);
             PerformLayout();
         }

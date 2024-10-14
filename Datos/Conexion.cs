@@ -16,11 +16,11 @@ namespace club_deportivo.Datos
         public Conexion()
         {
             // Asignamos valores a las variables de la conexión
-            baseDatos = "proyecto";
-            servidor = "localhost";
-            puerto = "3306";
-            usuario = "root";
-            clave = "pass"; 
+            this.baseDatos = "clubDeportivo_grupo14_comC";
+            this.servidor = "localhost";
+            this.puerto = "3306";
+            this.usuario = "root";
+            this.clave = "pass";
         }
 
         // Proceso de interacción para crear una conexión
@@ -31,48 +31,20 @@ namespace club_deportivo.Datos
             try
             {
                 // Cadena de conexión
-                cadena.ConnectionString = "datasource=" + servidor +
-                                          ";port=" + puerto +
-                                          ";username=" + usuario +
-                                          ";password=" + clave +
-                                          ";Database=" + baseDatos;
+                cadena.ConnectionString = "datasource=" + this.servidor +
+                                          ";port=" + this.puerto +
+                                          ";username=" + this.usuario +
+                                          ";password=" + this.clave +
+                                          ";Database=" + this.baseDatos;
             }
             catch (Exception ex)
             {
+                Console.WriteLine("Error al intentar establecer la conexión a la base de datos: " + ex.Message);
                 cadena = null;
                 throw;
             }
 
             return cadena;
-        }
-
-        public void InicializarBaseDeDatos()
-        {
-            using (var conexion = CrearConexion())
-            {
-                conexion.Open();
-
-                // Comprobar si la base de datos ya existe
-                var cmd = new MySqlCommand("SHOW DATABASES LIKE '" + baseDatos + "';", conexion);
-                var reader = cmd.ExecuteReader();
-
-                if (!reader.HasRows) // Si no existe la base de datos
-                {
-                    reader.Close();
-                    Console.WriteLine("Base de datos no encontrada. Creando la base de datos...");
-
-                    // Leer el script SQL desde el archivo en la carpeta "datos"
-                    string script = File.ReadAllText("BaseDatos/proyecto.sql");
-                    var cmdCrearBD = new MySqlCommand(script, conexion);
-                    cmdCrearBD.ExecuteNonQuery();
-
-                    Console.WriteLine("Base de datos creada correctamente.");
-                }
-                else
-                {
-                    Console.WriteLine("La base de datos ya existe.");
-                }
-            }
         }
 
         // Método para obtener la instancia de la conexión

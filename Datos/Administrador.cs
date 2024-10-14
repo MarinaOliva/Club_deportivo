@@ -4,9 +4,9 @@ using System.Data;
 
 namespace club_deportivo.Datos
 {
-    internal class Usuarios
+    internal class Administrador
     {
-        public DataTable Log_Usu(string L_Usu, string P_Usu)
+        public DataTable Log_Administrador(string L_Adm, string P_Adm)
         {
             MySqlDataReader resultado;
             DataTable tabla = new DataTable();
@@ -19,8 +19,8 @@ namespace club_deportivo.Datos
                 comando.CommandType = CommandType.StoredProcedure;
 
                 // Cambiar los nombres de los parámetros a los nuevos
-                comando.Parameters.Add("usuarioNombre", MySqlDbType.VarChar).Value = L_Usu;
-                comando.Parameters.Add("usuarioContrasena", MySqlDbType.VarChar).Value = P_Usu;
+                comando.Parameters.Add("usuarioNombre", MySqlDbType.VarChar).Value = L_Adm;
+                comando.Parameters.Add("usuarioContrasena", MySqlDbType.VarChar).Value = P_Adm;
 
                 sqlCon.Open();
                 resultado = comando.ExecuteReader();
@@ -29,6 +29,7 @@ namespace club_deportivo.Datos
             }
             catch (Exception ex)
             {
+                MessageBox.Show("Error al intentar validar las credenciales: " + ex.Message);
                 throw;
             }
             finally

@@ -1,104 +1,100 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\",
+  "WorkspaceRootPath": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\formactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\formnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\formactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\formnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\formnosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formnosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\forminfosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\forminfosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\formconsultasocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultasocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\formmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\forms\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formconsultasocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultasocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\formactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\formnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formnosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formnosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\forminfosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\forminfosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo5\\FormLogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\fase 5\\club_deportivo\\datos\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:datos\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo5\\FormLogin.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\formaltanosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:formaltanosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\formaltanosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\formaltasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:formaltasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\formaltasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -108,21 +104,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Program.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T09:39:28.108Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -130,24 +125,73 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormInfoSocio.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormInfoSocio.cs",
-              "RelativeDocumentMoniker": "Forms\\FormInfoSocio.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormInfoSocio.cs",
-              "RelativeToolTip": "Forms\\FormInfoSocio.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCkAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Datos\\Conexion.cs",
+              "RelativeDocumentMoniker": "Datos\\Conexion.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Datos\\Conexion.cs",
+              "RelativeToolTip": "Datos\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T10:24:29.907Z",
+              "WhenOpened": "2024-10-13T22:45:45.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "FormMenu.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormMenu.cs",
+              "RelativeDocumentMoniker": "Forms\\FormMenu.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormMenu.cs",
+              "RelativeToolTip": "Forms\\FormMenu.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:49:05.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormLogin.cs",
+              "RelativeDocumentMoniker": "Forms\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormLogin.cs",
+              "RelativeToolTip": "Forms\\FormLogin.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T07:20:54.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormMenu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormMenu.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\FormMenu.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormMenu.Designer.cs",
+              "RelativeToolTip": "Forms\\FormMenu.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T07:35:09.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormMenu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormMenu.cs",
+              "RelativeDocumentMoniker": "Forms\\FormMenu.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\CLUB FUNCIONA MIO - copia\\Forms\\FormMenu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\CLUB FUNCIONA MIO - copia\\Forms\\FormMenu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T07:21:51.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FormActividad.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormActividad.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormActividad.cs",
               "RelativeDocumentMoniker": "Forms\\FormActividad.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormActividad.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormActividad.cs",
               "RelativeToolTip": "Forms\\FormActividad.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -156,11 +200,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "FormNoSocio.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormNoSocio.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormNoSocio.cs",
               "RelativeDocumentMoniker": "Forms\\FormNoSocio.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormNoSocio.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormNoSocio.cs",
               "RelativeToolTip": "Forms\\FormNoSocio.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -169,149 +213,116 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormRegistro.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormRegistro.cs",
-              "RelativeDocumentMoniker": "Forms\\FormRegistro.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormRegistro.cs",
-              "RelativeToolTip": "Forms\\FormRegistro.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T11:48:00.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormActividad.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormActividad.cs",
-              "RelativeDocumentMoniker": "Forms\\FormActividad.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormActividad.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormActividad.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T11:55:46.249Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "FormRegistro.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormRegistro.cs",
-              "RelativeDocumentMoniker": "Forms\\FormRegistro.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormRegistro.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormRegistro.cs [Dise\u00F1o]",
+              "Title": "FormConsultaSocio.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormConsultaSocio.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormConsultaSocio.Designer.cs",
+              "RelativeToolTip": "Forms\\FormConsultaSocio.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T11:44:59.32Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-10-13T09:08:39.804Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormNoSocio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormNoSocio.cs",
-              "RelativeDocumentMoniker": "Forms\\FormNoSocio.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormNoSocio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormNoSocio.cs [Dise\u00F1o]",
+              "DocumentIndex": 9,
+              "Title": "FormInfoSocio.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormInfoSocio.cs",
+              "RelativeDocumentMoniker": "Forms\\FormInfoSocio.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormInfoSocio.cs",
+              "RelativeToolTip": "Forms\\FormInfoSocio.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T11:31:52.073Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormNoSocio.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormNoSocio.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\FormNoSocio.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormNoSocio.Designer.cs",
-              "RelativeToolTip": "Forms\\FormNoSocio.Designer.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwFIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T11:37:18.346Z",
+              "WhenOpened": "2024-10-13T10:24:29.907Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "FormMenu.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormMenu.cs",
-              "RelativeDocumentMoniker": "Forms\\FormMenu.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormMenu.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormMenu.cs [Dise\u00F1o]",
+              "Title": "FormActividad.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormActividad.cs",
+              "RelativeDocumentMoniker": "Forms\\FormActividad.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormActividad.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormActividad.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T07:21:51.875Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormConsultaSocio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormConsultaSocio.cs",
-              "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T09:05:08.818Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FormInfoSocio.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormInfoSocio.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\FormInfoSocio.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormInfoSocio.Designer.cs",
-              "RelativeToolTip": "Forms\\FormInfoSocio.Designer.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAD4vzUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T10:26:36.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T11:55:46.249Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "FormInfoSocio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormInfoSocio.cs",
-              "RelativeDocumentMoniker": "Forms\\FormInfoSocio.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormInfoSocio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormInfoSocio.cs [Dise\u00F1o]",
+              "Title": "FormRegistro.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormRegistro.cs",
+              "RelativeDocumentMoniker": "Forms\\FormRegistro.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormRegistro.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormRegistro.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T10:47:56.542Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-10-13T11:44:59.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormNoSocio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormNoSocio.cs",
+              "RelativeDocumentMoniker": "Forms\\FormNoSocio.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormNoSocio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormNoSocio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T11:31:52.073Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "FormConsultaSocio.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormConsultaSocio.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormConsultaSocio.Designer.cs",
-              "RelativeToolTip": "Forms\\FormConsultaSocio.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Title": "FormNoSocio.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormNoSocio.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\FormNoSocio.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormNoSocio.Designer.cs",
+              "RelativeToolTip": "Forms\\FormNoSocio.Designer.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwFIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T09:08:39.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T11:37:18.346Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "FormMenu.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormMenu.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\FormMenu.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormMenu.Designer.cs",
-              "RelativeToolTip": "Forms\\FormMenu.Designer.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAQwJoAAAABAAAAAAAAAA==",
+              "Title": "FormConsultaSocio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormConsultaSocio.cs",
+              "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T07:35:09.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T09:05:08.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormInfoSocio.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormInfoSocio.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\FormInfoSocio.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormInfoSocio.Designer.cs",
+              "RelativeToolTip": "Forms\\FormInfoSocio.Designer.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAD4vzUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T10:26:36.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FormInfoSocio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormInfoSocio.cs",
+              "RelativeDocumentMoniker": "Forms\\FormInfoSocio.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormInfoSocio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormInfoSocio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T10:47:56.542Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "FormAltaNoSocio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\FormAltaNoSocio.cs",
-              "RelativeDocumentMoniker": "FormAltaNoSocio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\FormAltaNoSocio.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\FormAltaNoSocio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormAltaNoSocio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\FormAltaNoSocio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T07:22:29.761Z"
             },
@@ -320,20 +331,20 @@
               "DocumentIndex": 22,
               "Title": "FormAltaSocio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\FormAltaSocio.cs",
-              "RelativeDocumentMoniker": "FormAltaSocio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\FormAltaSocio.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\FormAltaSocio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormAltaSocio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\FormAltaSocio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T07:22:26.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "FormLogin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormLogin.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormLogin.cs",
               "RelativeDocumentMoniker": "Forms\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormLogin.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\CLUB FUNCIONA MIO - copia\\Forms\\FormLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\CLUB FUNCIONA MIO - copia\\Forms\\FormLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T08:20:40.844Z"
             },
@@ -342,9 +353,9 @@
               "DocumentIndex": 23,
               "Title": "FormLogin.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\FormLogin.cs",
-              "RelativeDocumentMoniker": "FormLogin.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\FormLogin.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\FormLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\FormLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T03:33:49.908Z"
             },
@@ -353,31 +364,19 @@
               "DocumentIndex": 24,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\Form1.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T09:30:22.831Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FormLogin.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormLogin.cs",
-              "RelativeDocumentMoniker": "Forms\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormLogin.cs",
-              "RelativeToolTip": "Forms\\FormLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T07:20:54.39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "FormLogin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormLogin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormLogin.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\FormLogin.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Forms\\FormLogin.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormLogin.Designer.cs",
               "RelativeToolTip": "Forms\\FormLogin.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -385,36 +384,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Datos\\Usuarios.cs",
-              "RelativeDocumentMoniker": "Datos\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo\\Datos\\Usuarios.cs",
-              "RelativeToolTip": "Datos\\Usuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T09:48:51.959Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 20,
               "Title": "FormLogin.Designer.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo5\\FormLogin.Designer.cs",
-              "RelativeDocumentMoniker": "..\\Club_deportivo5\\FormLogin.Designer.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo5\\FormLogin.Designer.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo5\\FormLogin.Designer.cs",
-              "RelativeToolTip": "..\\Club_deportivo5\\FormLogin.Designer.cs",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo5\\FormLogin.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T03:32:18.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "FormLogin.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo5\\FormLogin.cs",
-              "RelativeDocumentMoniker": "..\\Club_deportivo5\\FormLogin.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo5\\FormLogin.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\FASE 5\\Club_deportivo5\\FormLogin.cs",
-              "RelativeToolTip": "..\\Club_deportivo5\\FormLogin.cs",
+              "RelativeToolTip": "..\\..\\..\\Escritorio\\FASE 5\\Club_deportivo5\\FormLogin.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T03:32:16.924Z"

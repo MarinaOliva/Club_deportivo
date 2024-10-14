@@ -1,16 +1,20 @@
 using System;
+using System.IO;
 using MySql.Data.MySqlClient;
 using club_deportivo.Datos;
-using System.Diagnostics;
+using System.Windows.Forms;
 using club_deportivo;
 
-static class Program
+namespace club_deportivo
 {
-    [STAThread]
-    static void Main()
+    static class Program
     {
-        Application.EnableVisualStyles();
-        Application.SetCompatibleTextRenderingDefault(false);
-        Application.Run(new FormLogin());  
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new FormLogin());
+        }
     }
 }

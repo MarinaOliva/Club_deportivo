@@ -1,6 +1,6 @@
 -- Crear la base de datos y usarla
-CREATE DATABASE Proyecto;
-USE Proyecto;
+CREATE DATABASE clubDeportivo_grupo14_comC;
+USE clubDeportivo_grupo14_comC;
 
 -- Tabla para los clientes
 CREATE TABLE Cliente (
