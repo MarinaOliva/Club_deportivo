@@ -7,20 +7,24 @@
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formcomprobantepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\cuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:cuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\formcomprobantepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formcomprobantepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formcomprobantepago.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formcomprobantepago.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\cuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:cuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -66,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -84,46 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormComprobantePago.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormComprobantePago.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\FormComprobantePago.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormComprobantePago.Designer.cs",
-              "RelativeToolTip": "Forms\\FormComprobantePago.Designer.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAjwJsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T09:03:02.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormComprobantePago.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormComprobantePago.cs",
-              "RelativeDocumentMoniker": "Forms\\FormComprobantePago.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormComprobantePago.cs",
-              "RelativeToolTip": "Forms\\FormComprobantePago.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAowB0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T09:05:47.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Cuotas.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Cuotas.cs",
-              "RelativeDocumentMoniker": "Cuotas.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Cuotas.cs",
-              "RelativeToolTip": "Cuotas.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:34:45.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "FormComprobantePago.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormComprobantePago.cs",
               "RelativeDocumentMoniker": "Forms\\FormComprobantePago.cs",
@@ -135,7 +100,71 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormAbonarCuota.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormAbonarCuota.cs",
+              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormAbonarCuota.cs",
+              "RelativeToolTip": "Forms\\FormAbonarCuota.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T09:50:34.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormComprobantePago.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormComprobantePago.cs",
+              "RelativeDocumentMoniker": "Forms\\FormComprobantePago.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormComprobantePago.cs",
+              "RelativeToolTip": "Forms\\FormComprobantePago.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T09:05:47.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cuotas.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Cuotas.cs",
+              "RelativeDocumentMoniker": "Cuotas.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Cuotas.cs",
+              "RelativeToolTip": "Cuotas.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAADwv1oAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T07:34:45.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "Properties\\Resources.Designer.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAFIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T09:55:32.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "FormAbonarCuota.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormAbonarCuota.cs",
+              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.cs",
+              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormAbonarCuota.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\FormAbonarCuota.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T02:41:22Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FormConsultaSocio.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormConsultaSocio.cs",
               "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.cs",
@@ -148,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "FormInfoSocio.Designer.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormInfoSocio.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\FormInfoSocio.Designer.cs",
@@ -160,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "FormConsultarCuota.Designer.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormConsultarCuota.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\FormConsultarCuota.Designer.cs",
@@ -172,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "FormMenu.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormMenu.cs",
               "RelativeDocumentMoniker": "Forms\\FormMenu.cs",
@@ -185,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "FormLogin.Designer.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormLogin.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\FormLogin.Designer.cs",
@@ -197,18 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormAbonarCuota.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormAbonarCuota.cs",
-              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormAbonarCuota.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormAbonarCuota.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T02:41:22Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "FormConsultaSocio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormConsultaSocio.cs",
               "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.cs",
@@ -219,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "FormInfoSocio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormInfoSocio.cs",
               "RelativeDocumentMoniker": "Forms\\FormInfoSocio.cs",
@@ -230,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "FormMenu.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormMenu.cs",
               "RelativeDocumentMoniker": "Forms\\FormMenu.cs",

@@ -74,6 +74,8 @@ namespace club_deportivo.Forms
             btnPagar.TabIndex = 3;
             btnPagar.Text = "Pagar";
             btnPagar.UseVisualStyleBackColor = true;
+            btnPagar.Click += btnPagar_Click;
+
             // 
             // btnCancelar
             // 

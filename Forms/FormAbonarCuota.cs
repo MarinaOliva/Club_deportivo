@@ -82,6 +82,10 @@ namespace club_deportivo.Forms
                 {
                     MessageBox.Show("El pago se ha registrado exitosamente.", "Pago Realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     CargarDatosCuota(); // Refresca la información de la cuota en la interfaz
+
+                    // Abre el formulario de comprobante de pago
+                    FormComprobantePago formComprobante = new FormComprobantePago(socioId);
+                    formComprobante.Show();
                 }
                 else
                 {
@@ -93,6 +97,7 @@ namespace club_deportivo.Forms
                 MessageBox.Show("Esta cuota ya está pagada.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
 
         private void FormAbonarCuota_Load(object sender, EventArgs e)
         {

@@ -71,7 +71,7 @@ namespace club_deportivo.Properties {
             }
         }
 
-        internal static System.Drawing.Bitmap logo
+        internal static System.Drawing.Bitmap Logo
         {
             get
             {

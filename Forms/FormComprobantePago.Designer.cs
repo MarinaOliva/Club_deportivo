@@ -149,7 +149,7 @@
             btnImprimir.TabIndex = 11;
             btnImprimir.Text = "Imprimir";
             btnImprimir.UseVisualStyleBackColor = true;
-            btnImprimir.Click += btnImprimir_Click;
+            //btnImprimir.Click += btnImprimir_Click;
             // 
             // pictureBoxLogo
             // 
