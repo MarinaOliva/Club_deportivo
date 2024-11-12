@@ -39,24 +39,19 @@ namespace club_deportivo
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            /*string query = "SELECT c.nombre, c.apellido, cu.fechaVencimiento FROM Cuota cu JOIN Socio s ON cu.socioID = s.socioID JOIN Cliente c ON s.clienteID = c.clienteID WHERE cu.fechaVencimiento = CURDATE()";
 
-            using (MySqlCommand cmd = new MySqlCommand(query, connection))
-            {
-                connection.Open(); // Abre la conexión
-                var reader = cmd.ExecuteReader();
-                string resultados = "Cuotas vencidas:\n";
+        }
 
-                // Recorre los resultados de la consulta
-                while (reader.Read())
-                {
-                    resultados += $"Nombre: {reader["nombre"]} {reader["apellido"]}, Vencimiento: {reader["fechaVencimiento"]}\n";
-                }
+        private void btnAbonar_Click(object sender, EventArgs e)
+        {
+            // Crea una nueva instancia de FormConsultarCuota
+            FormConsultarCuota formConsultarCuota = new FormConsultarCuota();
 
-                // Muestra los resultados en un cuadro de diálogo
-                MessageBox.Show(resultados);
-                connection.Close(); // Cierra la conexión
-            }*/
+            // Muestra el formulario
+            formConsultarCuota.Show();
+
+            // Ocultar el formulario actual:
+             this.Hide();
         }
     }
 }

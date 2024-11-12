@@ -33,7 +33,7 @@
             btnVolver_Login = new Button();
             RegistrarCliente = new Button();
             Actividades = new Button();
-            Abonar = new Button();
+            btnAbonar = new Button();
             SuspendLayout();
             // 
             // btnConsultar
@@ -87,21 +87,22 @@
             Actividades.Text = "Inscribir en Actividades Guiadas";
             Actividades.UseVisualStyleBackColor = true;
             // 
-            // Abonar
+            // btnAbonar
             // 
-            Abonar.Location = new Point(167, 314);
-            Abonar.Name = "Abonar";
-            Abonar.Size = new Size(242, 116);
-            Abonar.TabIndex = 7;
-            Abonar.Text = "Abonar";
-            Abonar.UseVisualStyleBackColor = true;
+            btnAbonar.Location = new Point(167, 314);
+            btnAbonar.Name = "btnAbonar";
+            btnAbonar.Size = new Size(242, 116);
+            btnAbonar.TabIndex = 7;
+            btnAbonar.Text = "Abonar";
+            btnAbonar.UseVisualStyleBackColor = true;
+            btnAbonar.Click += btnAbonar_Click;
             // 
             // FormMenu
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 690);
-            Controls.Add(Abonar);
+            Controls.Add(btnAbonar);
             Controls.Add(Actividades);
             Controls.Add(RegistrarCliente);
             Controls.Add(btnVolver_Login);
@@ -110,7 +111,6 @@
             Margin = new Padding(4, 5, 4, 5);
             Name = "FormMenu";
             Text = "Form1";
-            //Load += FormMenu_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -121,6 +121,6 @@
         private System.Windows.Forms.Button btnVolver_Login;
         private Button RegistrarCliente;
         private Button Actividades;
-        private Button Abonar;
+        private Button btnAbonar;
     }
 }
