@@ -40,7 +40,6 @@
             numero.Name = "numero";
             numero.Size = new Size(198, 30);
             numero.TabIndex = 0;
-            //numero.TextChanged += this.textBox1_TextChanged;
             // 
             // Consulta
             // 
@@ -59,7 +58,6 @@
             label1.Size = new Size(417, 23);
             label1.TabIndex = 2;
             label1.Text = "Seleccione el tipo e ingrese el número de documento";
-            
             // 
             // tipo_doc
             // 
@@ -82,6 +80,7 @@
             Controls.Add(numero);
             Name = "FormConsultaSocio";
             Text = "Consulta";
+            Load += FormConsultaSocio_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -1,12 +1,5 @@
 ﻿using club_deportivo.Datos;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace club_deportivo.Forms
@@ -20,39 +13,38 @@ namespace club_deportivo.Forms
 
         private void btnContinuar_Click(object sender, EventArgs e)
         {
-            int? socioId = null;
-            int? dni = null;
-
-            // Verifica si el usuario ingresó un número de socio o un DNI
-            if (int.TryParse(txtNumeroSocio.Text, out int result))
+            if (int.TryParse(txtNumeroSocio.Text, out int socioId))
             {
-                socioId = result;
-            }
-            else if (int.TryParse(txtDNI.Text, out result))
-            {
-                dni = result;
-            }
+                // Llama al método usando solo el número de socio
+                var cuota = Cuotas.ObtenerCuotaPorSocio(socioId);
 
-            // Llama al método con los valores disponibles
-            var cuota = Cuotas.ObtenerCuotaPorSocioODNI(socioId, dni);
+                if (cuota != null)
+                {
+                    // Si encontró el socio, abre el formulario para abonar la cuota
+                    FormAbonarCuota formularioAbono = new FormAbonarCuota(socioId);
 
-            if (cuota != null)
-            {
-                // Si encontró el socio, abre el formulario para abonar la cuota
-                FormAbonarCuota formularioAbono = new FormAbonarCuota();
+                    this.Hide();
 
-                // Pasa los datos relevantes al formulario AbonarCuota
-                formularioAbono.SocioID = cuota.SocioID;  // Pasa el SocioID o cualquier otro dato relevante
-
-                // Abre el formulario
-                formularioAbono.Show();
+                    // Abre el formulario
+                    formularioAbono.ShowDialog(); // Usa ShowDialog para abrirlo como modal
+                }
+                else
+                {
+                    // Si no se encontró el socio, muestra el mensaje de error
+                    MessageBox.Show("Socio no encontrado. Verifique el número de socio ingresado e intente nuevamente",
+                                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                // Si no se encontró el socio, muestra el mensaje de error
-                MessageBox.Show("Socio no encontrado. Verifique el dato ingresado e intente nuevamente",
-                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Muestra un mensaje de error si el número de socio no es válido
+                MessageBox.Show("Ingrese un número de socio válido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void FormConsultarCuota_Load(object sender, EventArgs e)
+        {
+            // Puedes realizar cualquier configuración adicional al cargar el formulario aquí.
         }
     }
 }

@@ -53,11 +53,11 @@ namespace club_deportivo.Forms
                         formInfo.LoadData(reader); // Método para cargar datos
                         this.Hide(); // Ocultar el formulario actual
                         formInfo.Show(); // Mostrar el nuevo formulario
-                       
+
                     }
                     else
                     {
-                      
+
                         // Si no existe, muestra un nuevo formulario con opciones
                         FormNoSocio formNoSocio = new FormNoSocio(numeroDocumento);
                         this.Hide();
@@ -69,6 +69,11 @@ namespace club_deportivo.Forms
             {
                 MessageBox.Show("Por favor, ingrese un número de documento válido.");
             }
-        } 
-    } 
+        }
+
+        private void FormConsultaSocio_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

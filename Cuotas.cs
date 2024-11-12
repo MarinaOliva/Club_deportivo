@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace club_deportivo.Datos
 {
     public class Cuotas
@@ -12,7 +13,9 @@ namespace club_deportivo.Datos
         public int SocioID { get; set; }
         public DateTime FechaVencimiento { get; set; }
         public DateTime? FechaPago { get; set; }
+        public decimal Importe { get; set; }
 
+        // Método para determinar el estado de la cuota
         public string EstadoCuota()
         {
             if (FechaPago.HasValue)
@@ -29,7 +32,8 @@ namespace club_deportivo.Datos
             }
         }
 
-        public static Cuotas ObtenerCuotaPorSocioODNI(int? socioId = null, int? dni = null)
+        // Método estático para obtener la cuota de un socio usando solo el número de socio
+        public static Cuotas ObtenerCuotaPorSocio(int socioId)
         {
             Cuotas cuota = null;
 
@@ -37,38 +41,14 @@ namespace club_deportivo.Datos
             {
                 conn.Open();
 
-                // Construye la consulta basada en los parámetros disponibles
-                string query = "SELECT c.fechaVencimiento, c.fechaPago, s.socioID FROM Cuota c ";
-                query += "JOIN Socio s ON s.socioID = c.socioID ";
-                query += "JOIN Cliente cl ON s.clienteID = cl.clienteID ";
-                query += "WHERE ";
-
-                // Si socioId se pasa, se filtra por socioID
-                if (socioId.HasValue)
-                {
-                    query += "s.socioID = @socioID";
-                }
-                // Si dni se pasa, se filtra por numDoc de la tabla Cliente
-                if (dni.HasValue)
-                {
-                    if (socioId.HasValue)
-                    {
-                        query += " OR ";
-                    }
-                    query += "cl.numDoc = @dni";
-                }
+                // Consulta SQL solo con filtro por socioID
+                string query = "SELECT c.fechaVencimiento, c.fechaPago, c.importe, s.socioID " +
+                               "FROM Cuota c " +
+                               "JOIN Socio s ON s.socioID = c.socioID " +
+                               "WHERE s.socioID = @socioID";
 
                 MySqlCommand cmd = new MySqlCommand(query, conn);
-
-                // Agrega los parámetros a la consulta
-                if (socioId.HasValue)
-                {
-                    cmd.Parameters.AddWithValue("@socioID", socioId.Value);
-                }
-                if (dni.HasValue)
-                {
-                    cmd.Parameters.AddWithValue("@dni", dni.Value);
-                }
+                cmd.Parameters.AddWithValue("@socioID", socioId);
 
                 using (MySqlDataReader reader = cmd.ExecuteReader())
                 {
@@ -76,9 +56,10 @@ namespace club_deportivo.Datos
                     {
                         cuota = new Cuotas
                         {
-                            SocioID = reader.GetInt32("socioID"), // Obtiene el socioID desde la consulta
+                            SocioID = reader.GetInt32("socioID"),
                             FechaVencimiento = reader.GetDateTime("fechaVencimiento"),
-                            FechaPago = reader["fechaPago"] != DBNull.Value ? (DateTime?)reader.GetDateTime("fechaPago") : null
+                            FechaPago = reader["fechaPago"] != DBNull.Value ? (DateTime?)reader.GetDateTime("fechaPago") : null,
+                            Importe = reader.GetDecimal("importe")
                         };
                     }
                 }
@@ -86,7 +67,22 @@ namespace club_deportivo.Datos
 
             return cuota;
         }
+        // método para registrar pago de cuota
+        public static bool RegistrarPagoCuota(int socioId)
+        {
+            using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+            {
+                conn.Open();
 
+                string query = "UPDATE Cuota SET fechaPago = @fechaPago WHERE socioID = @socioID AND fechaPago IS NULL";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@fechaPago", DateTime.Now);
+                cmd.Parameters.AddWithValue("@socioID", socioId);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+                return rowsAffected > 0; // Retorna true si se actualizó alguna fila
+            }
+        }
 
     }
 }
