@@ -4,6 +4,9 @@
     <Compile Update="Forms\FormAbonarCuota.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FormComprobantePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\FormConsultarCuota.cs">
       <SubType>Form</SubType>
     </Compile>
