@@ -68,21 +68,23 @@ namespace club_deportivo.Datos
             return cuota;
         }
         // método para registrar pago de cuota
-        public static bool RegistrarPagoCuota(int socioId)
+        public static bool RegistrarPagoCuota(int socioId, DateTime fechaPago)
         {
             using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
             {
                 conn.Open();
 
+                // Modifica la consulta para actualizar la fecha de pago con la fecha proporcionada por el usuario
                 string query = "UPDATE Cuota SET fechaPago = @fechaPago WHERE socioID = @socioID AND fechaPago IS NULL";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@fechaPago", DateTime.Now);
+                cmd.Parameters.AddWithValue("@fechaPago", fechaPago);
                 cmd.Parameters.AddWithValue("@socioID", socioId);
 
                 int rowsAffected = cmd.ExecuteNonQuery();
                 return rowsAffected > 0; // Retorna true si se actualizó alguna fila
             }
         }
+
 
     }
 }

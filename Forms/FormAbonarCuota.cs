@@ -16,11 +16,15 @@ namespace club_deportivo.Forms
     {
         private int socioId;
         private Cuotas cuota;
+        private DateTimePicker dtpFechaPago;
 
         public FormAbonarCuota(int socioId)
         {
             InitializeComponent();
             this.socioId = socioId;
+
+            // Establecer DateTimePicker como oculto inicialmente
+            this.dtpFechaPago.Visible = false;
 
             // Obtiene la información de la cuota al cargar el formulario
             CargarDatosCuota();
@@ -38,6 +42,16 @@ namespace club_deportivo.Forms
                 lblMonto.Text = $"Monto de la cuota: ${cuota.Importe}";
                 lblFecha.Text = $"Fecha de pago: {(cuota.FechaPago.HasValue ? cuota.FechaPago.Value.ToString("dd/MM/yyyy") : "No pagada")}";
                 lblVencimiento.Text = $"Fecha de vencimiento: {cuota.FechaVencimiento:dd/MM/yyyy}";
+
+                // Si la cuota no ha sido pagada, muestra el DateTimePicker para seleccionar la fecha de pago
+                if (!cuota.FechaPago.HasValue)
+                {
+                    dtpFechaPago.Visible = true; // Muestra el DateTimePicker
+                }
+                else
+                {
+                    dtpFechaPago.Visible = false;
+                }
             }
             else
             {
@@ -51,8 +65,18 @@ namespace club_deportivo.Forms
         {
             if (cuota != null && !cuota.FechaPago.HasValue)
             {
-                // Registra el pago en la base de datos
-                bool pagoExitoso = Cuotas.RegistrarPagoCuota(socioId);
+                // Obtener la fecha seleccionada en el DateTimePicker
+                DateTime fechaPago = dtpFechaPago.Value;
+
+                // Si el usuario no ha seleccionado una fecha válida, muestra un mensaje de advertencia
+                if (fechaPago < cuota.FechaVencimiento)
+                {
+                    MessageBox.Show("La fecha de pago no puede ser anterior a la fecha de vencimiento.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Registra el pago en la base de datos con la fecha de pago seleccionada
+                bool pagoExitoso = Cuotas.RegistrarPagoCuota(socioId, fechaPago);
 
                 if (pagoExitoso)
                 {
@@ -75,16 +99,6 @@ namespace club_deportivo.Forms
             // Puedes realizar cualquier configuración adicional al cargar el formulario aquí.
         }
 
-        private void lblFecha_Click(object sender, EventArgs e)
-        {
-            // Puedes manejar eventos adicionales si es necesario.
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            // Puedes manejar eventos adicionales si es necesario.
-        }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             // Volver al menú inicial
@@ -94,5 +108,6 @@ namespace club_deportivo.Forms
             this.Close();
         }
     }
+
 }
 

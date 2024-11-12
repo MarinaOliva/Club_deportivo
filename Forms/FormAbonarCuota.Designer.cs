@@ -1,4 +1,6 @@
-﻿namespace club_deportivo.Forms
+﻿using System.Windows.Forms;
+
+namespace club_deportivo.Forms
 {
     partial class FormAbonarCuota
     {
@@ -34,6 +36,7 @@
             btnPagar = new Button();
             btnCancelar = new Button();
             lblVencimiento = new Label();
+            dtpFechaPago = new DateTimePicker();
             SuspendLayout();
             // 
             // lblNumSocio
@@ -62,7 +65,6 @@
             lblFecha.Size = new Size(131, 23);
             lblFecha.TabIndex = 2;
             lblFecha.Text = "Fecha de pago: ";
-            lblFecha.Click += lblFecha_Click;
             // 
             // btnPagar
             // 
@@ -81,8 +83,7 @@
             btnCancelar.TabIndex = 4;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // lblVencimiento
             // 
@@ -92,13 +93,23 @@
             lblVencimiento.Size = new Size(185, 23);
             lblVencimiento.TabIndex = 5;
             lblVencimiento.Text = "Fecha de vencimiento: ";
-            lblVencimiento.Click += label1_Click;
+            // 
+            // dtpFechaPago
+            // 
+            dtpFechaPago.Location = new Point(424, 239);
+            dtpFechaPago.Name = "dtpFechaPago";
+            dtpFechaPago.Size = new Size(250, 30);
+            dtpFechaPago.TabIndex = 6;
+            dtpFechaPago.Visible = false;
+            dtpFechaPago.Format = DateTimePickerFormat.Custom;
+            dtpFechaPago.CustomFormat = "dd/MM/yy";
             // 
             // FormAbonarCuota
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dtpFechaPago);
             Controls.Add(lblVencimiento);
             Controls.Add(btnCancelar);
             Controls.Add(btnPagar);
