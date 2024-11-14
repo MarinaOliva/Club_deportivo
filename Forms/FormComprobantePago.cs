@@ -8,41 +8,74 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+using System;
+using System.Drawing;
+using System.Drawing.Printing;
+using System.Windows.Forms;
+
 namespace club_deportivo.Forms
 {
     public partial class FormComprobantePago : Form
     {
-        private int socioId;
+        // Propiedades para recibir los datos del formulario de pago
+        public string NombreSocio { get; set; }
+        public string DNI { get; set; }
+        public int NumeroSocio { get; set; }
+        public float MontoAbonado { get; set; }
+        public DateTime FechaPago { get; set; }
 
-        public FormComprobantePago(int socioId)
+        public FormComprobantePago()
         {
             InitializeComponent();
-            this.socioId = socioId; // Guardamos el socioId
         }
 
         private void FormComprobantePago_Load(object sender, EventArgs e)
         {
-            // Aquí puedes cargar los datos relacionados con el socio utilizando el socioId
-            // Ejemplo de datos fijos, deberías hacer la consulta a la base de datos o servicio correspondiente
-
-            // Cargar los datos del socio (esto debe ser reemplazado por la lógica de tu base de datos)
-            string nombreSocio = "Juan Pérez";  // Reemplaza con el nombre real obtenido de la base de datos
-            string dniSocio = "12345678";  // Reemplaza con el DNI real obtenido de la base de datos
-            decimal valorCuota = 1500;  // Reemplaza con el valor real de la cuota
-            string administrador = "Administrador1"; // Nombre del administrador que generó el comprobante
-
-            // Asignar los valores a los controles en el formulario
-            txtNombre.Text = nombreSocio;
-            txtDni.Text = dniSocio;
-            txtValor.Text = $"${valorCuota}";
-            txtFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");  // Fecha actual
-            txtAdministrador.Text = administrador;
+            // Asigna los valores a las etiquetas del comprobante de pago
+            lblNombreSocio.Text = NombreSocio;
+            lblDNI.Text = DNI;
+            lblNumeroSocio.Text = NumeroSocio.ToString();
+            lblMontoAbonado.Text = $"${MontoAbonado:F2}";
+            lblFechaPago.Text = FechaPago.ToShortDateString();
         }
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            // Aquí podrías agregar el código para generar un comprobante de pago en PDF
-            MessageBox.Show("Comprobante de pago generado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            btnImprimir.Visible = false;  // Oculta el botón durante la impresión
+            PrintDocument pd = new PrintDocument();
+            pd.PrintPage += new PrintPageEventHandler(ImprimirComprobante);
+            PrintPreviewDialog printPreview = new PrintPreviewDialog
+            {
+                Document = pd,
+                Width = 800,
+                Height = 600
+            };
+            printPreview.ShowDialog();
+            btnImprimir.Visible = true;  // Vuelve a mostrar el botón
+        }
+
+        private void ImprimirComprobante(object sender, PrintPageEventArgs e)
+        {
+            // Captura el formulario en una imagen para imprimir
+            Bitmap bitmap = new Bitmap(this.Width, this.Height);
+            this.DrawToBitmap(bitmap, new Rectangle(0, 0, this.Width, this.Height));
+            e.Graphics.DrawImage(bitmap, new Point(100, 100));
+        }
+
+        public void GenerarComprobante(string nombreSocio, string dni, int numeroSocio, float monto, DateTime fecha)
+        {
+            // Método para configurar los datos del comprobante
+            NombreSocio = nombreSocio;
+            DNI = dni;
+            NumeroSocio = numeroSocio;
+            MontoAbonado = monto;
+            FechaPago = fecha;
+
+            // Mostrar el formulario
+            this.ShowDialog();
         }
     }
 }
+
+

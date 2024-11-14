@@ -1,65 +1,69 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\",
+  "WorkspaceRootPath": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formcomprobantepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formcomprobantepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formcomprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formcomprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\formcomprobantepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formcomprobantepago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formcomprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formcomprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formconsultarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\cuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:cuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\forms\\formconsultarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\cuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:cuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\forminfosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\forminfosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\forminfosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formconsultarcuota.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formconsultarcuota.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultarcuota.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\documents\\github\\club_deportivo\\forms\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -70,15 +74,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Program.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -88,124 +92,114 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormComprobantePago.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormComprobantePago.cs",
-              "RelativeDocumentMoniker": "Forms\\FormComprobantePago.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormComprobantePago.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormComprobantePago.cs [Dise\u00F1o]",
+              "DocumentIndex": 0,
+              "Title": "FormComprobante.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormComprobante.cs",
+              "RelativeDocumentMoniker": "Forms\\FormComprobante.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormComprobante.cs",
+              "RelativeToolTip": "Forms\\FormComprobante.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T09:02:55.029Z",
+              "WhenOpened": "2024-11-14T20:55:12.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormComprobante.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormComprobante.cs",
+              "RelativeDocumentMoniker": "Forms\\FormComprobante.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormComprobante.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\FormComprobante.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T20:48:07.729Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FormAbonarCuota.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormAbonarCuota.cs",
-              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormAbonarCuota.cs",
-              "RelativeToolTip": "Forms\\FormAbonarCuota.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
+              "Title": "FormConsultarCuota.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.cs",
+              "RelativeDocumentMoniker": "Forms\\FormConsultarCuota.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.cs",
+              "RelativeToolTip": "Forms\\FormConsultarCuota.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvzIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T09:50:34.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormComprobantePago.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormComprobantePago.cs",
-              "RelativeDocumentMoniker": "Forms\\FormComprobantePago.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormComprobantePago.cs",
-              "RelativeToolTip": "Forms\\FormComprobantePago.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T09:05:47.858Z",
+              "WhenOpened": "2024-11-12T01:34:31.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "FormAbonarCuota.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormAbonarCuota.cs",
+              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormAbonarCuota.cs",
+              "RelativeToolTip": "Forms\\FormAbonarCuota.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T03:19:40.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Cuotas.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Cuotas.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Cuotas.cs",
               "RelativeDocumentMoniker": "Cuotas.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Cuotas.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Cuotas.cs",
               "RelativeToolTip": "Cuotas.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAADwv1oAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAIBJwEUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T07:34:45.271Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Resources.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Properties\\Resources.Designer.cs",
-              "RelativeDocumentMoniker": "Properties\\Resources.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Properties\\Resources.Designer.cs",
-              "RelativeToolTip": "Properties\\Resources.Designer.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAAFIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T09:55:32.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormAbonarCuota.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormAbonarCuota.cs",
-              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormAbonarCuota.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormAbonarCuota.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T02:41:22Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "FormConsultaSocio.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormConsultaSocio.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultaSocio.cs",
               "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormConsultaSocio.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultaSocio.cs",
               "RelativeToolTip": "Forms\\FormConsultaSocio.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAIBJwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T07:10:26.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "FormInfoSocio.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormInfoSocio.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormInfoSocio.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\FormInfoSocio.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormInfoSocio.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormInfoSocio.Designer.cs",
               "RelativeToolTip": "Forms\\FormInfoSocio.Designer.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAIwFwAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:05:27.382Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FormConsultarCuota.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormConsultarCuota.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\FormConsultarCuota.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormConsultarCuota.Designer.cs",
-              "RelativeToolTip": "Forms\\FormConsultarCuota.Designer.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAACQAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T02:08:25.447Z"
+              "WhenOpened": "2024-11-12T07:05:27.382Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "FormConsultarCuota.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\FormConsultarCuota.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.Designer.cs",
+              "RelativeToolTip": "Forms\\FormConsultarCuota.Designer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAIBJwBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T02:08:25.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "FormMenu.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormMenu.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormMenu.cs",
               "RelativeDocumentMoniker": "Forms\\FormMenu.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormMenu.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormMenu.cs",
               "RelativeToolTip": "Forms\\FormMenu.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAhwDUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -214,48 +208,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "FormLogin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormLogin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormLogin.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\FormLogin.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormLogin.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormLogin.Designer.cs",
               "RelativeToolTip": "Forms\\FormLogin.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T03:34:05.951Z"
+              "WhenOpened": "2024-10-13T03:34:05.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
+              "Title": "FormConsultarCuota.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.cs",
+              "RelativeDocumentMoniker": "Forms\\FormConsultarCuota.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\FormConsultarCuota.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T01:32:45.133Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormAbonarCuota.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormAbonarCuota.cs",
+              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormAbonarCuota.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\FormAbonarCuota.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T02:41:22Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "FormConsultaSocio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormConsultaSocio.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultaSocio.cs",
               "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:10:19.369Z"
+              "WhenOpened": "2024-11-12T07:10:19.369Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "FormInfoSocio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormInfoSocio.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormInfoSocio.cs",
               "RelativeDocumentMoniker": "Forms\\FormInfoSocio.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormInfoSocio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormInfoSocio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\FormInfoSocio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:05:11.342Z"
+              "WhenOpened": "2024-11-12T07:05:11.342Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "FormMenu.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Documents\\GitHub\\Club_deportivo\\Forms\\FormMenu.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormMenu.cs",
               "RelativeDocumentMoniker": "Forms\\FormMenu.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormMenu.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormMenu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\FormMenu.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T02:14:37.778Z"
+              "WhenOpened": "2024-11-12T02:14:37.778Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

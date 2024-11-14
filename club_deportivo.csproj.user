@@ -4,7 +4,7 @@
     <Compile Update="Forms\FormAbonarCuota.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\FormComprobantePago.cs">
+    <Compile Update="Forms\FormComprobante.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\FormConsultarCuota.cs">
@@ -31,5 +31,10 @@
     <Compile Update="Forms\FormNoSocio.cs">
       <SubType>Form</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Forms\FormComprobante.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
