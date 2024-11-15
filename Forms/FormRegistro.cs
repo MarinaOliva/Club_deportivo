@@ -46,5 +46,36 @@ namespace club_deportivo
             menu.Show();
             this.Hide();
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            // Limpiar campos de texto
+            txtNombre.Text = string.Empty;
+            txtApellido.Text = string.Empty;
+            txtNumDoc.Text = string.Empty;
+            txtTelefono.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+
+            // Restablecer el ComboBox a su estado inicial (sin selección)
+            cmbDoc.SelectedIndex = -1;
+
+            // Restablecer la fecha del DateTimePicker al valor actual
+            dateTimePicker1.Value = DateTime.Now;
+
+            // Deseleccionar los RadioButton
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+        }
+
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormRegistro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

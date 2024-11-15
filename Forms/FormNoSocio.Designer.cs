@@ -31,11 +31,12 @@
             btn_Asociar = new Button();
             btn_Act = new Button();
             label_dniIng = new Label();
+            btnOut = new Button();
             SuspendLayout();
             // 
             // btn_Asociar
             // 
-            btn_Asociar.Location = new Point(189, 236);
+            btn_Asociar.Location = new Point(58, 236);
             btn_Asociar.Name = "btn_Asociar";
             btn_Asociar.Size = new Size(144, 85);
             btn_Asociar.TabIndex = 0;
@@ -44,7 +45,7 @@
             // 
             // btn_Act
             // 
-            btn_Act.Location = new Point(438, 236);
+            btn_Act.Location = new Point(279, 236);
             btn_Act.Name = "btn_Act";
             btn_Act.Size = new Size(155, 85);
             btn_Act.TabIndex = 1;
@@ -60,11 +61,21 @@
             label_dniIng.TabIndex = 2;
             label_dniIng.Text = "N° de documento ingresado: ";
             // 
+            // btnOut
+            // 
+            btnOut.Location = new Point(503, 236);
+            btnOut.Name = "btnOut";
+            btnOut.Size = new Size(155, 85);
+            btnOut.TabIndex = 3;
+            btnOut.Text = "Salir";
+            btnOut.UseVisualStyleBackColor = true;
+            // 
             // FormNoSocio
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnOut);
             Controls.Add(label_dniIng);
             Controls.Add(btn_Act);
             Controls.Add(btn_Asociar);
@@ -79,5 +90,6 @@
         private Button btn_Asociar;
         private Button btn_Act;
         private Label label_dniIng;
+        private Button btnOut;
     }
 }

@@ -28,68 +28,137 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label_dniIng = new Label();
-            label_nombre = new Label();
-            label_apellido = new Label();
-            button_carnet = new Button();
-            button_out = new Button();
+            lblDNI = new Label();
+            lblNombre = new Label();
+            lblApellido = new Label();
+            btnCarnet = new Button();
+            btnOut = new Button();
+            lblCuota = new Label();
+            lblAct = new Label();
+            lbl1 = new Label();
+            lbl2 = new Label();
+            lbl3 = new Label();
+            lblValidez = new Label();
             SuspendLayout();
             // 
-            // label_dniIng
+            // lblDNI
             // 
-            label_dniIng.AutoSize = true;
-            label_dniIng.Location = new Point(93, 125);
-            label_dniIng.Name = "label_dniIng";
-            label_dniIng.Size = new Size(153, 23);
-            label_dniIng.TabIndex = 0;
-            label_dniIng.Text = "N° Doc ingresado: ";
+            lblDNI.AutoSize = true;
+            lblDNI.Location = new Point(94, 29);
+            lblDNI.Name = "lblDNI";
+            lblDNI.Size = new Size(153, 23);
+            lblDNI.TabIndex = 0;
+            lblDNI.Text = "N° Doc ingresado: ";
             // 
-            // label_nombre
+            // lblNombre
             // 
-            label_nombre.AutoSize = true;
-            label_nombre.Location = new Point(93, 190);
-            label_nombre.Name = "label_nombre";
-            label_nombre.Size = new Size(82, 23);
-            label_nombre.TabIndex = 1;
-            label_nombre.Text = "Nombre: ";
+            lblNombre.AutoSize = true;
+            lblNombre.Location = new Point(94, 84);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(82, 23);
+            lblNombre.TabIndex = 1;
+            lblNombre.Text = "Nombre: ";
+            lblNombre.Click += lblNombre_Click;
             // 
-            // label_apellido
+            // lblApellido
             // 
-            label_apellido.AutoSize = true;
-            label_apellido.Location = new Point(94, 252);
-            label_apellido.Name = "label_apellido";
-            label_apellido.Size = new Size(81, 23);
-            label_apellido.TabIndex = 2;
-            label_apellido.Text = "Apellido: ";
+            lblApellido.AutoSize = true;
+            lblApellido.Location = new Point(94, 136);
+            lblApellido.Name = "lblApellido";
+            lblApellido.Size = new Size(81, 23);
+            lblApellido.TabIndex = 2;
+            lblApellido.Text = "Apellido: ";
             // 
-            // button_carnet
+            // btnCarnet
             // 
-            button_carnet.Location = new Point(136, 356);
-            button_carnet.Name = "button_carnet";
-            button_carnet.Size = new Size(119, 46);
-            button_carnet.TabIndex = 3;
-            button_carnet.Text = "Ver Carnet";
-            button_carnet.UseVisualStyleBackColor = true;
+            btnCarnet.Location = new Point(204, 491);
+            btnCarnet.Name = "btnCarnet";
+            btnCarnet.Size = new Size(119, 46);
+            btnCarnet.TabIndex = 3;
+            btnCarnet.Text = "Ver Carnet";
+            btnCarnet.UseVisualStyleBackColor = true;
             // 
-            // button_out
+            // btnOut
             // 
-            button_out.Location = new Point(500, 356);
-            button_out.Name = "button_out";
-            button_out.Size = new Size(103, 46);
-            button_out.TabIndex = 4;
-            button_out.Text = "Salir";
-            button_out.UseVisualStyleBackColor = true;
+            btnOut.Location = new Point(452, 491);
+            btnOut.Name = "btnOut";
+            btnOut.Size = new Size(103, 46);
+            btnOut.TabIndex = 4;
+            btnOut.Text = "Salir";
+            btnOut.UseVisualStyleBackColor = true;
+            // 
+            // lblCuota
+            // 
+            lblCuota.AutoSize = true;
+            lblCuota.Location = new Point(94, 190);
+            lblCuota.Name = "lblCuota";
+            lblCuota.Size = new Size(60, 23);
+            lblCuota.TabIndex = 5;
+            lblCuota.Text = "Cuota:";
+            // 
+            // lblAct
+            // 
+            lblAct.AutoSize = true;
+            lblAct.Location = new Point(94, 248);
+            lblAct.Name = "lblAct";
+            lblAct.Size = new Size(189, 23);
+            lblAct.TabIndex = 6;
+            lblAct.Text = "Actividades Reservadas:";
+            lblAct.Click += label2_Click;
+            // 
+            // lbl1
+            // 
+            lbl1.AutoSize = true;
+            lbl1.Location = new Point(148, 288);
+            lbl1.Name = "lbl1";
+            lbl1.Size = new Size(28, 23);
+            lbl1.TabIndex = 8;
+            lbl1.Text = "1. ";
+            // 
+            // lbl2
+            // 
+            lbl2.AutoSize = true;
+            lbl2.Location = new Point(148, 330);
+            lbl2.Name = "lbl2";
+            lbl2.Size = new Size(23, 23);
+            lbl2.TabIndex = 9;
+            lbl2.Text = "2.";
+            // 
+            // lbl3
+            // 
+            lbl3.AutoSize = true;
+            lbl3.Location = new Point(148, 371);
+            lbl3.Name = "lbl3";
+            lbl3.Size = new Size(23, 23);
+            lbl3.TabIndex = 10;
+            lbl3.Text = "3.";
+            // 
+            // lblValidez
+            // 
+            lblValidez.AutoSize = true;
+            lblValidez.Location = new Point(94, 436);
+            lblValidez.Name = "lblValidez";
+            lblValidez.Size = new Size(185, 23);
+            lblValidez.TabIndex = 11;
+            lblValidez.Text = "Fecha de validez hasta:";
+            lblValidez.Click += label7_Click;
             // 
             // FormInfoSocio
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button_out);
-            Controls.Add(button_carnet);
-            Controls.Add(label_apellido);
-            Controls.Add(label_nombre);
-            Controls.Add(label_dniIng);
+            ClientSize = new Size(831, 563);
+            Controls.Add(lblValidez);
+            Controls.Add(lbl3);
+            Controls.Add(lbl2);
+            Controls.Add(lbl1);
+            Controls.Add(lblAct);
+            Controls.Add(lblCuota);
+            Controls.Add(btnOut);
+            Controls.Add(btnCarnet);
+            Controls.Add(lblApellido);
+            Controls.Add(lblNombre);
+            Controls.Add(lblDNI);
             Name = "FormInfoSocio";
             Text = "Socio";
             ResumeLayout(false);
@@ -98,10 +167,16 @@
 
         #endregion
 
-        private Label label_dniIng;
-        private Label label_nombre;
-        private Label label_apellido;
-        private Button button_carnet;
-        private Button button_out;
+        private Label lblDNI;
+        private Label lblNombre;
+        private Label lblApellido;
+        private Button btnCarnet;
+        private Button btnOut;
+        private Label lblCuota;
+        private Label lblAct;
+        private Label lbl1;
+        private Label lbl2;
+        private Label lbl3;
+        private Label lblValidez;
     }
 }

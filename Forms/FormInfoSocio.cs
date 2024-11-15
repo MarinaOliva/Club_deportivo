@@ -20,14 +20,14 @@ namespace club_deportivo.Forms
         {
             InitializeComponent();
             _formMenu = formMenu; // Guardamos la referencia
-            button_out.Click += button_out_Click; // Vinculamos el evento del botón "Salir"
+            btnOut.Click += button_out_Click; // Vinculamos el evento del botón "Salir"
         }
 
         public void LoadData(MySqlDataReader reader)
         {
-            label_dniIng.Text = "N° Doc ingresado: " + reader["numDoc"].ToString();       // N° Doc ingresado
-            label_nombre.Text = "Nombre: " + reader["nombre"].ToString();                 // Nombre
-            label_apellido.Text = "Apellido: " + reader["apellido"].ToString();           // Apellido
+            lblDNI.Text = "N° Doc ingresado: " + reader["numDoc"].ToString();       // N° Doc ingresado
+            lblNombre.Text = "Nombre: " + reader["nombre"].ToString();                 // Nombre
+            lblApellido.Text = "Apellido: " + reader["apellido"].ToString();           // Apellido
         }
 
         // Evento Click para el botón Salir
@@ -39,6 +39,21 @@ namespace club_deportivo.Forms
                 _formMenu.Show(); // Muestra el formulario principal FormMenu
                 this.Close(); // Cierra el formulario actual
             }
+        }
+
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

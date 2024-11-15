@@ -151,7 +151,7 @@
             // 
             // btnPagar
             // 
-            btnPagar.Location = new Point(135, 338);
+            btnPagar.Location = new Point(123, 371);
             btnPagar.Name = "btnPagar";
             btnPagar.Size = new Size(159, 58);
             btnPagar.TabIndex = 13;
@@ -160,7 +160,7 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(427, 338);
+            btnSalir.Location = new Point(425, 371);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(159, 58);
             btnSalir.TabIndex = 14;

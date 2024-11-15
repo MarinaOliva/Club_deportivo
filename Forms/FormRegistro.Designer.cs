@@ -36,7 +36,7 @@ namespace club_deportivo
             label3 = new Label();
             label4 = new Label();
             txtNombre = new TextBox();
-            txtApellido = new TextBox(); // Corregido de 'txtApelido' a 'txtApellido'
+            txtApellido = new TextBox();
             label5 = new Label();
             txtNumDoc = new TextBox();
             txtTelefono = new TextBox();
@@ -47,6 +47,9 @@ namespace club_deportivo
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
             btnSalir = new Button();
+            lblFecha = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            btnLimpiar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -78,7 +81,6 @@ namespace club_deportivo
             cmbDoc.Name = "cmbDoc";
             cmbDoc.Size = new Size(154, 31);
             cmbDoc.TabIndex = 2;
-            //cmbDoc.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label3
             // 
@@ -98,7 +100,8 @@ namespace club_deportivo
             label4.Name = "label4";
             label4.Size = new Size(76, 23);
             label4.TabIndex = 5;
-            label4.Text = "Apellido:"; // Verificado
+            label4.Text = "Apellido:";
+            label4.Click += label4_Click;
             // 
             // txtNombre
             // 
@@ -110,9 +113,9 @@ namespace club_deportivo
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(298, 113); // Corregido a 'txtApellido'
+            txtApellido.Location = new Point(298, 113);
             txtApellido.Margin = new Padding(4, 5, 4, 5);
-            txtApellido.Name = "txtApellido"; // Corregido a 'txtApellido'
+            txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(189, 30);
             txtApellido.TabIndex = 7;
             // 
@@ -158,7 +161,7 @@ namespace club_deportivo
             label6.Name = "label6";
             label6.Size = new Size(78, 23);
             label6.TabIndex = 12;
-            label6.Text = "Teléfono:"; // Corregido a 'Teléfono'
+            label6.Text = "Teléfono:";
             // 
             // label7
             // 
@@ -172,7 +175,7 @@ namespace club_deportivo
             // 
             // btnAltaNoSocio
             // 
-            btnAltaNoSocio.Location = new Point(127, 494);
+            btnAltaNoSocio.Location = new Point(127, 557);
             btnAltaNoSocio.Margin = new Padding(4, 5, 4, 5);
             btnAltaNoSocio.Name = "btnAltaNoSocio";
             btnAltaNoSocio.Size = new Size(235, 73);
@@ -205,18 +208,50 @@ namespace club_deportivo
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(673, 494);
+            btnSalir.Location = new Point(663, 557);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(231, 73);
             btnSalir.TabIndex = 17;
             btnSalir.Text = "Cancelar";
             btnSalir.UseVisualStyleBackColor = true;
             // 
+            // lblFecha
+            // 
+            lblFecha.AutoSize = true;
+            lblFecha.Location = new Point(127, 456);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(63, 23);
+            lblFecha.TabIndex = 18;
+            lblFecha.Text = "Fecha: ";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.CustomFormat = "dd/mm/YY";
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
+            dateTimePicker1.Location = new Point(213, 456);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(250, 30);
+            dateTimePicker1.TabIndex = 19;
+            // 
+            // btnLimpiar
+            // 
+            btnLimpiar.Location = new Point(400, 557);
+            btnLimpiar.Margin = new Padding(4, 5, 4, 5);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(235, 73);
+            btnLimpiar.TabIndex = 20;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
+            // 
             // FormRegistro
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 690);
+            Controls.Add(btnLimpiar);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(lblFecha);
             Controls.Add(btnSalir);
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
@@ -227,17 +262,18 @@ namespace club_deportivo
             Controls.Add(txtTelefono);
             Controls.Add(txtNumDoc);
             Controls.Add(label5);
-            Controls.Add(txtApellido); 
+            Controls.Add(txtApellido);
             Controls.Add(txtNombre);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(cmbDoc);
             Controls.Add(AptaF);
             Controls.Add(label1);
-            Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            Font = new Font("Segoe UI", 10F);
             Margin = new Padding(4, 5, 4, 5);
-            Name = "FormRegistro"; 
-            Text = "Registro de Nuevos Socios"; 
+            Name = "FormRegistro";
+            Text = "Registro de Nuevos Socios";
+            Load += FormRegistro_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -261,5 +297,8 @@ namespace club_deportivo
         private RadioButton radioButton1;
         private RadioButton radioButton2;
         private Button btnSalir;
+        private Label lblFecha;
+        private DateTimePicker dateTimePicker1;
+        private Button btnLimpiar;
     }
 }

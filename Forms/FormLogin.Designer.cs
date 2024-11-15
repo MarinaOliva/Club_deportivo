@@ -27,86 +27,92 @@
         /// </summary>
         private void InitializeComponent()
         {
-			this.SuspendLayout();
-			
-            pictureBox1 = new System.Windows.Forms.PictureBox();
-            label1 = new System.Windows.Forms.Label();
-            txtUsuario = new System.Windows.Forms.TextBox();
-            txtContrasena = new System.Windows.Forms.TextBox();
-            btnLogin = new System.Windows.Forms.Button();
-            btnClear = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-           
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            txtUsuario = new TextBox();
+            txtContrasena = new TextBox();
+            btnLogin = new Button();
+            btnClear = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Club_Deportivo;
-            pictureBox1.Location = new System.Drawing.Point(299, 94);
+            pictureBox1.Location = new Point(384, 144);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(237, 228);
-            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pictureBox1.Size = new Size(305, 350);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(267, 67);
+            label1.Location = new Point(343, 103);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(301, 15);
+            label1.Size = new Size(436, 23);
             label1.TabIndex = 1;
             label1.Text = "Bienvenid@s al sistema ingrese su nombre y contraseña";
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new System.Drawing.Point(159, 349);
+            txtUsuario.Location = new Point(204, 535);
+            txtUsuario.Margin = new Padding(4, 5, 4, 5);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new System.Drawing.Size(228, 23);
+            txtUsuario.Size = new Size(292, 30);
             txtUsuario.TabIndex = 2;
             // 
             // txtContrasena
             // 
-            txtContrasena.Location = new System.Drawing.Point(439, 349);
+            txtContrasena.Location = new Point(564, 535);
+            txtContrasena.Margin = new Padding(4, 5, 4, 5);
             txtContrasena.Name = "txtContrasena";
-            txtContrasena.Size = new System.Drawing.Size(227, 23);
+            txtContrasena.Size = new Size(291, 30);
             txtContrasena.TabIndex = 3;
             // 
             // btnLogin
             // 
-            btnLogin.Location = new System.Drawing.Point(239, 397);
+            btnLogin.Location = new Point(307, 609);
+            btnLogin.Margin = new Padding(4, 5, 4, 5);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new System.Drawing.Size(148, 32);
+            btnLogin.Size = new Size(190, 49);
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Ingresar";
             btnLogin.UseVisualStyleBackColor = true;
-            btnLogin.Click += new System.EventHandler(this.btnLogin_Click); // Asegúrate de tener el evento click
+            btnLogin.Click += btnLogin_Click;
             // 
             // btnClear
             // 
-            btnClear.Location = new System.Drawing.Point(439, 397);
+            btnClear.Location = new Point(564, 609);
+            btnClear.Margin = new Padding(4, 5, 4, 5);
             btnClear.Name = "btnClear";
-            btnClear.Size = new System.Drawing.Size(148, 32);
+            btnClear.Size = new Size(190, 49);
             btnClear.TabIndex = 5;
             btnClear.Text = "Borrar";
             btnClear.UseVisualStyleBackColor = true;
-            btnClear.Click += new System.EventHandler(this.btnClear_Click); // Asegúrate de tener el evento click
+            btnClear.Click += btnClear_Click;
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(btnClear);
-            this.Controls.Add(btnLogin);
-            this.Controls.Add(txtContrasena);
-            this.Controls.Add(txtUsuario);
-            this.Controls.Add(label1);
-            this.Controls.Add(pictureBox1);
-            this.Name = "FormLogin";
-            this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(9F, 23F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1029, 690);
+            Controls.Add(btnClear);
+            Controls.Add(btnLogin);
+            Controls.Add(txtContrasena);
+            Controls.Add(txtUsuario);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "FormLogin";
+            Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
