@@ -31,7 +31,7 @@
             numero = new TextBox();
             Consulta = new Button();
             label1 = new Label();
-            tipo_doc = new ComboBox();
+            cmbTipoDoc = new ComboBox();
             SuspendLayout();
             // 
             // numero
@@ -59,22 +59,22 @@
             label1.TabIndex = 2;
             label1.Text = "Seleccione el tipo e ingrese el número de documento";
             // 
-            // tipo_doc
+            // cmbTipoDoc
             // 
-            tipo_doc.DropDownStyle = ComboBoxStyle.DropDownList;
-            tipo_doc.FormattingEnabled = true;
-            tipo_doc.Items.AddRange(new object[] { "DNI", "Cédula de Indentidad", "Pasaporte" });
-            tipo_doc.Location = new Point(180, 203);
-            tipo_doc.Name = "tipo_doc";
-            tipo_doc.Size = new Size(151, 31);
-            tipo_doc.TabIndex = 3;
+            cmbTipoDoc.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbTipoDoc.FormattingEnabled = true;
+            cmbTipoDoc.Items.AddRange(new object[] { "DNI", "Cédula de Indentidad", "Pasaporte" });
+            cmbTipoDoc.Location = new Point(180, 203);
+            cmbTipoDoc.Name = "cmbTipoDoc";
+            cmbTipoDoc.Size = new Size(151, 31);
+            cmbTipoDoc.TabIndex = 3;
             // 
             // FormConsultaSocio
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(tipo_doc);
+            Controls.Add(cmbTipoDoc);
             Controls.Add(label1);
             Controls.Add(Consulta);
             Controls.Add(numero);
@@ -90,6 +90,6 @@
         private TextBox numero;
         private Button Consulta;
         private Label label1;
-        private ComboBox tipo_doc;
+        private ComboBox cmbTipoDoc;
     }
 }

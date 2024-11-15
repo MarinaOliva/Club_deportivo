@@ -46,7 +46,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            
             // 
             // label1
             // 
@@ -54,9 +53,9 @@
             label1.Location = new Point(343, 103);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(436, 23);
+            label1.Size = new Size(442, 23);
             label1.TabIndex = 1;
-            label1.Text = "Bienvenid@s al sistema ingrese su nombre y contraseña";
+            label1.Text = "Bienvenid@s al sistema! Ingrese su nombre y contraseña";
             // 
             // txtUsuario
             // 
@@ -110,6 +109,7 @@
             Margin = new Padding(4, 5, 4, 5);
             Name = "FormLogin";
             Text = "Login";
+            Load += FormLogin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

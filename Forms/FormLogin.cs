@@ -27,7 +27,7 @@ namespace club_deportivo
 
                 if (resultado.Rows.Count > 0) // Si hay resultados, el login fue exitoso
                 {
-                    MessageBox.Show("Login exitoso!");
+                    MessageBox.Show("Ingreso exitoso.\n¡Bienvenido!");
 
                     // Oculta el formulario de login
                     this.Hide();
@@ -52,6 +52,11 @@ namespace club_deportivo
         {
             txtUsuario.Clear(); // Limpiar el TextBox del usuario
             txtContrasena.Clear(); // Limpiar el TextBox de la contraseña
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

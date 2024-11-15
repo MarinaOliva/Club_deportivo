@@ -51,7 +51,12 @@ namespace club_deportivo
             formConsultarCuota.Show();
 
             // Ocultar el formulario actual:
-             this.Hide();
+            this.Hide();
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

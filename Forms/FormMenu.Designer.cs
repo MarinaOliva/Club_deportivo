@@ -93,7 +93,7 @@
             btnAbonar.Name = "btnAbonar";
             btnAbonar.Size = new Size(242, 116);
             btnAbonar.TabIndex = 7;
-            btnAbonar.Text = "Abonar";
+            btnAbonar.Text = "Abonar cuota";
             btnAbonar.UseVisualStyleBackColor = true;
             btnAbonar.Click += btnAbonar_Click;
             // 
@@ -110,7 +110,8 @@
             Controls.Add(btnConsultar);
             Margin = new Padding(4, 5, 4, 5);
             Name = "FormMenu";
-            Text = "Form1";
+            Text = "Menú principal";
+            Load += FormMenu_Load;
             ResumeLayout(false);
             PerformLayout();
         }
