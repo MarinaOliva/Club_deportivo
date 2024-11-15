@@ -132,7 +132,7 @@
             btnPrint.TabIndex = 3;
             btnPrint.Text = "Imprimir";
             btnPrint.UseVisualStyleBackColor = true;
-            //btnPrint.Click += button1_Click;
+            btnPrint.Click += btnPrint_Click;
             // 
             // FormComprobante
             // 
