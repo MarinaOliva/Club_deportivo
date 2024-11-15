@@ -1,4 +1,5 @@
-﻿using club_deportivo.Datos;
+﻿using club_deportivo;
+using club_deportivo.Datos;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;

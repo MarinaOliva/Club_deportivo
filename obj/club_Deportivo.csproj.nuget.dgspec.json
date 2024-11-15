@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\club_deportivo.csproj": {}
+    "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\club_deportivo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\club_deportivo.csproj": {
+    "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\club_deportivo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\club_deportivo.csproj",
+        "projectUniqueName": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\club_deportivo.csproj",
         "projectName": "club_deportivo",
-        "projectPath": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\club_deportivo.csproj",
+        "projectPath": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\club_deportivo.csproj",
         "packagesPath": "C:\\Users\\eien_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\obj\\",
+        "outputPath": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

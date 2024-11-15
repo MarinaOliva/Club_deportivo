@@ -10,6 +10,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
+using club_deportivo.Datos;
+using System;
+using System.Windows.Forms;
+
 namespace club_deportivo.Forms
 {
     public partial class FormAbonarCuota : Form
@@ -57,7 +61,21 @@ namespace club_deportivo.Forms
                 if (pagoExitoso)
                 {
                     MessageBox.Show("El pago se ha registrado exitosamente.", "Pago Realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    CargarDatosCuota(); // Refresca la información de la cuota en la interfaz
+                    // Llamar al método para cargar nuevamente los datos de la cuota
+                    CargarDatosCuota();
+
+                    // Obtener el comprobante (todos los datos necesarios)
+                    Cliente cliente = new Cliente(socioId); // Instancia de Cliente con el socioId
+                    var comprobanteData = cliente.ObtenerComprobante(socioId); // Obtiene la tupla con los datos del comprobante
+
+                    // Crear y mostrar el formulario de comprobante con los datos del pago
+                    FormComprobante formComprobante = new FormComprobante(
+                        comprobanteData.nombre,
+                        comprobanteData.dni,
+                        comprobanteData.monto,
+                        comprobanteData.fechaPago
+                    );
+                    formComprobante.ShowDialog();
                 }
                 else
                 {
@@ -70,28 +88,18 @@ namespace club_deportivo.Forms
             }
         }
 
-        private void FormAbonarCuota_Load(object sender, EventArgs e)
-        {
-            // Puedes realizar cualquier configuración adicional al cargar el formulario aquí.
-        }
-
-        private void lblFecha_Click(object sender, EventArgs e)
-        {
-            // Puedes manejar eventos adicionales si es necesario.
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            // Puedes manejar eventos adicionales si es necesario.
-        }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             // Volver al menú inicial
             FormMenu menuForm = new FormMenu();
             menuForm.Show();
-
             this.Close();
+        }
+
+        private void FormAbonarCuota_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

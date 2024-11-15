@@ -62,7 +62,6 @@
             lblFecha.Size = new Size(131, 23);
             lblFecha.TabIndex = 2;
             lblFecha.Text = "Fecha de pago: ";
-            lblFecha.Click += lblFecha_Click;
             // 
             // btnPagar
             // 
@@ -72,6 +71,7 @@
             btnPagar.TabIndex = 3;
             btnPagar.Text = "Pagar";
             btnPagar.UseVisualStyleBackColor = true;
+            btnPagar.Click += btnPagar_Click;
             // 
             // btnCancelar
             // 
@@ -81,8 +81,7 @@
             btnCancelar.TabIndex = 4;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // lblVencimiento
             // 
@@ -92,7 +91,6 @@
             lblVencimiento.Size = new Size(185, 23);
             lblVencimiento.TabIndex = 5;
             lblVencimiento.Text = "Fecha de vencimiento: ";
-            lblVencimiento.Click += label1_Click;
             // 
             // FormAbonarCuota
             // 

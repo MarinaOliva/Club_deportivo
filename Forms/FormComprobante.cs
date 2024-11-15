@@ -12,39 +12,22 @@ namespace club_deportivo.Forms
 {
     public partial class FormComprobante : Form
     {
-        public FormComprobante()
+        public FormComprobante(string nombre, string dni, decimal monto, DateTime fechaPago)
         {
             InitializeComponent();
+
+            // Asigna los valores a los controles del formulario
+            lblNombre.Text = nombre;
+            lblDNI.Text = dni;
+            lblMonto.Text = monto.ToString("C"); // Formatea el monto como moneda
+            lblFecha.Text = fechaPago.ToString("dd/MM/yyyy");
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnPrint_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            // Aquí puedes implementar la lógica para imprimir el comprobante si es necesario
         }
     }
+
+
 }

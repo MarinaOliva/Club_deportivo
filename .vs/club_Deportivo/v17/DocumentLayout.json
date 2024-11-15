@@ -1,69 +1,85 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\",
+  "WorkspaceRootPath": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formcomprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formcomprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formcomprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formcomprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formconsultarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\forms\\formconsultarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formabonarcuota.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formabonarcuota.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\cuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\nosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:nosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formcomprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formcomprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\cuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:cuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formcomprobante.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formcomprobante.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\forms\\formcomprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formcomprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\forms\\formconsultarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formconsultarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\forminfosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\forminfosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\forminfosocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\forminfosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formconsultarcuota.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formconsultarcuota.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultarcuota.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\dsoo_pi1_comc_grupo14_oliva_tamborelli_oliva\\club_deportivo\\forms\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -74,54 +90,144 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "FormComprobante.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormComprobante.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\FormComprobante.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormComprobante.Designer.cs",
+              "RelativeToolTip": "Forms\\FormComprobante.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T09:39:28.108Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-11-15T00:11:54.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Cliente.cs",
+              "RelativeDocumentMoniker": "Cliente.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Cliente.cs",
+              "RelativeToolTip": "Cliente.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAYwGoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T22:21:53.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormAbonarCuota.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormAbonarCuota.cs",
+              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormAbonarCuota.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\FormAbonarCuota.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T02:41:22Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormAbonarCuota.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormAbonarCuota.cs",
+              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormAbonarCuota.cs",
+              "RelativeToolTip": "Forms\\FormAbonarCuota.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAawGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T03:19:40.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NoSocio.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\NoSocio.cs",
+              "RelativeDocumentMoniker": "NoSocio.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\NoSocio.cs",
+              "RelativeToolTip": "NoSocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T00:58:27.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormAbonarCuota.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormAbonarCuota.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormAbonarCuota.Designer.cs",
+              "RelativeToolTip": "Forms\\FormAbonarCuota.Designer.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T01:04:52.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Socio.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Socio.cs",
+              "RelativeDocumentMoniker": "Socio.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Socio.cs",
+              "RelativeToolTip": "Socio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T01:00:32.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormRegistro.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormRegistro.cs",
+              "RelativeDocumentMoniker": "Forms\\FormRegistro.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormRegistro.cs",
+              "RelativeToolTip": "Forms\\FormRegistro.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwCoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T01:01:24.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FormComprobante.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormComprobante.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormComprobante.cs",
               "RelativeDocumentMoniker": "Forms\\FormComprobante.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormComprobante.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormComprobante.cs",
               "RelativeToolTip": "Forms\\FormComprobante.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAkwDIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T20:55:12.195Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormComprobante.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormComprobante.cs",
-              "RelativeDocumentMoniker": "Forms\\FormComprobante.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormComprobante.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormComprobante.cs [Dise\u00F1o]",
+              "DocumentIndex": 8,
+              "Title": "Cuotas.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Cuotas.cs",
+              "RelativeDocumentMoniker": "Cuotas.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Cuotas.cs",
+              "RelativeToolTip": "Cuotas.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAADwv1gAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T20:48:07.729Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-12T07:34:45.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "FormConsultarCuota.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConsultarCuota.cs",
               "RelativeDocumentMoniker": "Forms\\FormConsultarCuota.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConsultarCuota.cs",
               "RelativeToolTip": "Forms\\FormConsultarCuota.cs",
               "ViewState": "AgIAABIAAAAAAAAAAADwvzIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -130,37 +236,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormAbonarCuota.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormAbonarCuota.cs",
-              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormAbonarCuota.cs",
-              "RelativeToolTip": "Forms\\FormAbonarCuota.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T03:19:40.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Cuotas.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Cuotas.cs",
-              "RelativeDocumentMoniker": "Cuotas.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Cuotas.cs",
-              "RelativeToolTip": "Cuotas.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAIBJwEUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:34:45.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "FormConsultaSocio.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultaSocio.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConsultaSocio.cs",
               "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultaSocio.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConsultaSocio.cs",
               "RelativeToolTip": "Forms\\FormConsultaSocio.cs",
               "ViewState": "AgIAACwAAAAAAAAAAIBJwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -169,119 +249,95 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "FormInfoSocio.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormInfoSocio.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormInfoSocio.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\FormInfoSocio.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormInfoSocio.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormInfoSocio.Designer.cs",
               "RelativeToolTip": "Forms\\FormInfoSocio.Designer.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAIwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:05:27.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T07:05:27.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "FormConsultarCuota.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConsultarCuota.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\FormConsultarCuota.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConsultarCuota.Designer.cs",
               "RelativeToolTip": "Forms\\FormConsultarCuota.Designer.cs",
               "ViewState": "AgIAABMAAAAAAAAAAIBJwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T02:08:25.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T02:08:25.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "FormMenu.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormMenu.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormMenu.cs",
               "RelativeDocumentMoniker": "Forms\\FormMenu.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormMenu.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormMenu.cs",
               "RelativeToolTip": "Forms\\FormMenu.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAhwDUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T02:17:31.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T02:17:31.013Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "FormLogin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormLogin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormLogin.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\FormLogin.Designer.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormLogin.Designer.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormLogin.Designer.cs",
               "RelativeToolTip": "Forms\\FormLogin.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T03:34:05.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2024-10-13T03:34:05.951Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormConsultarCuota.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.cs",
-              "RelativeDocumentMoniker": "Forms\\FormConsultarCuota.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormConsultarCuota.cs [Dise\u00F1o]",
+              "DocumentIndex": 10,
+              "Title": "FormComprobante.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormComprobante.cs",
+              "RelativeDocumentMoniker": "Forms\\FormComprobante.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormComprobante.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormComprobante.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T01:32:45.133Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormAbonarCuota.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormAbonarCuota.cs",
-              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormAbonarCuota.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormAbonarCuota.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T02:41:22Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormConsultaSocio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultaSocio.cs",
-              "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:10:19.369Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-14T20:48:07.729Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "FormInfoSocio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormInfoSocio.cs",
-              "RelativeDocumentMoniker": "Forms\\FormInfoSocio.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormInfoSocio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormInfoSocio.cs [Dise\u00F1o]",
+              "Title": "FormConsultarCuota.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConsultarCuota.cs",
+              "RelativeDocumentMoniker": "Forms\\FormConsultarCuota.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultarCuota.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:05:11.342Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-12T01:32:45.133Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "FormMenu.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormMenu.cs",
-              "RelativeDocumentMoniker": "Forms\\FormMenu.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormMenu.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormMenu.cs [Dise\u00F1o]",
+              "Title": "FormConsultaSocio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConsultaSocio.cs",
+              "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T02:14:37.778Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-12T07:10:19.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormInfoSocio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormInfoSocio.cs",
+              "RelativeDocumentMoniker": "Forms\\FormInfoSocio.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormInfoSocio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\\Club_Deportivo\\Forms\\FormInfoSocio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T07:05:11.342Z"
             }
           ]
         }

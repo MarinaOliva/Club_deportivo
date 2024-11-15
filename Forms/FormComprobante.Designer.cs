@@ -32,10 +32,10 @@
             label1 = new Label();
             picLogo = new PictureBox();
             panel1 = new Panel();
-            lblNombre = new Label();
-            lblDNI = new Label();
-            lblMonto = new Label();
             lblFecha = new Label();
+            lblMonto = new Label();
+            lblDNI = new Label();
+            lblNombre = new Label();
             btnPrint = new Button();
             pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
@@ -51,7 +51,7 @@
             pnlTitulo.Name = "pnlTitulo";
             pnlTitulo.Size = new Size(733, 68);
             pnlTitulo.TabIndex = 0;
-            pnlTitulo.Paint += panel1_Paint;
+            //pnlTitulo.Paint += panel1_Paint;
             // 
             // label1
             // 
@@ -61,7 +61,7 @@
             label1.Size = new Size(377, 46);
             label1.TabIndex = 0;
             label1.Text = "Comprobante de Pago";
-            label1.Click += label1_Click;
+            //label1.Click += label1_Click;
             // 
             // picLogo
             // 
@@ -72,7 +72,7 @@
             picLogo.SizeMode = PictureBoxSizeMode.Zoom;
             picLogo.TabIndex = 1;
             picLogo.TabStop = false;
-            picLogo.Click += pictureBox1_Click;
+            //picLogo.Click += pictureBox1_Click;
             // 
             // panel1
             // 
@@ -84,35 +84,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(472, 288);
             panel1.TabIndex = 2;
-            // 
-            // lblNombre
-            // 
-            lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(17, 33);
-            lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(82, 23);
-            lblNombre.TabIndex = 0;
-            lblNombre.Text = "Nombre: ";
-            lblNombre.Click += label2_Click;
-            // 
-            // lblDNI
-            // 
-            lblDNI.AutoSize = true;
-            lblDNI.Location = new Point(19, 102);
-            lblDNI.Name = "lblDNI";
-            lblDNI.Size = new Size(49, 23);
-            lblDNI.TabIndex = 1;
-            lblDNI.Text = "DNI: ";
-            // 
-            // lblMonto
-            // 
-            lblMonto.AutoSize = true;
-            lblMonto.Location = new Point(16, 172);
-            lblMonto.Name = "lblMonto";
-            lblMonto.Size = new Size(138, 23);
-            lblMonto.TabIndex = 2;
-            lblMonto.Text = "Monto abonado:";
-            lblMonto.Click += label4_Click;
+            //panel1.Paint += panel1_Paint_1;
             // 
             // lblFecha
             // 
@@ -123,6 +95,35 @@
             lblFecha.TabIndex = 3;
             lblFecha.Text = "Fecha:";
             // 
+            // lblMonto
+            // 
+            lblMonto.AutoSize = true;
+            lblMonto.Location = new Point(16, 172);
+            lblMonto.Name = "lblMonto";
+            lblMonto.Size = new Size(138, 23);
+            lblMonto.TabIndex = 2;
+            lblMonto.Text = "Monto abonado:";
+            //lblMonto.Click += label4_Click;
+            // 
+            // lblDNI
+            // 
+            lblDNI.AutoSize = true;
+            lblDNI.Location = new Point(19, 102);
+            lblDNI.Name = "lblDNI";
+            lblDNI.Size = new Size(49, 23);
+            lblDNI.TabIndex = 1;
+            lblDNI.Text = "DNI: ";
+            // 
+            // lblNombre
+            // 
+            lblNombre.AutoSize = true;
+            lblNombre.Location = new Point(17, 33);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(82, 23);
+            lblNombre.TabIndex = 0;
+            lblNombre.Text = "Nombre: ";
+            //lblNombre.Click += label2_Click;
+            // 
             // btnPrint
             // 
             btnPrint.Location = new Point(377, 395);
@@ -131,7 +132,7 @@
             btnPrint.TabIndex = 3;
             btnPrint.Text = "Imprimir";
             btnPrint.UseVisualStyleBackColor = true;
-            btnPrint.Click += button1_Click;
+            //btnPrint.Click += button1_Click;
             // 
             // FormComprobante
             // 
