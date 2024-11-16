@@ -5,8 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Windows.Forms;
 
 namespace club_deportivo
 {
@@ -26,6 +25,7 @@ namespace club_deportivo
         {
             CargarClientePorId(clienteId);
         }
+
         public Cliente() { }
 
         // Método para guardar un nuevo cliente en la base de datos
@@ -47,40 +47,50 @@ namespace club_deportivo
                     cmd.Parameters.AddWithValue("@email", Email);
                     cmd.Parameters.AddWithValue("@presentaAptoFisico", PresentaAptoFisico);
                     ClienteID = Convert.ToInt32(cmd.ExecuteScalar());
+                    MessageBox.Show($"Cliente Guardado: {Nombre} {Apellido}, ID: {ClienteID}");
                 }
             }
         }
+
         // Método para cargar los datos del cliente desde la base de datos
-        private void CargarClientePorId(int clienteId)
+        protected void CargarClientePorId(int clienteId)
         {
-            using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+            try
             {
-                conn.Open();
-                string query = "SELECT nombre, apellido, tipoDoc, numDoc, telefono, email, presentaAptoFisico FROM Cliente WHERE ClienteID = @clienteID";
-
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
                 {
-                    cmd.Parameters.AddWithValue("@clienteID", clienteId);
+                    conn.Open();
+                    string query = "SELECT nombre, apellido, tipoDoc, numDoc, telefono, email, presentaAptoFisico FROM Cliente WHERE ClienteID = @clienteID";
 
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        if (reader.Read())
+                        cmd.Parameters.AddWithValue("@clienteID", clienteId);
+
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
-                            Nombre = reader.GetString("nombre");
-                            Apellido = reader.GetString("apellido");
-                            TipoDoc = reader.GetString("tipoDoc");
-                            NumDoc = reader.GetInt32("numDoc");
-                            Telefono = reader.GetInt32("telefono");
-                            Email = reader.GetString("email");
-                            PresentaAptoFisico = reader.GetBoolean("presentaAptoFisico");
-                        }
-                        else
-                        {
-                            // Si no se encuentra el cliente, lanzar una excepción o manejar el error según sea necesario
-                            throw new Exception("Cliente no encontrado.");
+                            if (reader.Read())
+                            {
+                                Nombre = reader.GetString("nombre");
+                                Apellido = reader.GetString("apellido");
+                                TipoDoc = reader.GetString("tipoDoc");
+                                NumDoc = reader.GetInt32("numDoc");
+                                Telefono = reader.GetInt32("telefono");
+                                Email = reader.GetString("email");
+                                PresentaAptoFisico = reader.GetBoolean("presentaAptoFisico");
+
+                                MessageBox.Show($"Cliente cargado: {Nombre} {Apellido}, ID: {ClienteID}");
+                            }
+                            else
+                            {
+                                throw new Exception("Cliente no encontrado.");
+                            }
                         }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar cliente: {ex.Message}");
             }
         }
 
@@ -92,36 +102,43 @@ namespace club_deportivo
             decimal importe = 0;
             DateTime fechaPago = DateTime.MinValue;
 
-            using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+            try
             {
-                conn.Open();
-
-                string query = @"SELECT CONCAT(c.nombre, ' ', c.apellido) AS nombreCompleto, c.numDoc, q.importe, q.fechaPago
-                         FROM Cliente c
-                         JOIN Socio s ON c.ClienteID = s.ClienteID
-                         JOIN Cuota q ON s.socioID = q.socioID
-                         WHERE s.socioID = @socioId";
-
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
                 {
-                    cmd.Parameters.AddWithValue("@socioId", socioId);
+                    conn.Open();
 
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    string query = @"SELECT CONCAT(c.nombre, ' ', c.apellido) AS nombreCompleto, c.numDoc, q.importe, q.fechaPago
+                                     FROM Cliente c
+                                     JOIN Socio s ON c.ClienteID = s.ClienteID
+                                     JOIN Cuota q ON s.socioID = q.socioID
+                                     WHERE s.socioID = @socioId";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        if (reader.Read())
+                        cmd.Parameters.AddWithValue("@socioId", socioId);
+
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
-                            nombreCompleto = reader.GetString("nombreCompleto");
-                            dni = reader.GetInt32("numDoc").ToString(); // Convertir el DNI a string
-                            importe = reader.GetDecimal("importe");
-                            fechaPago = reader.GetDateTime("fechaPago");
+                            if (reader.Read())
+                            {
+                                nombreCompleto = reader.GetString("nombreCompleto");
+                                dni = reader.GetInt32("numDoc").ToString();
+                                importe = reader.GetDecimal("importe");
+                                fechaPago = reader.GetDateTime("fechaPago");
+
+                                MessageBox.Show($"Comprobante generado: {nombreCompleto}, {dni}, {importe}, {fechaPago}");
+                            }
                         }
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al obtener comprobante: {ex.Message}");
+            }
 
-            return (nombreCompleto, dni, importe, fechaPago); // Devuelve todos los datos en una tupla
+            return (nombreCompleto, dni, importe, fechaPago);
         }
     }
 }
-
-

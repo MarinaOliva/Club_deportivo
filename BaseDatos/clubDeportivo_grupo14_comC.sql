@@ -99,6 +99,28 @@ CREATE TABLE administrador (
     Activo BOOLEAN 
 );
 
+-- Crear la tabla intermedia SocioActividad
+CREATE TABLE SocioActividad (
+    socioID INT,
+    actividadID INT,
+    PRIMARY KEY (socioID, actividadID),
+    FOREIGN KEY (socioID) REFERENCES Socio(socioID),
+    FOREIGN KEY (actividadID) REFERENCES Actividad(idActividad)
+);
+
+-- Insertar registros de ejemplo en la tabla SocioActividad
+INSERT INTO SocioActividad (socioID, actividadID)
+VALUES 
+    (1, 1),  -- Martín Aliaga participa en Musculación y Aparatos
+    (1, 2),  -- Martín Aliaga participa en Natación
+    (2, 3),  -- Lucía López participa en Pilates
+    (2, 4),  -- Lucía López participa en Yoga
+    (4, 5),  -- Carlos Ramírez participa en Zumba
+    (6, 1),  -- Miguel Torres participa en Musculación y Aparatos
+    (6, 4),  -- Miguel Torres participa en Yoga
+    (6, 2);  -- Ana García participa en Natación
+
+
 INSERT INTO administrador (NombreUsu, PassUsu, Activo)
 VALUES 
     ('Juan_Gomez', 'Juan2024!', TRUE),

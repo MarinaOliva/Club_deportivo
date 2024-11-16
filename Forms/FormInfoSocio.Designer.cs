@@ -35,16 +35,14 @@
             btnOut = new Button();
             lblCuota = new Label();
             lblAct = new Label();
-            lbl1 = new Label();
-            lbl2 = new Label();
-            lbl3 = new Label();
             lblValidez = new Label();
+            lblTipoDoc = new Label();
             SuspendLayout();
             // 
             // lblDNI
             // 
             lblDNI.AutoSize = true;
-            lblDNI.Location = new Point(94, 29);
+            lblDNI.Location = new Point(465, 42);
             lblDNI.Name = "lblDNI";
             lblDNI.Size = new Size(153, 23);
             lblDNI.TabIndex = 0;
@@ -106,33 +104,6 @@
             lblAct.Text = "Actividades Reservadas:";
             lblAct.Click += label2_Click;
             // 
-            // lbl1
-            // 
-            lbl1.AutoSize = true;
-            lbl1.Location = new Point(148, 288);
-            lbl1.Name = "lbl1";
-            lbl1.Size = new Size(28, 23);
-            lbl1.TabIndex = 8;
-            lbl1.Text = "1. ";
-            // 
-            // lbl2
-            // 
-            lbl2.AutoSize = true;
-            lbl2.Location = new Point(148, 330);
-            lbl2.Name = "lbl2";
-            lbl2.Size = new Size(23, 23);
-            lbl2.TabIndex = 9;
-            lbl2.Text = "2.";
-            // 
-            // lbl3
-            // 
-            lbl3.AutoSize = true;
-            lbl3.Location = new Point(148, 371);
-            lbl3.Name = "lbl3";
-            lbl3.Size = new Size(23, 23);
-            lbl3.TabIndex = 10;
-            lbl3.Text = "3.";
-            // 
             // lblValidez
             // 
             lblValidez.AutoSize = true;
@@ -143,15 +114,22 @@
             lblValidez.Text = "Fecha de validez hasta:";
             lblValidez.Click += label7_Click;
             // 
+            // lblTipoDoc
+            // 
+            lblTipoDoc.AutoSize = true;
+            lblTipoDoc.Location = new Point(94, 42);
+            lblTipoDoc.Name = "lblTipoDoc";
+            lblTipoDoc.Size = new Size(109, 23);
+            lblTipoDoc.TabIndex = 12;
+            lblTipoDoc.Text = "Tipo de doc: ";
+            // 
             // FormInfoSocio
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(831, 563);
+            Controls.Add(lblTipoDoc);
             Controls.Add(lblValidez);
-            Controls.Add(lbl3);
-            Controls.Add(lbl2);
-            Controls.Add(lbl1);
             Controls.Add(lblAct);
             Controls.Add(lblCuota);
             Controls.Add(btnOut);
@@ -174,9 +152,7 @@
         private Button btnOut;
         private Label lblCuota;
         private Label lblAct;
-        private Label lbl1;
-        private Label lbl2;
-        private Label lbl3;
         private Label lblValidez;
+        private Label lblTipoDoc;
     }
 }

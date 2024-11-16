@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using club_deportivo.Datos;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace club_deportivo.Forms
 {
@@ -78,10 +79,10 @@ namespace club_deportivo.Forms
 
                     // Consulta en Socio para verificar que el cliente sea socio usando clienteId
                     string querySocio = @"
-                    SELECT s.*, c.nombre, c.apellido, c.numDoc, c.tipoDoc
-                    FROM Socio AS s
-                    JOIN Cliente AS c ON s.clienteID = c.clienteID
-                    WHERE s.clienteID = @clienteId";
+                SELECT s.*, c.nombre, c.apellido, c.numDoc
+                FROM Socio AS s
+                JOIN Cliente AS c ON s.clienteID = c.clienteID
+                WHERE s.clienteID = @clienteId";
                     MySqlCommand cmdSocio = new MySqlCommand(querySocio, conn);
                     cmdSocio.Parameters.AddWithValue("@clienteId", clienteId);
 
@@ -105,18 +106,36 @@ namespace club_deportivo.Forms
                             // Depuración: Verificar los datos recibidos
                             MessageBox.Show($"Cargando datos para: {socio.Nombre} {socio.Apellido}, N° Documento: {socio.NumDoc}, Tipo de Documento: {socio.TipoDoc}");
 
-                            // Llamar al método de la clase Socio para cargar la información (cuotas y actividades)
-                            socio.CargarInformacionSocio();
-
-                            // Depuración: Verificar la información cargada
+                            // Depuración: ver datos del socio
                             MessageBox.Show($"Socio encontrado: {socio.Nombre} {socio.Apellido}");
-                            MessageBox.Show($"Fecha de validez: {socio.FechaValidez}");
 
-                            Cuotas cuota = socio.Cuota;
+                            // Obtener la cuota del socio (en este caso, obtienes la cuota asociada al SocioID)
+                            Cuotas cuota = Cuotas.ObtenerCuotaPorSocio(socio.SocioID);
 
-                            // Mostrar la ventana con la información cargada
+                            // Depuración: verificar la cuota obtenida
+                            if (cuota == null)
+                            {
+                                MessageBox.Show("No se encontró información de la cuota para este socio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+
+                            // Depuración: mostrar detalles de la cuota
+                            MessageBox.Show($"Cuota obtenida: {cuota.Importe}, Estado: {cuota.EstadoCuota()}");
+
                             FormInfoSocio formInfo = new FormInfoSocio(this.Owner as FormMenu);
-                            formInfo.LoadData(socio, cuota); // Llamar a LoadData con el objeto Socio
+                            formInfo.LoadData(socio, cuota); // Llamar a LoadData con el objeto Socio y Cuota
+                            this.Hide();
+                            formInfo.Show();
+
+                            // Obtener la lista de actividades del socio
+                            List<Actividad> actividades = ObtenerActividadesPorSocio(socio.SocioID);
+
+                            // Depuración: Verificar las actividades
+                            string actividadesStr = string.Join(", ", actividades.Select(a => a.Nombre));
+                            MessageBox.Show($"Actividades asociadas: {actividadesStr}");
+
+                            FormInfoSocio formInfo = new FormInfoSocio(this.Owner as FormMenu);
+                            formInfo.LoadData(socio, cuota, actividades); // Llamar a LoadData con el objeto Socio, Cuota y lista de Actividades
                             this.Hide();
                             formInfo.Show();
                         }
@@ -136,9 +155,9 @@ namespace club_deportivo.Forms
             }
         }
 
+
         private void FormConsultaSocio_Load(object sender, EventArgs e)
         {
-            // Aquí podrías cargar los tipos de documento si es necesario.
         }
     }
 }

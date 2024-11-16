@@ -1,10 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 namespace club_deportivo.Datos
 {
@@ -37,52 +32,81 @@ namespace club_deportivo.Datos
         {
             Cuotas cuota = null;
 
-            using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+            try
             {
-                conn.Open();
-
-                // Consulta SQL solo con filtro por socioID
-                string query = "SELECT c.fechaVencimiento, c.fechaPago, c.importe, s.socioID " +
-                               "FROM Cuota c " +
-                               "JOIN Socio s ON s.socioID = c.socioID " +
-                               "WHERE s.socioID = @socioID";
-
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@socioID", socioId);
-
-                using (MySqlDataReader reader = cmd.ExecuteReader())
+                using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
                 {
-                    if (reader.Read())
+                    conn.Open();
+
+                    string query = "SELECT c.fechaVencimiento, c.fechaPago, c.importe, s.socioID " +
+                                   "FROM Cuota c " +
+                                   "JOIN Socio s ON s.socioID = c.socioID " +
+                                   "WHERE s.socioID = @socioID " +
+                                   "ORDER BY c.fechaVencimiento DESC " +
+                                   "LIMIT 1 ";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@socioID", socioId);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
-                        cuota = new Cuotas
+                        if (reader.Read())
                         {
-                            SocioID = reader.GetInt32("socioID"),
-                            FechaVencimiento = reader.GetDateTime("fechaVencimiento"),
-                            FechaPago = reader["fechaPago"] != DBNull.Value ? (DateTime?)reader.GetDateTime("fechaPago") : null,
-                            Importe = reader.GetDecimal("importe")
-                        };
+                            cuota = new Cuotas
+                            {
+                                SocioID = reader.GetInt32("socioID"),
+                                FechaVencimiento = reader.GetDateTime("fechaVencimiento"),
+                                FechaPago = reader["fechaPago"] != DBNull.Value ? (DateTime?)reader.GetDateTime("fechaPago") : null,
+                                Importe = reader.GetDecimal("importe")
+                            };
+
+                            MessageBox.Show($"Cuota obtenida: {cuota.Importe}, Estado: {cuota.EstadoCuota()}");
+                        }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al obtener cuota: {ex.Message}");
             }
 
             return cuota;
         }
-        // método para registrar pago de cuota
-        public static bool RegistrarPagoCuota(int socioId)
+
+        // Método para obtener la fecha de validez de la cuota (30 días después del pago)
+        public DateTime? FechaValidez()
         {
-            using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+            if (FechaPago.HasValue)
             {
-                conn.Open();
-
-                string query = "UPDATE Cuota SET fechaPago = @fechaPago WHERE socioID = @socioID AND fechaPago IS NULL";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@fechaPago", DateTime.Now);
-                cmd.Parameters.AddWithValue("@socioID", socioId);
-
-                int rowsAffected = cmd.ExecuteNonQuery();
-                return rowsAffected > 0; // Retorna true si se actualizó alguna fila
+                return FechaPago.Value.AddDays(30);
             }
+            return null;
         }
 
+        // Método para registrar pago de cuota
+        public static bool RegistrarPagoCuota(int socioId)
+        {
+            try
+            {
+                using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+                {
+                    conn.Open();
+
+                    string query = "UPDATE Cuota SET fechaPago = @fechaPago WHERE socioID = @socioID AND fechaPago IS NULL";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@fechaPago", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@socioID", socioId);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    MessageBox.Show($"Pago registrado para el socio {socioId}, filas afectadas: {rowsAffected}");
+                    return rowsAffected > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al registrar pago de cuota: {ex.Message}");
+                return false;
+            }
+        }
     }
 }
