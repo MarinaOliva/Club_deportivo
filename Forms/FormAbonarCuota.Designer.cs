@@ -39,7 +39,7 @@
             // lblNumSocio
             // 
             lblNumSocio.AutoSize = true;
-            lblNumSocio.Location = new Point(88, 71);
+            lblNumSocio.Location = new Point(88, 119);
             lblNumSocio.Name = "lblNumSocio";
             lblNumSocio.Size = new Size(86, 23);
             lblNumSocio.TabIndex = 0;
@@ -48,7 +48,7 @@
             // lblMonto
             // 
             lblMonto.AutoSize = true;
-            lblMonto.Location = new Point(88, 155);
+            lblMonto.Location = new Point(88, 176);
             lblMonto.Name = "lblMonto";
             lblMonto.Size = new Size(169, 23);
             lblMonto.TabIndex = 1;
@@ -79,7 +79,7 @@
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(113, 48);
             btnCancelar.TabIndex = 4;
-            btnCancelar.Text = "Cancelar";
+            btnCancelar.Text = "Salir";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 

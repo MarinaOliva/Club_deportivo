@@ -99,7 +99,7 @@ namespace club_deportivo.Datos
                     cmd.Parameters.AddWithValue("@socioID", socioId);
 
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    MessageBox.Show($"Pago registrado para el socio {socioId}, filas afectadas: {rowsAffected}");
+                    //MessageBox.Show($"Pago registrado para el socio {socioId}, filas afectadas: {rowsAffected}");
                     return rowsAffected > 0;
                 }
             }

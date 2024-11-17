@@ -32,19 +32,65 @@ public class Socio : Cliente
     // Método para guardar socio
     public void GuardarSocio()
     {
-        using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+        try
         {
-            conn.Open();
-            string query = "INSERT INTO Socio (clienteID) VALUES (@clienteID);";
-            using (MySqlCommand cmd = new MySqlCommand(query, conn))
+            // Conexión a la base de datos
+            using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
             {
-                cmd.Parameters.AddWithValue("@clienteID", ClienteID);
-                cmd.ExecuteNonQuery();
+                conn.Open();
+                //MessageBox.Show("Conexión exitosa a la base de datos.");
+
+                // Inserción del socio
+                string query = "INSERT INTO Socio (clienteID) VALUES (@clienteID);";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@clienteID", ClienteID);
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    //MessageBox.Show($"Socio insertado, filas afectadas: {rowsAffected}");
+
+                    // Verifica si la inserción fue exitosa
+                    if (rowsAffected > 0)
+                    {
+                        // Obtención del SocioID
+                        SocioID = (int)cmd.LastInsertedId;
+                        //MessageBox.Show($"SocioID obtenido correctamente: {SocioID}");
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se insertó el socio.");
+                        return;
+                    }
+                }
+
+                // Inserción de la cuota
+                if (SocioID > 0)
+                {
+                    string queryCuota = "INSERT INTO Cuota (socioID, fechaVencimiento, importe) VALUES (@socioID, @fechaVencimiento, @importe);";
+                    using (MySqlCommand cmdCuota = new MySqlCommand(queryCuota, conn))
+                    {
+                        cmdCuota.Parameters.AddWithValue("@socioID", SocioID);
+                        cmdCuota.Parameters.AddWithValue("@fechaVencimiento", DateTime.Now.AddMonths(1)); // Fecha de vencimiento a un mes
+                        cmdCuota.Parameters.AddWithValue("@importe", 23000.00m); // Importe de la cuota mensual
+
+                        int cuotaRowsAffected = cmdCuota.ExecuteNonQuery();
+                        //MessageBox.Show($"Cuota insertada, filas afectadas: {cuotaRowsAffected}");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("SocioID no válido para insertar la cuota.");
+                }
             }
+        }
+        catch (Exception ex)
+        {
+            // Captura de cualquier excepción
+            MessageBox.Show($"Error: {ex.Message}");
         }
     }
 
-    // Método privado para cargar la información del socio, delegando la lógica de cuota a la clase Cuotas
+
+    // Método para cargar la información del socio, delegando la lógica de cuota a la clase Cuotas
     public void CargarInformacionSocio()
     {
         // Llama al método de la clase base Cliente para cargar datos básicos del cliente
