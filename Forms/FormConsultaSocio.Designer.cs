@@ -69,6 +69,7 @@
             cmbTipoDoc.Name = "cmbTipoDoc";
             cmbTipoDoc.Size = new Size(151, 31);
             cmbTipoDoc.TabIndex = 3;
+            cmbTipoDoc.SelectedIndexChanged += cmbTipoDoc_SelectedIndexChanged;
             // 
             // btnSalir
             // 

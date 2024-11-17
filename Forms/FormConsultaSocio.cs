@@ -151,5 +151,10 @@ namespace club_deportivo.Forms
             menuForm.Show();
             this.Close();
         }
+
+        private void cmbTipoDoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

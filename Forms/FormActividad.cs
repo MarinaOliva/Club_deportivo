@@ -15,10 +15,21 @@ namespace club_deportivo.Forms
 {
     public partial class FormActividad : Form
     {
+        // Diccionario que mapea actividades a montos
+        private Dictionary<string, decimal> actividadesMontos = new Dictionary<string, decimal>()
+        {
+            { "Musculación y Aparatos", 2000 },
+            { "Pilates", 2500 },
+            { "Yoga", 2300 },
+            { "Zumba", 2200 },
+            { "Natación", 3000 }
+        };
+
         public FormActividad()
         {
-            InitializeComponent(); 
-            btnSalir.Click += btnSalir_Click; 
+            InitializeComponent();
+            btnSalir.Click += btnSalir_Click;
+            cboAct.SelectedIndexChanged += cboAct_SelectedIndexChanged;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -28,12 +39,21 @@ namespace club_deportivo.Forms
             this.Hide();
         }
 
-        private void label2_Click(object sender, EventArgs e) { }
+        private void cboAct_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Limpiar el ComboBox de montos
+            cboMonto.Items.Clear();
 
-        private void label1_Click(object sender, EventArgs e) { }
+            // Obtener la actividad seleccionada
+            string actividadSeleccionada = cboAct.SelectedItem?.ToString();
 
-        private void label4_Click(object sender, EventArgs e) { }
-
-        private void label1_Click_1(object sender, EventArgs e) { }
+            // Verificar si la actividad tiene un monto asociado
+            if (actividadSeleccionada != null && actividadesMontos.ContainsKey(actividadSeleccionada))
+            {
+                decimal monto = actividadesMontos[actividadSeleccionada];
+                cboMonto.Items.Add(monto);  // Agregar el monto al ComboBox
+                cboMonto.SelectedIndex = 0;  // Seleccionar automáticamente el monto
+            }
+        }
     }
 }

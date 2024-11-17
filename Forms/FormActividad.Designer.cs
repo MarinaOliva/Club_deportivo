@@ -31,8 +31,8 @@
             lblNombre = new Label();
             lblEleccionActividad = new Label();
             lblApellido = new Label();
-            label4 = new Label();
-            lblDoc = new Label();
+            lblMonto = new Label();
+            lblNumDoc = new Label();
             textBox1 = new TextBox();
             textBox3 = new TextBox();
             cboAct = new ComboBox();
@@ -52,7 +52,7 @@
             lblNombre.Size = new Size(77, 23);
             lblNombre.TabIndex = 0;
             lblNombre.Text = "Nombre:";
-            lblNombre.Click += label1_Click;
+            //lblNombre.Click += label1_Click;
             // 
             // lblEleccionActividad
             // 
@@ -62,7 +62,7 @@
             lblEleccionActividad.Size = new Size(181, 23);
             lblEleccionActividad.TabIndex = 1;
             lblEleccionActividad.Text = "Seleccione la actividad";
-            lblEleccionActividad.Click += label2_Click;
+            //lblEleccionActividad.Click += label2_Click;
             // 
             // lblApellido
             // 
@@ -73,24 +73,24 @@
             lblApellido.TabIndex = 2;
             lblApellido.Text = "Apellido:";
             // 
-            // label4
+            // lblMonto
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(62, 98);
-            label4.Name = "label4";
-            label4.Size = new Size(140, 23);
-            label4.TabIndex = 3;
-            label4.Text = "Monto a Abonar:";
-            label4.Click += label4_Click;
+            lblMonto.AutoSize = true;
+            lblMonto.Location = new Point(62, 98);
+            lblMonto.Name = "lblMonto";
+            lblMonto.Size = new Size(140, 23);
+            lblMonto.TabIndex = 3;
+            lblMonto.Text = "Monto a Abonar:";
+            //lblMonto.Click += lblMonto_Click;
             // 
-            // lblDoc
+            // lblNumDoc
             // 
-            lblDoc.AutoSize = true;
-            lblDoc.Location = new Point(62, 275);
-            lblDoc.Name = "lblDoc";
-            lblDoc.Size = new Size(150, 23);
-            lblDoc.TabIndex = 4;
-            lblDoc.Text = "N° de documento:";
+            lblNumDoc.AutoSize = true;
+            lblNumDoc.Location = new Point(62, 275);
+            lblNumDoc.Name = "lblNumDoc";
+            lblNumDoc.Size = new Size(150, 23);
+            lblNumDoc.TabIndex = 4;
+            lblNumDoc.Text = "N° de documento:";
             // 
             // textBox1
             // 
@@ -108,16 +108,20 @@
             // 
             // cboAct
             // 
+            cboAct.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboAct.AutoCompleteSource = AutoCompleteSource.ListItems;
             cboAct.FormattingEnabled = true;
             cboAct.Items.AddRange(new object[] { "Musculación", "Pilates", "Yoga", "Zumba", "Natación" });
             cboAct.Location = new Point(259, 43);
             cboAct.Name = "cboAct";
             cboAct.Size = new Size(151, 31);
             cboAct.TabIndex = 8;
+            cboAct.SelectedIndexChanged += cboAct_SelectedIndexChanged;
             // 
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "DNI", "Cédula de Indentidad", "Pasaporte" });
             comboBox2.Location = new Point(233, 220);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 31);
@@ -138,10 +142,12 @@
             lblTipoDoc.Size = new Size(164, 23);
             lblTipoDoc.TabIndex = 11;
             lblTipoDoc.Text = "Tipo de documento:";
-            lblTipoDoc.Click += label1_Click_1;
+            //lblTipoDoc.Click += label1_Click_1;
             // 
             // cboMonto
             // 
+            cboMonto.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboMonto.AutoCompleteSource = AutoCompleteSource.ListItems;
             cboMonto.FormattingEnabled = true;
             cboMonto.Items.AddRange(new object[] { "2000", "2500", "2300", "2200", "3000" });
             cboMonto.Location = new Point(259, 98);
@@ -181,8 +187,8 @@
             Controls.Add(cboAct);
             Controls.Add(textBox3);
             Controls.Add(textBox1);
-            Controls.Add(lblDoc);
-            Controls.Add(label4);
+            Controls.Add(lblNumDoc);
+            Controls.Add(lblMonto);
             Controls.Add(lblApellido);
             Controls.Add(lblEleccionActividad);
             Controls.Add(lblNombre);
@@ -197,8 +203,8 @@
         private Label lblNombre;
         private Label lblEleccionActividad;
         private Label lblApellido;
-        private Label label4;
-        private Label lblDoc;
+        private Label lblMonto;
+        private Label lblNumDoc;
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
