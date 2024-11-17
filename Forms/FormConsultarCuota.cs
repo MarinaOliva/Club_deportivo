@@ -46,5 +46,12 @@ namespace club_deportivo.Forms
         {
             // Puedes realizar cualquier configuración adicional al cargar el formulario aquí.
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            FormMenu menuForm = new FormMenu();
+            menuForm.Show();
+            this.Close();
+        }
     }
 }

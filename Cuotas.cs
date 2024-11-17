@@ -9,6 +9,8 @@ namespace club_deportivo.Datos
         public DateTime FechaVencimiento { get; set; }
         public DateTime? FechaPago { get; set; }
         public decimal Importe { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
 
         // Método para determinar el estado de la cuota
         public string EstadoCuota()
@@ -38,12 +40,13 @@ namespace club_deportivo.Datos
                 {
                     conn.Open();
 
-                    string query = "SELECT c.fechaVencimiento, c.fechaPago, c.importe, s.socioID " +
+                    string query = "SELECT c.fechaVencimiento, c.fechaPago, c.importe, s.socioID, cl.nombre, cl.apellido " +
                                    "FROM Cuota c " +
                                    "JOIN Socio s ON s.socioID = c.socioID " +
+                                   "JOIN Cliente cl ON s.clienteID = cl.clienteID " +  // Unir con Cliente para obtener nombre y apellido
                                    "WHERE s.socioID = @socioID " +
                                    "ORDER BY c.fechaVencimiento DESC " +
-                                   "LIMIT 1 ";
+                                   "LIMIT 1";
 
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@socioID", socioId);
@@ -57,12 +60,11 @@ namespace club_deportivo.Datos
                                 SocioID = reader.GetInt32("socioID"),
                                 FechaVencimiento = reader.GetDateTime("fechaVencimiento"),
                                 FechaPago = reader["fechaPago"] != DBNull.Value ? (DateTime?)reader.GetDateTime("fechaPago") : null,
-                                Importe = reader.GetDecimal("importe")
+                                Importe = reader.GetDecimal("importe"),
+                                Nombre = reader.GetString("nombre"),  // Obtener el nombre del socio
+                                Apellido = reader.GetString("apellido")  // Obtener el apellido del socio
                             };
-                            /* Para depurar
-                            MessageBox.Show($"Cuota obtenida: {cuota.Importe}, Estado: {cuota.EstadoCuota()}");
-                            */
-                            }
+                        }
                     }
                 }
             }
@@ -73,6 +75,8 @@ namespace club_deportivo.Datos
 
             return cuota;
         }
+
+
 
         // Método para obtener la fecha de validez de la cuota (30 días después del pago)
         public DateTime? FechaValidez()

@@ -32,6 +32,7 @@
             Consulta = new Button();
             label1 = new Label();
             cmbTipoDoc = new ComboBox();
+            btnSalir = new Button();
             SuspendLayout();
             // 
             // numero
@@ -43,7 +44,7 @@
             // 
             // Consulta
             // 
-            Consulta.Location = new Point(313, 302);
+            Consulta.Location = new Point(228, 312);
             Consulta.Name = "Consulta";
             Consulta.Size = new Size(103, 38);
             Consulta.TabIndex = 1;
@@ -69,11 +70,22 @@
             cmbTipoDoc.Size = new Size(151, 31);
             cmbTipoDoc.TabIndex = 3;
             // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(446, 317);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 4;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
+            // 
             // FormConsultaSocio
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSalir);
             Controls.Add(cmbTipoDoc);
             Controls.Add(label1);
             Controls.Add(Consulta);
@@ -91,5 +103,6 @@
         private Button Consulta;
         private Label label1;
         private ComboBox cmbTipoDoc;
+        private Button btnSalir;
     }
 }

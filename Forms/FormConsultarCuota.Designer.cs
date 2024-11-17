@@ -31,6 +31,7 @@
             lbl_instruccion = new Label();
             btnContinuar = new Button();
             txtNumeroSocio = new TextBox();
+            btnSalir = new Button();
             SuspendLayout();
             // 
             // lbl_instruccion
@@ -44,7 +45,7 @@
             // 
             // btnContinuar
             // 
-            btnContinuar.Location = new Point(305, 248);
+            btnContinuar.Location = new Point(185, 248);
             btnContinuar.Name = "btnContinuar";
             btnContinuar.Size = new Size(94, 29);
             btnContinuar.TabIndex = 1;
@@ -59,11 +60,22 @@
             txtNumeroSocio.Size = new Size(199, 30);
             txtNumeroSocio.TabIndex = 4;
             // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(535, 248);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 5;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
+            // 
             // FormConsultarCuota
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSalir);
             Controls.Add(txtNumeroSocio);
             Controls.Add(btnContinuar);
             Controls.Add(lbl_instruccion);
@@ -79,5 +91,6 @@
         private Label lbl_instruccion;
         private Button btnContinuar;
         private TextBox txtNumeroSocio;
+        private Button btnSalir;
     }
 }

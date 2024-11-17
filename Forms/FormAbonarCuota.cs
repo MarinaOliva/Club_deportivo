@@ -38,6 +38,7 @@ namespace club_deportivo.Forms
             if (cuota != null)
             {
                 // Muestra la información de la cuota en las etiquetas
+                lblNombre.Text = $"Nombre: {cuota.Nombre} {cuota.Apellido}";
                 lblNumSocio.Text = $"Socio n° : {socioId}";
                 lblMonto.Text = $"Monto de la cuota: ${cuota.Importe}";
                 lblFecha.Text = $"Fecha de pago: {(cuota.FechaPago.HasValue ? cuota.FechaPago.Value.ToString("dd/MM/yyyy") : "No pagada")}";

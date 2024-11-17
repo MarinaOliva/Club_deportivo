@@ -34,6 +34,7 @@
             btnPagar = new Button();
             btnCancelar = new Button();
             lblVencimiento = new Label();
+            lblNombre = new Label();
             SuspendLayout();
             // 
             // lblNumSocio
@@ -92,11 +93,21 @@
             lblVencimiento.TabIndex = 5;
             lblVencimiento.Text = "Fecha de vencimiento: ";
             // 
+            // lblNombre
+            // 
+            lblNombre.AutoSize = true;
+            lblNombre.Location = new Point(90, 62);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(77, 23);
+            lblNombre.TabIndex = 6;
+            lblNombre.Text = "Nombre:";
+            // 
             // FormAbonarCuota
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblNombre);
             Controls.Add(lblVencimiento);
             Controls.Add(btnCancelar);
             Controls.Add(btnPagar);
@@ -118,5 +129,6 @@
         private Button btnPagar;
         private Button btnCancelar;
         private Label lblVencimiento;
+        private Label lblNombre;
     }
 }

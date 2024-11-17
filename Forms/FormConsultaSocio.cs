@@ -144,5 +144,12 @@ namespace club_deportivo.Forms
         {
             // 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            FormMenu menuForm = new FormMenu();
+            menuForm.Show();
+            this.Close();
+        }
     }
 }
