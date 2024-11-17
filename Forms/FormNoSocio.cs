@@ -13,15 +13,17 @@ namespace club_deportivo.Forms
     public partial class FormNoSocio : Form
     {
         private int numeroDocumento;
-
-        public FormNoSocio(int numeroDocumento)
+        private FormMenu _formMenu;
+        public FormNoSocio(int numeroDocumento, FormMenu formMenu)
         {
             InitializeComponent();
             this.numeroDocumento = numeroDocumento;
+            _formMenu = formMenu;
             label_dniIng.Text = $"N° de documento ingresado: {numeroDocumento}";
 
             btn_Asociar.Click += Btn_Asociar_Click;
             btn_Act.Click += Btn_Act_Click;
+            btnOut.Click += BtnOut_Click;
         }
         private void Btn_Asociar_Click(object? sender, EventArgs e)
         {
@@ -37,9 +39,10 @@ namespace club_deportivo.Forms
             formActividad.Show();
         }
 
-        private void btnOut_Click(object sender, EventArgs e)
+        private void BtnOut_Click(object sender, EventArgs e)
         {
-
+            this.Close(); // Ocultar el formulario actual
+            _formMenu.Show();
         }
     }
 }

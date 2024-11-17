@@ -71,7 +71,7 @@ namespace club_deportivo.Forms
                         else
                         {
                             MessageBox.Show("El número de documento no existe. Puede registrar un nuevo cliente.");
-                            FormNoSocio formNoSocio = new FormNoSocio(numeroDocumento);
+                            FormNoSocio formNoSocio = new FormNoSocio(numeroDocumento, this.Owner as FormMenu);
                             this.Hide();
                             formNoSocio.Show();
                             return;
@@ -127,7 +127,7 @@ namespace club_deportivo.Forms
                         else
                         {
                             MessageBox.Show("El cliente no es un socio registrado.");
-                            FormNoSocio formNoSocio = new FormNoSocio(numeroDocumento);
+                            FormNoSocio formNoSocio = new FormNoSocio(numeroDocumento, this.Owner as FormMenu);
                             this.Hide();
                             formNoSocio.Show();
                         }
