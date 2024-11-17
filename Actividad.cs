@@ -15,6 +15,37 @@ namespace club_deportivo
         public decimal Costo { get; set; }
         public int CuposDisponibles { get; set; }
 
+        // Método para ver si hay cupos disponibles
+        public static bool HayCuposDisponibles(int idActividad)
+        {
+            try
+            {
+                // Crear conexión a la base de datos
+                MySqlConnection conexion = Conexion.getInstancia().CrearConexion();
+                conexion.Open();
+
+                // Consulta SQL para obtener los cupos disponibles
+                string query = "SELECT cuposDisponibles FROM Actividad WHERE idActividad = @idActividad";
+                MySqlCommand cmd = new MySqlCommand(query, conexion);
+                cmd.Parameters.AddWithValue("@idActividad", idActividad);
+
+                // Ejecutar la consulta y obtener el número de cupos
+                object result = cmd.ExecuteScalar();
+                conexion.Close();
+
+                if (result != null && Convert.ToInt32(result) > 0)
+                {
+                    return true;  // Hay cupos disponibles
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al verificar los cupos de la actividad: " + ex.Message);
+            }
+
+            return false;  // No hay cupos disponibles
+        }
+
         // Método para actualizar los cupos de la actividad
         public static void ActualizarCupos(int idActividad)
         {

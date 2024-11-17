@@ -71,25 +71,28 @@ namespace club_deportivo.Forms
 
             DateTime fechaPago = DateTime.Now;  // Fecha actual como fecha de pago
 
-            // Crear una nueva instancia de FormComprobante y pasar los datos
-            FormComprobante comprobante = new FormComprobante(nombre, dni, monto, fechaPago);
-
-            // Mostrar el formulario de comprobante
-            comprobante.Show();
-
             // Obtener el id de la actividad seleccionada desde la clase Actividad
             int idActividadSeleccionada = Actividad.ObtenerIdActividad(actividadSeleccionada);
 
-            if (idActividadSeleccionada != -1)
+            // Verificar si hay cupos disponibles para la actividad seleccionada
+            if (idActividadSeleccionada != -1 && Actividad.HayCuposDisponibles(idActividadSeleccionada))
             {
+                // Crear una nueva instancia de FormComprobante y pasar los datos
+                FormComprobante comprobante = new FormComprobante(nombre, dni, monto, fechaPago);
+
+                // Mostrar el formulario de comprobante
+                comprobante.Show();
+
                 // Llamar al método estático de la clase Actividad para actualizar los cupos
                 Actividad.ActualizarCupos(idActividadSeleccionada);
             }
             else
             {
-                MessageBox.Show("Selecciona una actividad válida.");
+                // Mostrar un mensaje si no hay cupos disponibles
+                MessageBox.Show("No hay cupos disponibles para esta actividad. Por favor, elija otra.");
             }
         }
+
 
     }
 }
