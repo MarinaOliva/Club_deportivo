@@ -108,7 +108,7 @@
             cboAct.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cboAct.AutoCompleteSource = AutoCompleteSource.ListItems;
             cboAct.FormattingEnabled = true;
-            cboAct.Items.AddRange(new object[] { "Musculación", "Pilates", "Yoga", "Zumba", "Natación" });
+            cboAct.Items.AddRange(new object[] { "Pilates", "Yoga", "Zumba" });
             cboAct.Location = new Point(259, 43);
             cboAct.Name = "cboAct";
             cboAct.Size = new Size(151, 31);
@@ -145,7 +145,7 @@
             cboMonto.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cboMonto.AutoCompleteSource = AutoCompleteSource.ListItems;
             cboMonto.FormattingEnabled = true;
-            cboMonto.Items.AddRange(new object[] { "2000", "2500", "2300", "2200", "3000" });
+            cboMonto.Items.AddRange(new object[] { "2500", "2300", "2200" });
             cboMonto.Location = new Point(259, 98);
             cboMonto.Name = "cboMonto";
             cboMonto.Size = new Size(151, 31);

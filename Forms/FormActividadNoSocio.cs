@@ -18,11 +18,11 @@ namespace club_deportivo.Forms
         // Diccionario que mapea actividades a montos
         private Dictionary<string, decimal> actividadesMontos = new Dictionary<string, decimal>()
         {
-            { "Musculación y Aparatos", 2000 },
+            
             { "Pilates", 2500 },
             { "Yoga", 2300 },
             { "Zumba", 2200 },
-            { "Natación", 3000 }
+          
         };
 
         public FormActividadNoSocio()
@@ -76,6 +76,19 @@ namespace club_deportivo.Forms
 
             // Mostrar el formulario de comprobante
             comprobante.Show();
+
+            // Obtener el id de la actividad seleccionada desde la clase Actividad
+            int idActividadSeleccionada = Actividad.ObtenerIdActividad(actividadSeleccionada);
+
+            if (idActividadSeleccionada != -1)
+            {
+                // Llamar al método estático de la clase Actividad para actualizar los cupos
+                Actividad.ActualizarCupos(idActividadSeleccionada);
+            }
+            else
+            {
+                MessageBox.Show("Selecciona una actividad válida.");
+            }
         }
 
     }
