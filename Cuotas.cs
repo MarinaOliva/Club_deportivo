@@ -59,9 +59,10 @@ namespace club_deportivo.Datos
                                 FechaPago = reader["fechaPago"] != DBNull.Value ? (DateTime?)reader.GetDateTime("fechaPago") : null,
                                 Importe = reader.GetDecimal("importe")
                             };
-
+                            /* Para depurar
                             MessageBox.Show($"Cuota obtenida: {cuota.Importe}, Estado: {cuota.EstadoCuota()}");
-                        }
+                            */
+                            }
                     }
                 }
             }

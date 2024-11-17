@@ -31,7 +31,7 @@
             pnlTitulo = new Panel();
             label1 = new Label();
             picLogo = new PictureBox();
-            panel1 = new Panel();
+            pnlContenido = new Panel();
             lblFecha = new Label();
             lblMonto = new Label();
             lblDNI = new Label();
@@ -39,7 +39,7 @@
             btnPrint = new Button();
             pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
-            panel1.SuspendLayout();
+            pnlContenido.SuspendLayout();
             SuspendLayout();
             // 
             // pnlTitulo
@@ -51,7 +51,6 @@
             pnlTitulo.Name = "pnlTitulo";
             pnlTitulo.Size = new Size(733, 68);
             pnlTitulo.TabIndex = 0;
-            //pnlTitulo.Paint += panel1_Paint;
             // 
             // label1
             // 
@@ -61,30 +60,28 @@
             label1.Size = new Size(377, 46);
             label1.TabIndex = 0;
             label1.Text = "Comprobante de Pago";
-            //label1.Click += label1_Click;
             // 
             // picLogo
             // 
             picLogo.Image = Properties.Resources.Logo;
-            picLogo.Location = new Point(544, 112);
+            picLogo.Location = new Point(544, 86);
             picLogo.Name = "picLogo";
-            picLogo.Size = new Size(228, 213);
+            picLogo.Size = new Size(228, 288);
             picLogo.SizeMode = PictureBoxSizeMode.Zoom;
             picLogo.TabIndex = 1;
             picLogo.TabStop = false;
-            //picLogo.Click += pictureBox1_Click;
+            picLogo.Click += picLogo_Click;
             // 
-            // panel1
+            // pnlContenido
             // 
-            panel1.Controls.Add(lblFecha);
-            panel1.Controls.Add(lblMonto);
-            panel1.Controls.Add(lblDNI);
-            panel1.Controls.Add(lblNombre);
-            panel1.Location = new Point(39, 86);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(472, 288);
-            panel1.TabIndex = 2;
-            //panel1.Paint += panel1_Paint_1;
+            pnlContenido.Controls.Add(lblFecha);
+            pnlContenido.Controls.Add(lblMonto);
+            pnlContenido.Controls.Add(lblDNI);
+            pnlContenido.Controls.Add(lblNombre);
+            pnlContenido.Location = new Point(39, 86);
+            pnlContenido.Name = "pnlContenido";
+            pnlContenido.Size = new Size(472, 288);
+            pnlContenido.TabIndex = 2;
             // 
             // lblFecha
             // 
@@ -103,7 +100,6 @@
             lblMonto.Size = new Size(138, 23);
             lblMonto.TabIndex = 2;
             lblMonto.Text = "Monto abonado:";
-            //lblMonto.Click += label4_Click;
             // 
             // lblDNI
             // 
@@ -122,7 +118,6 @@
             lblNombre.Size = new Size(82, 23);
             lblNombre.TabIndex = 0;
             lblNombre.Text = "Nombre: ";
-            //lblNombre.Click += label2_Click;
             // 
             // btnPrint
             // 
@@ -140,7 +135,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btnPrint);
-            Controls.Add(panel1);
+            Controls.Add(pnlContenido);
             Controls.Add(picLogo);
             Controls.Add(pnlTitulo);
             Name = "FormComprobante";
@@ -148,8 +143,8 @@
             pnlTitulo.ResumeLayout(false);
             pnlTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            pnlContenido.ResumeLayout(false);
+            pnlContenido.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -158,7 +153,7 @@
         private Panel pnlTitulo;
         private Label label1;
         private PictureBox picLogo;
-        private Panel panel1;
+        private Panel pnlContenido;
         private Label lblFecha;
         private Label lblMonto;
         private Label lblDNI;

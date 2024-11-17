@@ -26,15 +26,20 @@ namespace club_deportivo.Forms
         private void Btn_Asociar_Click(object? sender, EventArgs e)
         {
             FormRegistro formAltaNoSocio = new FormRegistro();
-            this.Hide(); 
+            this.Hide();
             formAltaNoSocio.Show();
         }
 
         private void Btn_Act_Click(object? sender, EventArgs e)
         {
             FormActividad formActividad = new FormActividad();
-            this.Hide(); 
-            formActividad.Show(); 
+            this.Hide();
+            formActividad.Show();
+        }
+
+        private void btnOut_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

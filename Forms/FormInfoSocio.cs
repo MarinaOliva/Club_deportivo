@@ -15,6 +15,7 @@ namespace club_deportivo.Forms
     public partial class FormInfoSocio : Form
     {
         private FormMenu _formMenu; // Referencia al FormMenu principal
+        private Socio socioActual; // Variable miembro para almacenar el objeto Socio
 
         // Constructor que recibe la referencia al formulario principal (FormMenu)
         public FormInfoSocio(FormMenu formMenu)
@@ -26,8 +27,10 @@ namespace club_deportivo.Forms
 
         public void LoadData(Socio socio, Cuotas cuota)
         {
-            // Depuración: Verificar los datos recibidos
+            socioActual = socio;
+            /* Depuración: Verificar los datos recibidos
             MessageBox.Show($"Cargando datos para: {socio.Nombre} {socio.Apellido}, N° Documento: {socio.NumDoc}");
+            */
 
             // Usamos los métodos de la clase Socio para obtener los datos
             lblNombre.Text = "Nombre: " + socio.Nombre;
@@ -54,7 +57,7 @@ namespace club_deportivo.Forms
             // Mostrar la fecha de validez usando el método FechaValidez
             lblValidez.Text = "Fecha de validez: " + cuota?.FechaValidez()?.ToString("dd/MM/yyyy") ?? "Sin validez";
 
-            
+
             // Generar la cadena con las actividades numeradas
             if (socio.Actividades.Count > 0)
             {
@@ -93,5 +96,19 @@ namespace club_deportivo.Forms
         private void label7_Click(object sender, EventArgs e)
         {
         }
+
+        private void btnCarnet_Click(object sender, EventArgs e)
+        {
+            // Obtener los datos del socio usando el método ObtenerDatosCarnet
+            var (nombre, apellido, numeroSocio) = socioActual.ObtenerDatosCarnet();
+
+            // Crear una instancia de FormCarnet
+            FormCarnet formCarnet = new FormCarnet(nombre, apellido, numeroSocio);
+
+            // Mostrar el formulario de carnet
+            formCarnet.Show();
+            //this.Hide();  // Ocultar FormInfoSocio si es necesario
+        }
+
     }
 }

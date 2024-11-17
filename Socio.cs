@@ -20,7 +20,7 @@ public class Socio : Cliente
     {
         SocioID = socioId;
         Actividades = new List<string>();
-        MessageBox.Show("ClienteID: " + ClienteID);
+        // MessageBox.Show("ClienteID: " + ClienteID);
         CargarInformacionSocio();  // Llamada al método para cargar la información
     }
 
@@ -83,7 +83,7 @@ public class Socio : Cliente
                         }
                     }
 
-                    // Depuración: Verificar si las actividades fueron cargadas
+                    /* Depuración: Verificar si las actividades fueron cargadas
                     if (Actividades.Count > 0)
                     {
                         MessageBox.Show($"Actividades cargadas: {string.Join(", ", Actividades)}");
@@ -92,6 +92,7 @@ public class Socio : Cliente
                     {
                         MessageBox.Show("No se encontraron actividades asociadas.");
                     }
+                    */
                 }
             }
 
@@ -102,7 +103,7 @@ public class Socio : Cliente
             if (Cuota != null)
             {
                 EstadoCuota = Cuota.EstadoCuota();
-                MessageBox.Show($"Estado de la cuota: {EstadoCuota}");
+                //MessageBox.Show($"Estado de la cuota: {EstadoCuota}");
 
                 // Asignar la fecha de validez
                 if (Cuota.FechaValidez().HasValue)
@@ -114,13 +115,18 @@ public class Socio : Cliente
                     FechaValidez = "Sin validez";
                 }
 
-                // Depuración: Verificar la fecha de validez
-                MessageBox.Show($"Fecha de validez: {FechaValidez}");
-            }
+                /* Depuración: Verificar la fecha de validez
+                MessageBox.Show($"Fecha de validez: {FechaValidez}");*/
+            } 
             else
             {
                 MessageBox.Show("No se encontró cuota para el socio.");
             }
         }
+    }
+
+    public (string Nombre, string Apellido, string NumeroSocio) ObtenerDatosCarnet()
+    {
+        return ($"Nombre: {Nombre}", $"Apellido: {Apellido}", $"N° Socio: {SocioID}");
     }
 }

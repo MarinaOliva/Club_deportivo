@@ -30,9 +30,9 @@ namespace club_deportivo.Forms
             {
                 string tipoDocSeleccionado = cmbTipoDoc.SelectedItem.ToString();
 
-                // Depuración: Verificar el valor de numeroDocumento
+                /* Depuración: Verificar el valor de numeroDocumento
                 MessageBox.Show($"Número de documento ingresado: {numeroDocumento}");
-
+                */
                 using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
                 {
                     conn.Open();
@@ -51,9 +51,11 @@ namespace club_deportivo.Forms
                         {
                             readerDoc.Read();
 
-                            // Depuración: Verificar el valor obtenido de numDoc desde la base de datos
+                            /* Depuración: Verificar el valor obtenido
+                             * de numDoc desde la base de datos
                             int numDocEnBD = readerDoc.GetInt32(readerDoc.GetOrdinal("numDoc"));
                             MessageBox.Show($"Número de documento desde la base de datos: {numDocEnBD}");
+                            */
 
                             // Verificar si el tipo de documento coincide
                             if (readerDoc["tipoDoc"].ToString() != tipoDocSeleccionado)
@@ -64,7 +66,7 @@ namespace club_deportivo.Forms
 
                             // Obtener el clienteID
                             clienteId = Convert.ToInt32(readerDoc["clienteID"]);
-                            MessageBox.Show($"ClienteID obtenido: {clienteId}");
+                            //MessageBox.Show($"ClienteID obtenido: {clienteId}");
                         }
                         else
                         {
@@ -102,15 +104,17 @@ namespace club_deportivo.Forms
                                 TipoDoc = readerSocio["tipoDoc"].ToString()
                             };
 
-                            // Depuración: Verificar los datos recibidos
+                            /* Depuración: Verificar los datos recibidos
                             MessageBox.Show($"Cargando datos para: {socio.Nombre} {socio.Apellido}, N° Documento: {socio.NumDoc}, Tipo de Documento: {socio.TipoDoc}");
+                            */
 
                             // Llamar al método de la clase Socio para cargar la información (cuotas y actividades)
                             socio.CargarInformacionSocio();
 
-                            // Depuración: Verificar la información cargada
+                            /* Depuración: Verificar la información cargada
                             MessageBox.Show($"Socio encontrado: {socio.Nombre} {socio.Apellido}");
                             MessageBox.Show($"Fecha de validez: {socio.FechaValidez}");
+                            */
 
                             Cuotas cuota = socio.Cuota;
 
@@ -138,7 +142,7 @@ namespace club_deportivo.Forms
 
         private void FormConsultaSocio_Load(object sender, EventArgs e)
         {
-            // Aquí podrías cargar los tipos de documento si es necesario.
+            // 
         }
     }
 }

@@ -69,6 +69,7 @@
             btnOut.TabIndex = 3;
             btnOut.Text = "Salir";
             btnOut.UseVisualStyleBackColor = true;
+            btnOut.Click += btnOut_Click;
             // 
             // FormNoSocio
             // 

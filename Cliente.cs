@@ -47,7 +47,9 @@ namespace club_deportivo
                     cmd.Parameters.AddWithValue("@email", Email);
                     cmd.Parameters.AddWithValue("@presentaAptoFisico", PresentaAptoFisico);
                     ClienteID = Convert.ToInt32(cmd.ExecuteScalar());
+                    /* Para depurar
                     MessageBox.Show($"Cliente Guardado: {Nombre} {Apellido}, ID: {ClienteID}");
+                    */
                 }
             }
         }
@@ -78,8 +80,10 @@ namespace club_deportivo
                                 Email = reader.GetString("email");
                                 PresentaAptoFisico = reader.GetBoolean("presentaAptoFisico");
 
+                                /* Para depurar
                                 MessageBox.Show($"Cliente cargado: {Nombre} {Apellido}, ID: {ClienteID}");
-                            }
+                                */
+                                }
                             else
                             {
                                 throw new Exception("Cliente no encontrado.");
@@ -126,9 +130,10 @@ namespace club_deportivo
                                 dni = reader.GetInt32("numDoc").ToString();
                                 importe = reader.GetDecimal("importe");
                                 fechaPago = reader.GetDateTime("fechaPago");
-
+                                /* Para depurar
                                 MessageBox.Show($"Comprobante generado: {nombreCompleto}, {dni}, {importe}, {fechaPago}");
-                            }
+                                */
+                                }
                         }
                     }
                 }

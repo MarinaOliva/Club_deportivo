@@ -75,10 +75,11 @@
             btnCarnet.TabIndex = 3;
             btnCarnet.Text = "Ver Carnet";
             btnCarnet.UseVisualStyleBackColor = true;
+            btnCarnet.Click += btnCarnet_Click;
             // 
             // btnOut
             // 
-            btnOut.Location = new Point(452, 491);
+            btnOut.Location = new Point(515, 491);
             btnOut.Name = "btnOut";
             btnOut.Size = new Size(103, 46);
             btnOut.TabIndex = 4;

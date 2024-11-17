@@ -36,6 +36,7 @@ C:\Users\eien_\Escritorio\Club_Deportivo\bin\Debug\net8.0-windows\runtimes\win-x
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.csproj.AssemblyReference.cache
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormAbonarCuota.resources
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormActividad.resources
+C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormCarnet.resources
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormComprobante.resources
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormConsultarCuota.resources
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormConsultaSocio.resources
