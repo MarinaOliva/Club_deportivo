@@ -17,7 +17,6 @@ C:\Users\eien_\Escritorio\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\Club_Depo
 C:\Users\eien_\Escritorio\DSOO_PI1_ComC_GRUPO14_Oliva_Tamborelli_Oliva\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.csproj.CoreCompileInputs.cache
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.csproj.AssemblyReference.cache
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormAbonarCuota.resources
-C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormActividad.resources
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormCarnet.resources
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormComprobante.resources
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormConsultarCuota.resources
@@ -57,3 +56,4 @@ C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\refint\club_de
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.pdb
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.genruntimeconfig.cache
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\ref\club_deportivo.dll
+C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormActividadNoSocio.resources

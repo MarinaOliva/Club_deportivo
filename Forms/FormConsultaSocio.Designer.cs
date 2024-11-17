@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            numero = new TextBox();
+            txtNum = new TextBox();
             Consulta = new Button();
             label1 = new Label();
             cmbTipoDoc = new ComboBox();
             btnSalir = new Button();
             SuspendLayout();
             // 
-            // numero
+            // txtNum
             // 
-            numero.Location = new Point(388, 204);
-            numero.Name = "numero";
-            numero.Size = new Size(198, 30);
-            numero.TabIndex = 0;
+            txtNum.Location = new Point(388, 204);
+            txtNum.Name = "txtNum";
+            txtNum.Size = new Size(198, 30);
+            txtNum.TabIndex = 0;
+            txtNum.TextChanged += numero_TextChanged;
             // 
             // Consulta
             // 
@@ -90,7 +91,7 @@
             Controls.Add(cmbTipoDoc);
             Controls.Add(label1);
             Controls.Add(Consulta);
-            Controls.Add(numero);
+            Controls.Add(txtNum);
             Name = "FormConsultaSocio";
             Text = "Consulta";
             Load += FormConsultaSocio_Load;
@@ -100,7 +101,7 @@
 
         #endregion
 
-        private TextBox numero;
+        private TextBox txtNum;
         private Button Consulta;
         private Label label1;
         private ComboBox cmbTipoDoc;

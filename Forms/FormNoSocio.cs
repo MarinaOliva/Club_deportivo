@@ -34,7 +34,7 @@ namespace club_deportivo.Forms
 
         private void Btn_Act_Click(object? sender, EventArgs e)
         {
-            FormActividad formActividad = new FormActividad();
+            FormActividadNoSocio formActividad = new FormActividadNoSocio();
             this.Hide();
             formActividad.Show();
         }

@@ -12,7 +12,7 @@ namespace club_deportivo.Forms
         {
             InitializeComponent();
             Consulta.Click += Consulta_Click;
-            numero.KeyPress += numero_KeyPress;
+            txtNum.KeyPress += numero_KeyPress;
         }
 
         // Evento KeyPress para validar que solo se ingresen números
@@ -26,7 +26,7 @@ namespace club_deportivo.Forms
 
         private void Consulta_Click(object? sender, EventArgs e)
         {
-            if (int.TryParse(numero.Text, out int numeroDocumento) && cmbTipoDoc.SelectedItem != null)
+            if (int.TryParse(txtNum.Text, out int numeroDocumento) && cmbTipoDoc.SelectedItem != null)
             {
                 string tipoDocSeleccionado = cmbTipoDoc.SelectedItem.ToString();
 
@@ -153,6 +153,11 @@ namespace club_deportivo.Forms
         }
 
         private void cmbTipoDoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numero_TextChanged(object sender, EventArgs e)
         {
 
         }
