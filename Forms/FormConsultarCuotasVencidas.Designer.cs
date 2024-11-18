@@ -47,22 +47,26 @@
             // 
             // btnVolver
             // 
-            btnVolver.Location = new Point(599, 403);
+            btnVolver.BackColor = SystemColors.ButtonHighlight;
+            btnVolver.FlatStyle = FlatStyle.Flat;
+            btnVolver.Location = new Point(527, 382);
             btnVolver.Name = "btnVolver";
-            btnVolver.Size = new Size(161, 29);
+            btnVolver.Size = new Size(139, 50);
             btnVolver.TabIndex = 1;
-            btnVolver.Text = "Volver al menú principal";
-            btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Text = "Volver";
+            btnVolver.UseVisualStyleBackColor = false;
             btnVolver.Click += btnVolver_Click;
             // 
             // btnPrint
             // 
-            btnPrint.Location = new Point(209, 403);
+            btnPrint.BackColor = SystemColors.ButtonHighlight;
+            btnPrint.FlatStyle = FlatStyle.Flat;
+            btnPrint.Location = new Point(312, 382);
             btnPrint.Name = "btnPrint";
-            btnPrint.Size = new Size(118, 43);
+            btnPrint.Size = new Size(143, 50);
             btnPrint.TabIndex = 2;
             btnPrint.Text = "Imprimir";
-            btnPrint.UseVisualStyleBackColor = true;
+            btnPrint.UseVisualStyleBackColor = false;
             btnPrint.Click += btnPrint_Click;
             // 
             // lblHeader
@@ -70,9 +74,9 @@
             lblHeader.AutoSize = true;
             lblHeader.Location = new Point(346, 56);
             lblHeader.Name = "lblHeader";
-            lblHeader.Size = new Size(222, 23);
+            lblHeader.Size = new Size(220, 23);
             lblHeader.TabIndex = 3;
-            lblHeader.Text = "Cuotas Vencidas a la fecha: ";
+            lblHeader.Text = "Cuotas vencidas a la fecha: ";
             lblHeader.Click += label1_Click;
             // 
             // FormConsultarCuotasVencidas
@@ -85,7 +89,7 @@
             Controls.Add(btnVolver);
             Controls.Add(dgvCuotasVencidas);
             Name = "FormConsultarCuotasVencidas";
-            Text = "FormCuotasVencidas";
+            Text = "Cuotas Vencidas";
             Load += FormCuotasVencidas_Load;
             ((System.ComponentModel.ISupportInitialize)dgvCuotasVencidas).EndInit();
             ResumeLayout(false);

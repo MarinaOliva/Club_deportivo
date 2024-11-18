@@ -18,11 +18,11 @@ namespace club_deportivo.Forms
         // Diccionario que mapea actividades a montos
         private Dictionary<string, decimal> actividadesMontos = new Dictionary<string, decimal>()
         {
-            
+
             { "Pilates", 2500 },
             { "Yoga", 2300 },
             { "Zumba", 2200 },
-          
+
         };
 
         public FormActividadNoSocio()
@@ -99,6 +99,14 @@ namespace club_deportivo.Forms
             }
         }
 
+        private void lblApellido_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btnPagar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

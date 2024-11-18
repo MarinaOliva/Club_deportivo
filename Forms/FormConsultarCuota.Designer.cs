@@ -45,36 +45,40 @@
             // 
             // btnContinuar
             // 
-            btnContinuar.Location = new Point(185, 248);
+            btnContinuar.BackColor = SystemColors.ButtonHighlight;
+            btnContinuar.FlatStyle = FlatStyle.Flat;
+            btnContinuar.Location = new Point(118, 228);
             btnContinuar.Name = "btnContinuar";
-            btnContinuar.Size = new Size(94, 29);
+            btnContinuar.Size = new Size(132, 60);
             btnContinuar.TabIndex = 1;
             btnContinuar.Text = "Continuar";
-            btnContinuar.UseVisualStyleBackColor = true;
+            btnContinuar.UseVisualStyleBackColor = false;
             btnContinuar.Click += btnContinuar_Click;
             // 
             // txtNumeroSocio
             // 
-            txtNumeroSocio.Location = new Point(356, 93);
+            txtNumeroSocio.Location = new Point(281, 93);
             txtNumeroSocio.Name = "txtNumeroSocio";
             txtNumeroSocio.Size = new Size(199, 30);
             txtNumeroSocio.TabIndex = 4;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(535, 248);
+            btnSalir.BackColor = SystemColors.ButtonHighlight;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Location = new Point(303, 228);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(94, 29);
+            btnSalir.Size = new Size(155, 58);
             btnSalir.TabIndex = 5;
             btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 
             // FormConsultarCuota
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(571, 363);
             Controls.Add(btnSalir);
             Controls.Add(txtNumeroSocio);
             Controls.Add(btnContinuar);

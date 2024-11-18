@@ -37,7 +37,7 @@
             // 
             // txtNum
             // 
-            txtNum.Location = new Point(388, 204);
+            txtNum.Location = new Point(292, 179);
             txtNum.Name = "txtNum";
             txtNum.Size = new Size(198, 30);
             txtNum.TabIndex = 0;
@@ -45,17 +45,18 @@
             // 
             // Consulta
             // 
-            Consulta.Location = new Point(228, 312);
+            Consulta.BackColor = SystemColors.ButtonHighlight;
+            Consulta.Location = new Point(118, 286);
             Consulta.Name = "Consulta";
-            Consulta.Size = new Size(103, 38);
+            Consulta.Size = new Size(131, 54);
             Consulta.TabIndex = 1;
             Consulta.Text = "Consultar";
-            Consulta.UseVisualStyleBackColor = true;
+            Consulta.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(189, 140);
+            label1.Location = new Point(83, 91);
             label1.Name = "label1";
             label1.Size = new Size(417, 23);
             label1.TabIndex = 2;
@@ -66,7 +67,7 @@
             cmbTipoDoc.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbTipoDoc.FormattingEnabled = true;
             cmbTipoDoc.Items.AddRange(new object[] { "DNI", "Cédula de Indentidad", "Pasaporte" });
-            cmbTipoDoc.Location = new Point(180, 203);
+            cmbTipoDoc.Location = new Point(83, 178);
             cmbTipoDoc.Name = "cmbTipoDoc";
             cmbTipoDoc.Size = new Size(151, 31);
             cmbTipoDoc.TabIndex = 3;
@@ -74,19 +75,21 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(446, 317);
+            btnSalir.BackColor = SystemColors.ButtonHighlight;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Location = new Point(327, 286);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(94, 29);
+            btnSalir.Size = new Size(131, 54);
             btnSalir.TabIndex = 4;
             btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 
             // FormConsultaSocio
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(589, 389);
             Controls.Add(btnSalir);
             Controls.Add(cmbTipoDoc);
             Controls.Add(label1);

@@ -36,26 +36,31 @@
             // 
             // btn_Asociar
             // 
-            btn_Asociar.Location = new Point(58, 236);
+            btn_Asociar.BackColor = SystemColors.ButtonHighlight;
+            btn_Asociar.FlatAppearance.BorderColor = Color.Black;
+            btn_Asociar.FlatStyle = FlatStyle.Flat;
+            btn_Asociar.Location = new Point(49, 180);
             btn_Asociar.Name = "btn_Asociar";
             btn_Asociar.Size = new Size(144, 85);
             btn_Asociar.TabIndex = 0;
             btn_Asociar.Text = "Asociar";
-            btn_Asociar.UseVisualStyleBackColor = true;
+            btn_Asociar.UseVisualStyleBackColor = false;
             // 
             // btn_Act
             // 
-            btn_Act.Location = new Point(279, 236);
+            btn_Act.BackColor = SystemColors.ButtonHighlight;
+            btn_Act.FlatStyle = FlatStyle.Flat;
+            btn_Act.Location = new Point(267, 180);
             btn_Act.Name = "btn_Act";
             btn_Act.Size = new Size(155, 85);
             btn_Act.TabIndex = 1;
             btn_Act.Text = "Elegir Actividad Guiada";
-            btn_Act.UseVisualStyleBackColor = true;
+            btn_Act.UseVisualStyleBackColor = false;
             // 
             // label_dniIng
             // 
             label_dniIng.AutoSize = true;
-            label_dniIng.Location = new Point(199, 147);
+            label_dniIng.Location = new Point(49, 55);
             label_dniIng.Name = "label_dniIng";
             label_dniIng.Size = new Size(235, 23);
             label_dniIng.TabIndex = 2;
@@ -63,19 +68,21 @@
             // 
             // btnOut
             // 
-            btnOut.Location = new Point(503, 236);
+            btnOut.BackColor = SystemColors.ButtonHighlight;
+            btnOut.FlatStyle = FlatStyle.Flat;
+            btnOut.Location = new Point(495, 180);
             btnOut.Name = "btnOut";
             btnOut.Size = new Size(155, 85);
             btnOut.TabIndex = 3;
             btnOut.Text = "Salir";
-            btnOut.UseVisualStyleBackColor = true;
+            btnOut.UseVisualStyleBackColor = false;
             btnOut.Click += BtnOut_Click;
             // 
             // FormNoSocio
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(713, 362);
             Controls.Add(btnOut);
             Controls.Add(label_dniIng);
             Controls.Add(btn_Act);

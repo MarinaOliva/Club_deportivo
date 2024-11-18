@@ -42,7 +42,7 @@
             // lblDNI
             // 
             lblDNI.AutoSize = true;
-            lblDNI.Location = new Point(465, 42);
+            lblDNI.Location = new Point(297, 42);
             lblDNI.Name = "lblDNI";
             lblDNI.Size = new Size(153, 23);
             lblDNI.TabIndex = 0;
@@ -51,7 +51,7 @@
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(94, 84);
+            lblNombre.Location = new Point(47, 88);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(82, 23);
             lblNombre.TabIndex = 1;
@@ -61,7 +61,7 @@
             // lblApellido
             // 
             lblApellido.AutoSize = true;
-            lblApellido.Location = new Point(94, 136);
+            lblApellido.Location = new Point(47, 136);
             lblApellido.Name = "lblApellido";
             lblApellido.Size = new Size(81, 23);
             lblApellido.TabIndex = 2;
@@ -69,27 +69,31 @@
             // 
             // btnCarnet
             // 
-            btnCarnet.Location = new Point(204, 491);
+            btnCarnet.BackColor = SystemColors.ButtonHighlight;
+            btnCarnet.FlatStyle = FlatStyle.Flat;
+            btnCarnet.Location = new Point(145, 471);
             btnCarnet.Name = "btnCarnet";
-            btnCarnet.Size = new Size(119, 46);
+            btnCarnet.Size = new Size(136, 63);
             btnCarnet.TabIndex = 3;
             btnCarnet.Text = "Ver Carnet";
-            btnCarnet.UseVisualStyleBackColor = true;
+            btnCarnet.UseVisualStyleBackColor = false;
             btnCarnet.Click += btnCarnet_Click;
             // 
             // btnOut
             // 
-            btnOut.Location = new Point(515, 491);
+            btnOut.BackColor = SystemColors.ButtonHighlight;
+            btnOut.FlatStyle = FlatStyle.Flat;
+            btnOut.Location = new Point(340, 471);
             btnOut.Name = "btnOut";
-            btnOut.Size = new Size(103, 46);
+            btnOut.Size = new Size(124, 63);
             btnOut.TabIndex = 4;
             btnOut.Text = "Salir";
-            btnOut.UseVisualStyleBackColor = true;
+            btnOut.UseVisualStyleBackColor = false;
             // 
             // lblCuota
             // 
             lblCuota.AutoSize = true;
-            lblCuota.Location = new Point(94, 190);
+            lblCuota.Location = new Point(47, 190);
             lblCuota.Name = "lblCuota";
             lblCuota.Size = new Size(60, 23);
             lblCuota.TabIndex = 5;
@@ -98,7 +102,7 @@
             // lblAct
             // 
             lblAct.AutoSize = true;
-            lblAct.Location = new Point(94, 248);
+            lblAct.Location = new Point(47, 248);
             lblAct.Name = "lblAct";
             lblAct.Size = new Size(189, 23);
             lblAct.TabIndex = 6;
@@ -108,7 +112,7 @@
             // lblValidez
             // 
             lblValidez.AutoSize = true;
-            lblValidez.Location = new Point(94, 436);
+            lblValidez.Location = new Point(47, 389);
             lblValidez.Name = "lblValidez";
             lblValidez.Size = new Size(185, 23);
             lblValidez.TabIndex = 11;
@@ -118,7 +122,7 @@
             // lblTipoDoc
             // 
             lblTipoDoc.AutoSize = true;
-            lblTipoDoc.Location = new Point(94, 42);
+            lblTipoDoc.Location = new Point(47, 42);
             lblTipoDoc.Name = "lblTipoDoc";
             lblTipoDoc.Size = new Size(109, 23);
             lblTipoDoc.TabIndex = 12;
@@ -128,7 +132,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(831, 563);
+            ClientSize = new Size(678, 557);
             Controls.Add(lblTipoDoc);
             Controls.Add(lblValidez);
             Controls.Add(lblAct);

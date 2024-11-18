@@ -63,12 +63,14 @@
             // 
             // btnInscribir
             // 
-            btnInscribir.Location = new Point(224, 461);
+            btnInscribir.BackColor = SystemColors.ButtonHighlight;
+            btnInscribir.FlatStyle = FlatStyle.Flat;
+            btnInscribir.Location = new Point(224, 449);
             btnInscribir.Name = "btnInscribir";
-            btnInscribir.Size = new Size(110, 35);
+            btnInscribir.Size = new Size(125, 47);
             btnInscribir.TabIndex = 2;
             btnInscribir.Text = "Inscribir";
-            btnInscribir.UseVisualStyleBackColor = true;
+            btnInscribir.UseVisualStyleBackColor = false;
             btnInscribir.Click += btnInscribir_Click;
             // 
             // txtNumSocio
@@ -129,22 +131,26 @@
             // 
             // btnOut
             // 
-            btnOut.Location = new Point(502, 461);
+            btnOut.BackColor = SystemColors.ButtonHighlight;
+            btnOut.FlatStyle = FlatStyle.Flat;
+            btnOut.Location = new Point(502, 449);
             btnOut.Name = "btnOut";
-            btnOut.Size = new Size(101, 35);
+            btnOut.Size = new Size(110, 47);
             btnOut.TabIndex = 18;
             btnOut.Text = "Cancelar";
-            btnOut.UseVisualStyleBackColor = true;
+            btnOut.UseVisualStyleBackColor = false;
             btnOut.Click += btnOut_Click;
             // 
             // btnConsultar
             // 
+            btnConsultar.BackColor = SystemColors.ButtonHighlight;
+            btnConsultar.FlatStyle = FlatStyle.Flat;
             btnConsultar.Location = new Point(502, 38);
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new Size(110, 35);
             btnConsultar.TabIndex = 19;
             btnConsultar.Text = "Consultar";
-            btnConsultar.UseVisualStyleBackColor = true;
+            btnConsultar.UseVisualStyleBackColor = false;
             btnConsultar.Click += btnConsultar_Click;
             // 
             // lblSocioInsc

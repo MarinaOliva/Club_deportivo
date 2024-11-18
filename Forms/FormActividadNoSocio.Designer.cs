@@ -47,7 +47,7 @@
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(62, 154);
+            lblNombre.Location = new Point(62, 161);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(77, 23);
             lblNombre.TabIndex = 0;
@@ -65,11 +65,12 @@
             // lblApellido
             // 
             lblApellido.AutoSize = true;
-            lblApellido.Location = new Point(379, 157);
+            lblApellido.Location = new Point(66, 210);
             lblApellido.Name = "lblApellido";
             lblApellido.Size = new Size(76, 23);
             lblApellido.TabIndex = 2;
             lblApellido.Text = "Apellido:";
+            lblApellido.Click += lblApellido_Click;
             // 
             // lblMonto
             // 
@@ -83,7 +84,7 @@
             // lblNumDoc
             // 
             lblNumDoc.AutoSize = true;
-            lblNumDoc.Location = new Point(62, 275);
+            lblNumDoc.Location = new Point(66, 322);
             lblNumDoc.Name = "lblNumDoc";
             lblNumDoc.Size = new Size(150, 23);
             lblNumDoc.TabIndex = 4;
@@ -91,16 +92,16 @@
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(475, 154);
+            txtApellido.Location = new Point(164, 206);
             txtApellido.Name = "txtApellido";
-            txtApellido.Size = new Size(125, 30);
+            txtApellido.Size = new Size(148, 30);
             txtApellido.TabIndex = 5;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(157, 154);
+            txtNombre.Location = new Point(164, 161);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(125, 30);
+            txtNombre.Size = new Size(148, 30);
             txtNombre.TabIndex = 7;
             // 
             // cboAct
@@ -119,22 +120,22 @@
             // 
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "DNI", "Cédula de Indentidad", "Pasaporte" });
-            comboBox2.Location = new Point(233, 220);
+            comboBox2.Location = new Point(237, 267);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 31);
             comboBox2.TabIndex = 9;
             // 
             // txtDNI
             // 
-            txtDNI.Location = new Point(233, 272);
+            txtDNI.Location = new Point(237, 319);
             txtDNI.Name = "txtDNI";
-            txtDNI.Size = new Size(125, 30);
+            txtDNI.Size = new Size(151, 30);
             txtDNI.TabIndex = 10;
             // 
             // lblTipoDoc
             // 
             lblTipoDoc.AutoSize = true;
-            lblTipoDoc.Location = new Point(62, 220);
+            lblTipoDoc.Location = new Point(66, 267);
             lblTipoDoc.Name = "lblTipoDoc";
             lblTipoDoc.Size = new Size(164, 23);
             lblTipoDoc.TabIndex = 11;
@@ -153,27 +154,32 @@
             // 
             // btnPagar
             // 
-            btnPagar.Location = new Point(123, 371);
+            btnPagar.BackColor = SystemColors.ButtonHighlight;
+            btnPagar.FlatStyle = FlatStyle.Flat;
+            btnPagar.Location = new Point(76, 409);
             btnPagar.Name = "btnPagar";
             btnPagar.Size = new Size(159, 58);
             btnPagar.TabIndex = 13;
             btnPagar.Text = "Pagar";
-            btnPagar.UseVisualStyleBackColor = true;
+            btnPagar.UseVisualStyleBackColor = false;
+            btnPagar.Click += btnPagar_Click_1;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(425, 371);
+            btnSalir.BackColor = SystemColors.ButtonHighlight;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Location = new Point(288, 409);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(159, 58);
             btnSalir.TabIndex = 14;
             btnSalir.Text = "Cancelar";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             // 
             // FormActividadNoSocio
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(619, 528);
             Controls.Add(btnSalir);
             Controls.Add(btnPagar);
             Controls.Add(cboMonto);

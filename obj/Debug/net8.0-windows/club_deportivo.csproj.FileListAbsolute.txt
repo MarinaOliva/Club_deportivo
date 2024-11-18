@@ -24,7 +24,6 @@ C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormConsultarCuota.resources
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormConsultarCuotasVencidas.resources
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormConsultaSocio.resources
-C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormCuotasVencidas.resources
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormInfoSocio.resources
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.FormLogin.resources
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.FormMenu.resources

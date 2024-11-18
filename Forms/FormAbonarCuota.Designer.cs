@@ -42,9 +42,9 @@
             lblNumSocio.AutoSize = true;
             lblNumSocio.Location = new Point(88, 119);
             lblNumSocio.Name = "lblNumSocio";
-            lblNumSocio.Size = new Size(86, 23);
+            lblNumSocio.Size = new Size(81, 23);
             lblNumSocio.TabIndex = 0;
-            lblNumSocio.Text = "Socio n° : ";
+            lblNumSocio.Text = "Socio n°: ";
             // 
             // lblMonto
             // 
@@ -66,22 +66,26 @@
             // 
             // btnPagar
             // 
+            btnPagar.BackColor = SystemColors.ButtonHighlight;
+            btnPagar.FlatStyle = FlatStyle.Flat;
             btnPagar.Location = new Point(208, 380);
             btnPagar.Name = "btnPagar";
             btnPagar.Size = new Size(102, 48);
             btnPagar.TabIndex = 3;
             btnPagar.Text = "Pagar";
-            btnPagar.UseVisualStyleBackColor = true;
+            btnPagar.UseVisualStyleBackColor = false;
             btnPagar.Click += btnPagar_Click;
             // 
             // btnCancelar
             // 
+            btnCancelar.BackColor = SystemColors.ButtonHighlight;
+            btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Location = new Point(461, 379);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(113, 48);
             btnCancelar.TabIndex = 4;
             btnCancelar.Text = "Salir";
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // lblVencimiento

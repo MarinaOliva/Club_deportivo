@@ -80,8 +80,13 @@ namespace club_deportivo.Forms
         }
 
 
-            
+
         private void picLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormComprobante_Load(object sender, EventArgs e)
         {
 
         }

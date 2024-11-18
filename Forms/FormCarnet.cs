@@ -81,6 +81,10 @@ namespace club_deportivo.Forms
             MessageBox.Show("Operación exitosa", "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        private void lblTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

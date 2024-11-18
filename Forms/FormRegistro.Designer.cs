@@ -68,9 +68,9 @@ namespace club_deportivo
             AptaF.Location = new Point(127, 359);
             AptaF.Margin = new Padding(4, 0, 4, 0);
             AptaF.Name = "AptaF";
-            AptaF.Size = new Size(101, 23);
+            AptaF.Size = new Size(102, 23);
             AptaF.TabIndex = 1;
-            AptaF.Text = "Apta Físico: ";
+            AptaF.Text = "Apto Físico: ";
             // 
             // cmbDoc
             // 
@@ -105,7 +105,7 @@ namespace club_deportivo
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(298, 52);
+            txtNombre.Location = new Point(210, 52);
             txtNombre.Margin = new Padding(4, 5, 4, 5);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(189, 30);
@@ -113,7 +113,7 @@ namespace club_deportivo
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(298, 113);
+            txtApellido.Location = new Point(209, 113);
             txtApellido.Margin = new Padding(4, 5, 4, 5);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(189, 30);
@@ -156,7 +156,7 @@ namespace club_deportivo
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(127, 269);
+            label6.Location = new Point(127, 275);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
             label6.Size = new Size(78, 23);
@@ -166,7 +166,7 @@ namespace club_deportivo
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(496, 269);
+            label7.Location = new Point(496, 276);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
             label7.Size = new Size(62, 23);
@@ -175,13 +175,15 @@ namespace club_deportivo
             // 
             // btnAltaNoSocio
             // 
+            btnAltaNoSocio.BackColor = SystemColors.ButtonHighlight;
+            btnAltaNoSocio.FlatStyle = FlatStyle.Flat;
             btnAltaNoSocio.Location = new Point(127, 557);
             btnAltaNoSocio.Margin = new Padding(4, 5, 4, 5);
             btnAltaNoSocio.Name = "btnAltaNoSocio";
             btnAltaNoSocio.Size = new Size(235, 73);
             btnAltaNoSocio.TabIndex = 14;
             btnAltaNoSocio.Text = "Registrar";
-            btnAltaNoSocio.UseVisualStyleBackColor = true;
+            btnAltaNoSocio.UseVisualStyleBackColor = false;
             btnAltaNoSocio.Click += btnAltaNoSocio_Click;
             // 
             // radioButton1
@@ -208,12 +210,14 @@ namespace club_deportivo
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(663, 557);
+            btnSalir.BackColor = SystemColors.ButtonHighlight;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Location = new Point(671, 557);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(231, 73);
             btnSalir.TabIndex = 17;
             btnSalir.Text = "Cancelar";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             // 
             // lblFecha
             // 
@@ -235,13 +239,15 @@ namespace club_deportivo
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(400, 557);
+            btnLimpiar.BackColor = SystemColors.ButtonHighlight;
+            btnLimpiar.FlatStyle = FlatStyle.Flat;
+            btnLimpiar.Location = new Point(405, 557);
             btnLimpiar.Margin = new Padding(4, 5, 4, 5);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(235, 73);
             btnLimpiar.TabIndex = 20;
             btnLimpiar.Text = "Limpiar";
-            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.UseVisualStyleBackColor = false;
             btnLimpiar.Click += btnLimpiar_Click;
             // 
             // FormRegistro
