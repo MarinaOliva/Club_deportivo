@@ -13,6 +13,9 @@
     <Compile Update="Forms\FormComprobante.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FormConectarBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\FormConsultarCuota.cs">
       <SubType>Form</SubType>
     </Compile>

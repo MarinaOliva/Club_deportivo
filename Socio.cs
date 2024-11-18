@@ -35,7 +35,7 @@ public class Socio : Cliente
         try
         {
             // Conexión a la base de datos
-            using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+            using (MySqlConnection conn = new MySqlConnection(Program.ConnectionString))
             {
                 conn.Open();
                 //MessageBox.Show("Conexión exitosa a la base de datos.");
@@ -96,7 +96,7 @@ public class Socio : Cliente
         // Llama al método de la clase base Cliente para cargar datos básicos del cliente
         CargarClientePorId(ClienteID);
 
-        using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+        using (MySqlConnection conn = new MySqlConnection(Program.ConnectionString))
         {
             conn.Open();
 
@@ -185,7 +185,7 @@ public class Socio : Cliente
         try
         {
             // Crear conexión a la base de datos
-            MySqlConnection conexion = Conexion.getInstancia().CrearConexion();
+            MySqlConnection conexion = new MySqlConnection(Program.ConnectionString);
             conexion.Open();
 
             // Consulta SQL para obtener las actividades del socio

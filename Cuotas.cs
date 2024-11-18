@@ -36,7 +36,7 @@ namespace club_deportivo.Datos
 
             try
             {
-                using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+                using (MySqlConnection conn = new MySqlConnection(Program.ConnectionString))
                 {
                     conn.Open();
 
@@ -93,7 +93,7 @@ namespace club_deportivo.Datos
         {
             try
             {
-                using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+                using (MySqlConnection conn = new MySqlConnection(Program.ConnectionString))
                 {
                     conn.Open();
 
@@ -121,7 +121,7 @@ namespace club_deportivo.Datos
         
             try
             {
-                using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+                using (MySqlConnection conn = new MySqlConnection(Program.ConnectionString ))
                 {
                     conn.Open();
                    

@@ -31,7 +31,7 @@ namespace club_deportivo
         // Método para guardar un nuevo cliente en la base de datos
         public void GuardarCliente()
         {
-            using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+            using (MySqlConnection conn = new MySqlConnection(Program.ConnectionString))
             {
                 conn.Open();
                 string query = "INSERT INTO Cliente (nombre, apellido, tipoDoc, numDoc, telefono, email, presentaAptoFisico) " +
@@ -59,7 +59,7 @@ namespace club_deportivo
         {
             try
             {
-                using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+                using (MySqlConnection conn = new MySqlConnection(Program.ConnectionString))
                 {
                     conn.Open();
                     string query = "SELECT nombre, apellido, tipoDoc, numDoc, telefono, email, presentaAptoFisico FROM Cliente WHERE ClienteID = @clienteID";
@@ -108,7 +108,7 @@ namespace club_deportivo
 
             try
             {
-                using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+                using (MySqlConnection conn = new MySqlConnection(Program.ConnectionString ))
                 {
                     conn.Open();
 

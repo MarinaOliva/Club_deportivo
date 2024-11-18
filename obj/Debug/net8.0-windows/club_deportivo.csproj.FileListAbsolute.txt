@@ -59,3 +59,4 @@ C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\refint\club_de
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.pdb
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.genruntimeconfig.cache
 C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\ref\club_deportivo.dll
+C:\Users\eien_\Escritorio\Club_Deportivo\obj\Debug\net8.0-windows\club_deportivo.Forms.FormConectarBD.resources

@@ -33,7 +33,7 @@ namespace club_deportivo.Forms
                 /* Depuración: Verificar el valor de numeroDocumento
                 MessageBox.Show($"Número de documento ingresado: {numeroDocumento}");
                 */
-                using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+                using (MySqlConnection conn = new MySqlConnection(Program.ConnectionString))
                 {
                     conn.Open();
 

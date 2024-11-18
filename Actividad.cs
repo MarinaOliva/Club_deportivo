@@ -26,8 +26,8 @@ namespace club_deportivo
         {
             try
             {
-                // Crear conexión a la base de datos
-                MySqlConnection conexion = Conexion.getInstancia().CrearConexion();
+                // Crear conexión a la base de datos                
+                MySqlConnection conexion = new MySqlConnection(Program.ConnectionString);
                 conexion.Open();
 
                 // Consulta SQL para obtener los cupos disponibles
@@ -58,7 +58,7 @@ namespace club_deportivo
             try
             {
                 // Obtener la conexión
-                MySqlConnection conexion = Conexion.getInstancia().CrearConexion();
+                MySqlConnection conexion = new MySqlConnection(Program.ConnectionString);
                 conexion.Open();
 
                 // Consultar el número actual de cupos disponibles
@@ -92,7 +92,7 @@ namespace club_deportivo
             try
             {
                 // Crear conexión a la base de datos
-                MySqlConnection conexion = Conexion.getInstancia().CrearConexion();
+                MySqlConnection conexion = new MySqlConnection(Program.ConnectionString);
                 conexion.Open();
 
                 // Consulta SQL para obtener el ID de la actividad
@@ -128,7 +128,7 @@ namespace club_deportivo
                 if (actividad.HayCuposDisponibles())
                 {
                     // Insertar la relación en la tabla intermedia SocioActividad
-                    MySqlConnection conexion = Conexion.getInstancia().CrearConexion();
+                    MySqlConnection conexion = new MySqlConnection(Program.ConnectionString);
                     conexion.Open();
                     string insertQuery = "INSERT INTO SocioActividad (socioID, actividadID) VALUES (@socioID, @actividadID)";
                     MySqlCommand insertCmd = new MySqlCommand(insertQuery, conexion);
@@ -161,7 +161,7 @@ namespace club_deportivo
             try
             {
                 // Crear conexión a la base de datos
-                MySqlConnection conexion = Conexion.getInstancia().CrearConexion();
+                MySqlConnection conexion = new MySqlConnection(Program.ConnectionString);
                 conexion.Open();
 
                 // Consulta SQL para contar el número de actividades inscritas por un socio

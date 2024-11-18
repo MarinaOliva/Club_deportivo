@@ -41,7 +41,7 @@ namespace club_deportivo.Forms
             {
                 MessageBox.Show("Número de documento está vacío o es 0.");
             }
-            lblDNI.Text = "N°: " + socio.NumDoc.ToString();
+            lblDNI.Text = "N° doc: " + socio.NumDoc.ToString();
             lblTipoDoc.Text = "Tipo doc: " + socio.TipoDoc;
 
             // Verificar que la cuota no sea nula
@@ -61,7 +61,7 @@ namespace club_deportivo.Forms
             // Generar la cadena con las actividades numeradas
             if (socio.Actividades.Count > 0)
             {
-                string actividadesListadas = "Actividades:\n";
+                string actividadesListadas = "Actividades Reservadas:\n";
                 for (int i = 0; i < socio.Actividades.Count; i++)
                 {
                     actividadesListadas += $"{i + 1}. {socio.Actividades[i]}\n";

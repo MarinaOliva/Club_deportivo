@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System.Data;
 
+
 namespace club_deportivo.Datos
 {
     internal class Administrador
@@ -14,7 +15,9 @@ namespace club_deportivo.Datos
 
             try
             {
-                sqlCon = Conexion.getInstancia().CrearConexion();
+                // Usar directamente Program.ConnectionString para crear la conexión
+                sqlCon.ConnectionString = Program.ConnectionString;
+
                 MySqlCommand comando = new MySqlCommand("IngresoLogin", sqlCon);
                 comando.CommandType = CommandType.StoredProcedure;
 
