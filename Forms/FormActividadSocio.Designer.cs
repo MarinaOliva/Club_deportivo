@@ -28,146 +28,152 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            checkBox1 = new CheckBox();
-            button1 = new Button();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
+            lblNumSocio = new Label();
+            chkAikido = new CheckBox();
+            btnInscribir = new Button();
+            txtNumSocio = new TextBox();
+            lblListaAct = new Label();
+            chkAcrobacias = new CheckBox();
+            chkZumba = new CheckBox();
+            chkPilates = new CheckBox();
+            chkYoga = new CheckBox();
+            btnOut = new Button();
+            btnConsultar = new Button();
+            lblSocioInsc = new Label();
             SuspendLayout();
             // 
-            // label1
+            // lblNumSocio
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(39, 54);
-            label1.Name = "label1";
-            label1.Size = new Size(176, 23);
-            label1.TabIndex = 0;
-            label1.Text = "ingrese el n° de socio:";
+            lblNumSocio.AutoSize = true;
+            lblNumSocio.Location = new Point(82, 44);
+            lblNumSocio.Name = "lblNumSocio";
+            lblNumSocio.Size = new Size(177, 23);
+            lblNumSocio.TabIndex = 0;
+            lblNumSocio.Text = "Ingrese el n° de socio:";
             // 
-            // checkBox1
+            // chkAikido
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(68, 141);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(112, 27);
-            checkBox1.TabIndex = 1;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = true;
+            chkAikido.AutoSize = true;
+            chkAikido.Location = new Point(82, 314);
+            chkAikido.Name = "chkAikido";
+            chkAikido.Size = new Size(79, 27);
+            chkAikido.TabIndex = 1;
+            chkAikido.Text = "Aikido";
+            chkAikido.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnInscribir
             // 
-            button1.Location = new Point(74, 333);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnInscribir.Location = new Point(224, 461);
+            btnInscribir.Name = "btnInscribir";
+            btnInscribir.Size = new Size(110, 35);
+            btnInscribir.TabIndex = 2;
+            btnInscribir.Text = "Inscribir";
+            btnInscribir.UseVisualStyleBackColor = true;
+            btnInscribir.Click += btnInscribir_Click;
             // 
-            // label2
+            // txtNumSocio
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(373, 214);
-            label2.Name = "label2";
-            label2.Size = new Size(55, 23);
-            label2.TabIndex = 3;
-            label2.Text = "label2";
+            txtNumSocio.Location = new Point(295, 44);
+            txtNumSocio.Name = "txtNumSocio";
+            txtNumSocio.Size = new Size(125, 30);
+            txtNumSocio.TabIndex = 12;
             // 
-            // label3
+            // lblListaAct
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(381, 222);
-            label3.Name = "label3";
-            label3.Size = new Size(55, 23);
-            label3.TabIndex = 4;
-            label3.Text = "label3";
+            lblListaAct.AutoSize = true;
+            lblListaAct.Location = new Point(76, 251);
+            lblListaAct.Name = "lblListaAct";
+            lblListaAct.Size = new Size(248, 23);
+            lblListaAct.TabIndex = 13;
+            lblListaAct.Text = "Seleccione hasta 3 actividades: ";
             // 
-            // label4
+            // chkAcrobacias
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(389, 230);
-            label4.Name = "label4";
-            label4.Size = new Size(55, 23);
-            label4.TabIndex = 5;
-            label4.Text = "label4";
+            chkAcrobacias.AutoSize = true;
+            chkAcrobacias.Location = new Point(82, 380);
+            chkAcrobacias.Name = "chkAcrobacias";
+            chkAcrobacias.Size = new Size(164, 27);
+            chkAcrobacias.TabIndex = 14;
+            chkAcrobacias.Text = "Acrobacia en tela";
+            chkAcrobacias.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // chkZumba
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(397, 238);
-            label5.Name = "label5";
-            label5.Size = new Size(55, 23);
-            label5.TabIndex = 6;
-            label5.Text = "label5";
+            chkZumba.AutoSize = true;
+            chkZumba.Location = new Point(536, 314);
+            chkZumba.Name = "chkZumba";
+            chkZumba.Size = new Size(86, 27);
+            chkZumba.TabIndex = 15;
+            chkZumba.Text = "Zumba";
+            chkZumba.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // chkPilates
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(405, 246);
-            label6.Name = "label6";
-            label6.Size = new Size(55, 23);
-            label6.TabIndex = 7;
-            label6.Text = "label6";
+            chkPilates.AutoSize = true;
+            chkPilates.Location = new Point(339, 314);
+            chkPilates.Name = "chkPilates";
+            chkPilates.Size = new Size(81, 27);
+            chkPilates.TabIndex = 16;
+            chkPilates.Text = "Pilates";
+            chkPilates.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // chkYoga
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(413, 254);
-            label7.Name = "label7";
-            label7.Size = new Size(55, 23);
-            label7.TabIndex = 8;
-            label7.Text = "label7";
+            chkYoga.AutoSize = true;
+            chkYoga.Location = new Point(339, 380);
+            chkYoga.Name = "chkYoga";
+            chkYoga.Size = new Size(69, 27);
+            chkYoga.TabIndex = 17;
+            chkYoga.Text = "Yoga";
+            chkYoga.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // btnOut
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(421, 262);
-            label8.Name = "label8";
-            label8.Size = new Size(55, 23);
-            label8.TabIndex = 9;
-            label8.Text = "label8";
+            btnOut.Location = new Point(502, 461);
+            btnOut.Name = "btnOut";
+            btnOut.Size = new Size(101, 35);
+            btnOut.TabIndex = 18;
+            btnOut.Text = "Cancelar";
+            btnOut.UseVisualStyleBackColor = true;
+            btnOut.Click += btnOut_Click;
             // 
-            // label9
+            // btnConsultar
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(429, 270);
-            label9.Name = "label9";
-            label9.Size = new Size(55, 23);
-            label9.TabIndex = 10;
-            label9.Text = "label9";
+            btnConsultar.Location = new Point(502, 38);
+            btnConsultar.Name = "btnConsultar";
+            btnConsultar.Size = new Size(110, 35);
+            btnConsultar.TabIndex = 19;
+            btnConsultar.Text = "Consultar";
+            btnConsultar.UseVisualStyleBackColor = true;
+            btnConsultar.Click += btnConsultar_Click;
             // 
-            // label10
+            // lblSocioInsc
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(368, 214);
-            label10.Name = "label10";
-            label10.Size = new Size(64, 23);
-            label10.TabIndex = 11;
-            label10.Text = "label10";
+            lblSocioInsc.AutoSize = true;
+            lblSocioInsc.Location = new Point(82, 124);
+            lblSocioInsc.Name = "lblSocioInsc";
+            lblSocioInsc.Size = new Size(22, 23);
+            lblSocioInsc.TabIndex = 20;
+            lblSocioInsc.Text = "- ";
+            lblSocioInsc.Click += label1_Click;
             // 
             // FormActividadSocio
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(button1);
-            Controls.Add(checkBox1);
-            Controls.Add(label1);
+            ClientSize = new Size(850, 522);
+            Controls.Add(lblSocioInsc);
+            Controls.Add(btnConsultar);
+            Controls.Add(btnOut);
+            Controls.Add(chkYoga);
+            Controls.Add(chkPilates);
+            Controls.Add(chkZumba);
+            Controls.Add(chkAcrobacias);
+            Controls.Add(lblListaAct);
+            Controls.Add(txtNumSocio);
+            Controls.Add(btnInscribir);
+            Controls.Add(chkAikido);
+            Controls.Add(lblNumSocio);
             Name = "FormActividadSocio";
             Text = "Inscripción a actividades guiadas (socios)";
             ResumeLayout(false);
@@ -176,17 +182,17 @@
 
         #endregion
 
-        private Label label1;
-        private CheckBox checkBox1;
-        private Button button1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label10;
+        private Label lblNumSocio;
+        private CheckBox chkAikido;
+        private Button btnInscribir;
+        private TextBox txtNumSocio;
+        private Label lblListaAct;
+        private CheckBox chkAcrobacias;
+        private CheckBox chkZumba;
+        private CheckBox chkPilates;
+        private CheckBox chkYoga;
+        private Button btnOut;
+        private Button btnConsultar;
+        private Label lblSocioInsc;
     }
 }

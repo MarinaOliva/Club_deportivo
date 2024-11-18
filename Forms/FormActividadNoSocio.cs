@@ -75,21 +75,27 @@ namespace club_deportivo.Forms
             int idActividadSeleccionada = Actividad.ObtenerIdActividad(actividadSeleccionada);
 
             // Verificar si hay cupos disponibles para la actividad seleccionada
-            if (idActividadSeleccionada != -1 && Actividad.HayCuposDisponibles(idActividadSeleccionada))
+            if (idActividadSeleccionada != -1)
             {
-                // Crear una nueva instancia de FormComprobante y pasar los datos
-                FormComprobante comprobante = new FormComprobante(nombre, dni, monto, fechaPago);
+                // Crear una instancia de Actividad para llamar a los métodos de instancia
+                Actividad actividad = new Actividad(idActividadSeleccionada) { IdActividad = idActividadSeleccionada };
 
-                // Mostrar el formulario de comprobante
-                comprobante.Show();
+                if (actividad.HayCuposDisponibles()) // Llamar al método de instancia
+                {
+                    // Crear una nueva instancia de FormComprobante y pasar los datos
+                    FormComprobante comprobante = new FormComprobante(nombre, dni, monto, fechaPago);
 
-                // Llamar al método estático de la clase Actividad para actualizar los cupos
-                Actividad.ActualizarCupos(idActividadSeleccionada);
-            }
-            else
-            {
-                // Mostrar un mensaje si no hay cupos disponibles
-                MessageBox.Show("No hay cupos disponibles para esta actividad. Por favor, elija otra.");
+                    // Mostrar el formulario de comprobante
+                    comprobante.Show();
+
+                    // Llamar al método de instancia para actualizar los cupos
+                    actividad.ActualizarCupos();
+                }
+                else
+                {
+                    // Mostrar un mensaje si no hay cupos disponibles
+                    MessageBox.Show("No hay cupos disponibles para esta actividad. Por favor, elija otra.");
+                }
             }
         }
 

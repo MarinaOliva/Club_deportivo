@@ -86,6 +86,7 @@
             Actividades.TabIndex = 6;
             Actividades.Text = "Inscribir en Actividades Guiadas";
             Actividades.UseVisualStyleBackColor = true;
+            Actividades.Click += Actividades_Click;
             // 
             // btnAbonar
             // 

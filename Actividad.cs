@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace club_deportivo
 {
     public class Actividad
@@ -15,8 +16,13 @@ namespace club_deportivo
         public decimal Costo { get; set; }
         public int CuposDisponibles { get; set; }
 
-        // Método para ver si hay cupos disponibles
-        public static bool HayCuposDisponibles(int idActividad)
+        public Actividad(int idActividad)
+        {
+            this.IdActividad = idActividad;
+        }
+
+        // Método para verificar si hay cupos disponibles
+        public bool HayCuposDisponibles()
         {
             try
             {
@@ -27,7 +33,7 @@ namespace club_deportivo
                 // Consulta SQL para obtener los cupos disponibles
                 string query = "SELECT cuposDisponibles FROM Actividad WHERE idActividad = @idActividad";
                 MySqlCommand cmd = new MySqlCommand(query, conexion);
-                cmd.Parameters.AddWithValue("@idActividad", idActividad);
+                cmd.Parameters.AddWithValue("@idActividad", this.IdActividad);
 
                 // Ejecutar la consulta y obtener el número de cupos
                 object result = cmd.ExecuteScalar();
@@ -47,7 +53,7 @@ namespace club_deportivo
         }
 
         // Método para actualizar los cupos de la actividad
-        public static void ActualizarCupos(int idActividad)
+        public void ActualizarCupos()
         {
             try
             {
@@ -58,7 +64,7 @@ namespace club_deportivo
                 // Consultar el número actual de cupos disponibles
                 string query = "SELECT cuposDisponibles FROM Actividad WHERE idActividad = @idActividad";
                 MySqlCommand cmd = new MySqlCommand(query, conexion);
-                cmd.Parameters.AddWithValue("@idActividad", idActividad);
+                cmd.Parameters.AddWithValue("@idActividad", this.IdActividad);
                 int cuposDisponibles = Convert.ToInt32(cmd.ExecuteScalar());
 
                 // Si hay cupos disponibles, restamos uno
@@ -66,7 +72,7 @@ namespace club_deportivo
                 {
                     string updateQuery = "UPDATE Actividad SET cuposDisponibles = cuposDisponibles - 1 WHERE idActividad = @idActividad";
                     MySqlCommand updateCmd = new MySqlCommand(updateQuery, conexion);
-                    updateCmd.Parameters.AddWithValue("@idActividad", idActividad);
+                    updateCmd.Parameters.AddWithValue("@idActividad", this.IdActividad);
                     updateCmd.ExecuteNonQuery();
                 }
                 else
@@ -80,7 +86,7 @@ namespace club_deportivo
             }
         }
 
-        // Método para obtener el ID de una actividad
+        // Método para obtener el ID de una actividad desde su nombre
         public static int ObtenerIdActividad(string nombreActividad)
         {
             try
@@ -112,6 +118,69 @@ namespace club_deportivo
             return -1;
         }
 
-    }
+        // Método para inscribir un socio a una actividad
+        public static bool InscribirSocio(int socioID, int actividadID)
+        {
+            try
+            {
+                // Verificar si hay cupos disponibles
+                Actividad actividad = new Actividad(actividadID); //{ IdActividad = actividadID };
+                if (actividad.HayCuposDisponibles())
+                {
+                    // Insertar la relación en la tabla intermedia SocioActividad
+                    MySqlConnection conexion = Conexion.getInstancia().CrearConexion();
+                    conexion.Open();
+                    string insertQuery = "INSERT INTO SocioActividad (socioID, actividadID) VALUES (@socioID, @actividadID)";
+                    MySqlCommand insertCmd = new MySqlCommand(insertQuery, conexion);
+                    insertCmd.Parameters.AddWithValue("@socioID", socioID);
+                    insertCmd.Parameters.AddWithValue("@actividadID", actividadID);
+                    insertCmd.ExecuteNonQuery();
+                    conexion.Close();
 
+                    // Actualizar los cupos de la actividad
+                    actividad.ActualizarCupos();
+
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("No hay cupos disponibles para esta actividad.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al inscribir al socio: "); //+ ex.Message);
+                return false;
+            }
+        }
+
+        // Método para contar las actividades en las que un socio ya está inscrito
+        public static int ContarActividadesInscritas(int socioID)
+        {
+            try
+            {
+                // Crear conexión a la base de datos
+                MySqlConnection conexion = Conexion.getInstancia().CrearConexion();
+                conexion.Open();
+
+                // Consulta SQL para contar el número de actividades inscritas por un socio
+                string query = "SELECT COUNT(*) FROM SocioActividad WHERE socioID = @socioID";
+                MySqlCommand cmd = new MySqlCommand(query, conexion);
+                cmd.Parameters.AddWithValue("@socioID", socioID);
+
+                // Ejecutar la consulta y obtener el número de actividades
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                conexion.Close();
+
+                return count;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al contar las actividades inscritas: " + ex.Message);
+                return -1;
+            }
+        }
+
+    }
 }

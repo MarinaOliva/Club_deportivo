@@ -176,4 +176,41 @@ public class Socio : Cliente
     {
         return ($"Nombre: {Nombre}", $"Apellido: {Apellido}", $"N° Socio: {SocioID}");
     }
+
+    // Método para obtener las actividades en las que está inscripto cada socio
+    public List<string> ObtenerActividades()
+    {
+        List<string> actividades = new List<string>();
+
+        try
+        {
+            // Crear conexión a la base de datos
+            MySqlConnection conexion = Conexion.getInstancia().CrearConexion();
+            conexion.Open();
+
+            // Consulta SQL para obtener las actividades del socio
+            string query = @"SELECT a.nombreActividad
+                             FROM Actividad a
+                             JOIN SocioActividad sa ON a.idActividad = sa.actividadID
+                             WHERE sa.socioID = @socioID";
+
+            MySqlCommand cmd = new MySqlCommand(query, conexion);
+            cmd.Parameters.AddWithValue("@socioID", this.SocioID);
+
+            MySqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                // Agregar cada actividad a la lista
+                actividades.Add(reader.GetString("nombreActividad"));
+            }
+
+            conexion.Close();
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Error al obtener las actividades del socio: " + ex.Message);
+        }
+
+        return actividades;
+    }
 }

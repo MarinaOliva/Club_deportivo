@@ -58,5 +58,17 @@ namespace club_deportivo
         {
 
         }
+
+        private void Actividades_Click(object sender, EventArgs e)
+        {
+            // Crea una nueva instancia de FormActividadSocio
+            FormActividadSocio formActividadSocio = new FormActividadSocio();
+           
+            // Muestra el formulario
+            formActividadSocio.Show();
+
+            // Ocultar el formulario actual:
+            this.Hide();
+        }
     }
 }
