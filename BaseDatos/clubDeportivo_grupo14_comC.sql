@@ -70,8 +70,8 @@ VALUES
     ('Natación', 3000.00, NULL),
     ('Pilates', 2500.00, 25),
     ('Yoga', 2300.00, 25),
-    ('Zumba', 2200.00, 25);
-	('Aikido', 2700.00, 10);
+    ('Zumba', 2200.00, 25),
+	('Aikido', 2700.00, 10),
 	('Acrobacia en tela', 3000.00, 7);
 
 -- Tabla para las cuotas
@@ -113,14 +113,13 @@ CREATE TABLE SocioActividad (
 -- Insertar registros de ejemplo en la tabla SocioActividad
 INSERT INTO SocioActividad (socioID, actividadID)
 VALUES 
-    (1, 1),  -- Martín Aliaga participa en Musculación y Aparatos
-    (1, 2),  -- Martín Aliaga participa en Natación
+    (1, 6),  -- Martín Aliaga participa en Aikido
+    (1, 3),  -- Martín Aliaga participa en Pilates
     (2, 3),  -- Lucía López participa en Pilates
-    (2, 4),  -- Lucía López participa en Yoga
+    (2, 5),  -- Lucía López participa en Zumba
     (4, 5),  -- Carlos Ramírez participa en Zumba
-    (6, 1),  -- Miguel Torres participa en Musculación y Aparatos
-    (6, 4),  -- Miguel Torres participa en Yoga
-    (6, 2);  -- Ana García participa en Natación
+    (6, 6);  -- Miguel Torres participa en Aikido
+    
 
 
 INSERT INTO administrador (NombreUsu, PassUsu, Activo)

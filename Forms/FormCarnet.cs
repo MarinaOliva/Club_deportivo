@@ -39,26 +39,35 @@ namespace club_deportivo.Forms
             // Asociar el evento PrintPage con el método de impresión
             pd.PrintPage += (s, ev) =>
             {
-                // Dibujar el fondo (opcional)
-                ev.Graphics.Clear(Color.White);
+                // Dibujar el fondo del carnet (pnlCarnet)
+                Brush carnetBackgroundBrush = new SolidBrush(pnlCarnet.BackColor);
+                ev.Graphics.FillRectangle(carnetBackgroundBrush, 25, 12, 750, 420);
 
-                // Dibujar el título (lblTitulo)
+                // Dibujar el encabezado (pnlHeader) con color de fondo
+                ev.Graphics.FillRectangle(Brushes.Teal, 39, 12, 733, 68); // Fondo del título
                 Font titleFont = new Font("Segoe UI", 20.2F, FontStyle.Bold);
-                Brush titleBrush = Brushes.Black;
-                ev.Graphics.FillRectangle(Brushes.LightCoral, 39, 12, 733, 68); // Fondo del título
+                Brush titleBrush = Brushes.Orange;
                 ev.Graphics.DrawString("Carnet de Socio", titleFont, titleBrush, 176, 20);
 
-                // Dibujar el logo (picLogo)
+                // Dibujar el fondo del panel de contenido (pnlContenido)
+                ev.Graphics.FillRectangle(Brushes.Black, 39, 120, 414, 270); // Fondo de contenido
+
+                // Dibujar los datos del socio (lblNombre, lblApellido, lblNumSocio) en color naranja
+                Font labelFont = new Font("Segoe UI", 12, FontStyle.Bold); // Poner el texto en negrita
+                Brush labelBrush = Brushes.Orange;
+
+                // Dibujar el texto dentro del área correspondiente
+                ev.Graphics.DrawString(lblNombre.Text, labelFont, labelBrush, 70, 160); 
+                ev.Graphics.DrawString(lblApellido.Text, labelFont, labelBrush, 70, 240);
+                ev.Graphics.DrawString(lblNumSocio.Text, labelFont, labelBrush, 70, 320);
+
+                // Dibujar el logo (picLogo) ajustado al tamaño correcto y reposicionado
                 Image logo = picLogo.Image;
-                ev.Graphics.DrawImage(logo, 544, 112, 228, 213); // Ajustar la posición y tamaño según sea necesario
-
-                // Dibujar los datos del socio (lblNombre, lblApellido, lblNumSocio)
-                Font labelFont = new Font("Segoe UI", 12, FontStyle.Regular);
-                Brush labelBrush = Brushes.Black;
-
-                ev.Graphics.DrawString("Nombre: " + lblNombre.Text, labelFont, labelBrush, 20, 120);
-                ev.Graphics.DrawString("Apellido: " + lblApellido.Text, labelFont, labelBrush, 20, 150);
-                ev.Graphics.DrawString("Número de Socio: " + lblNumSocio.Text, labelFont, labelBrush, 20, 180);
+                float logoWidth = 428f; // Ancho del logo
+                float logoHeight = 413f; // Alto del logo
+                float logoX = 400f; // posición X
+                float logoY = 30f;  // posición Y
+                ev.Graphics.DrawImage(logo, logoX, logoY, logoWidth, logoHeight); // Dibujar el logo ajustado
 
                 // Evitar que la impresión continúe en una nueva página
                 ev.HasMorePages = false;
@@ -80,6 +89,11 @@ namespace club_deportivo.Forms
             // Mostrar mensaje de éxito
             MessageBox.Show("Operación exitosa", "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+
+
+
+
 
         private void lblTitulo_Click(object sender, EventArgs e)
         {

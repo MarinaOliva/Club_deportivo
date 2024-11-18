@@ -38,7 +38,7 @@ namespace club_deportivo.Forms
                 using (MySqlConnection conexion = new MySqlConnection(cadenaConexion))
                 {
                     conexion.Open();
-                    MessageBox.Show("Conexión exitosa.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
 
                     // Guardar la conexión para usarla en la aplicación
                     Program.ConnectionString = cadenaConexion;

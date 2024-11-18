@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using club_deportivo.Datos; 
+using club_deportivo.Datos;
 
 
 namespace club_deportivo.Forms
@@ -54,10 +54,6 @@ namespace club_deportivo.Forms
                         );
                     }
                 }
-                else
-                {
-                    MessageBox.Show("No hay cuotas vencidas para mostrar.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
             }
             catch (Exception ex)
             {
@@ -94,42 +90,45 @@ namespace club_deportivo.Forms
             PrintDocument pd = new PrintDocument();
 
             // Definir los márgenes de la página
-            pd.DefaultPageSettings.Margins = new Margins(50, 50, 50, 50); // Ajuste de márgenes
+            pd.DefaultPageSettings.Margins = new Margins(50, 50, 50, 50);
 
             // Asociar el evento PrintPage con el método de impresión
             pd.PrintPage += (s, ev) =>
             {
-                // Definir la fuente para el título y los datos
+                // Definir las fuentes y colores
                 Font titleFont = new Font("Segoe UI", 16F, FontStyle.Bold);
                 Font dataFont = new Font("Segoe UI", 10F, FontStyle.Regular);
                 Brush titleBrush = Brushes.Black;
                 Brush dataBrush = Brushes.Black;
 
-                // Título
-                ev.Graphics.FillRectangle(Brushes.LightCoral, 39, 12, 733, 68); // Fondo del título
-                ev.Graphics.DrawString("Cuotas Vencidas", titleFont, titleBrush, 176, 20);
+                // Calcular el ancho total de la tabla (sumando los anchos de las columnas)
+                int tableWidth = 100 + 150 + 150 + 180 + 120; // Suma de los anchos de las columnas
+                int tableX = 20; // Posición inicial en X para la tabla
+                int tableEndX = tableX + tableWidth;
 
-                // Definir la posición inicial para los datos
+                // Dibujar el fondo del título
+                ev.Graphics.FillRectangle(Brushes.LightCoral, tableX, 12, tableWidth, 68);
+
+                // Centrar el título
+                string titulo = "Cuotas Vencidas";
+                SizeF tituloSize = ev.Graphics.MeasureString(titulo, titleFont);
+                float tituloX = tableX + (tableWidth - tituloSize.Width) / 2; // Centrado en el ancho del fondo
+                ev.Graphics.DrawString(titulo, titleFont, titleBrush, tituloX, 20);
+
+                // Posición inicial para los datos
                 int yPosition = 120; // Comienza debajo del título
 
-                // Definir el ancho de las columnas
-                int columnWidth1 = 100; // Ancho para la columna "ID Socio"
-                int columnWidth2 = 150; // Ancho para la columna "Nombre"
-                int columnWidth3 = 150; // Ancho para la columna "Apellido"
-                int columnWidth4 = 180; // Ancho para la columna "Fecha Vencimiento"
-                int columnWidth5 = 120; // Ancho para la columna "Importe"
-
                 // Dibujar las cabeceras de la tabla
-                ev.Graphics.DrawString("ID Socio", dataFont, dataBrush, 20, yPosition);
-                ev.Graphics.DrawString("Nombre", dataFont, dataBrush, 20 + columnWidth1, yPosition);
-                ev.Graphics.DrawString("Apellido", dataFont, dataBrush, 20 + columnWidth1 + columnWidth2, yPosition);
-                ev.Graphics.DrawString("Fecha Vencimiento", dataFont, dataBrush, 20 + columnWidth1 + columnWidth2 + columnWidth3, yPosition);
-                ev.Graphics.DrawString("Importe", dataFont, dataBrush, 20 + columnWidth1 + columnWidth2 + columnWidth3 + columnWidth4, yPosition);
+                ev.Graphics.DrawString("ID Socio", dataFont, dataBrush, tableX, yPosition);
+                ev.Graphics.DrawString("Nombre", dataFont, dataBrush, tableX + 100, yPosition);
+                ev.Graphics.DrawString("Apellido", dataFont, dataBrush, tableX + 250, yPosition);
+                ev.Graphics.DrawString("Fecha Vencimiento", dataFont, dataBrush, tableX + 400, yPosition);
+                ev.Graphics.DrawString("Importe", dataFont, dataBrush, tableX + 580, yPosition);
 
                 // Ajustar la posición para los datos
-                yPosition += 30; // Espaciado entre cabecera y datos
+                yPosition += 30;
 
-                // Recorrer las filas del DataGridView y dibujarlas en el PDF
+                // Recorrer las filas del DataGridView y dibujarlas
                 foreach (DataGridViewRow row in dgvCuotasVencidas.Rows)
                 {
                     if (!row.IsNewRow)
@@ -140,17 +139,14 @@ namespace club_deportivo.Forms
                         string fechaVencimiento = row.Cells["fechaVencimiento"].Value.ToString();
                         string importe = row.Cells["importe"].Value.ToString();
 
-                        // Imprimir cada fila de datos
-                        ev.Graphics.DrawString(socioID, dataFont, dataBrush, 20, yPosition);
-                        ev.Graphics.DrawString(nombre, dataFont, dataBrush, 20 + columnWidth1, yPosition);
-                        ev.Graphics.DrawString(apellido, dataFont, dataBrush, 20 + columnWidth1 + columnWidth2, yPosition);
-                        ev.Graphics.DrawString(fechaVencimiento, dataFont, dataBrush, 20 + columnWidth1 + columnWidth2 + columnWidth3, yPosition);
-                        ev.Graphics.DrawString(importe, dataFont, dataBrush, 20 + columnWidth1 + columnWidth2 + columnWidth3 + columnWidth4, yPosition);
+                        ev.Graphics.DrawString(socioID, dataFont, dataBrush, tableX, yPosition);
+                        ev.Graphics.DrawString(nombre, dataFont, dataBrush, tableX + 100, yPosition);
+                        ev.Graphics.DrawString(apellido, dataFont, dataBrush, tableX + 250, yPosition);
+                        ev.Graphics.DrawString(fechaVencimiento, dataFont, dataBrush, tableX + 400, yPosition);
+                        ev.Graphics.DrawString(importe, dataFont, dataBrush, tableX + 580, yPosition);
 
-                        // Ajustar la posición para la siguiente fila
                         yPosition += 25;
 
-                        // Comprobar si se alcanza el final de la página, si es así, continuar en la siguiente
                         if (yPosition > ev.MarginBounds.Bottom)
                         {
                             ev.HasMorePages = true;
@@ -159,7 +155,6 @@ namespace club_deportivo.Forms
                     }
                 }
 
-                // No hay más páginas que imprimir
                 ev.HasMorePages = false;
             };
 
@@ -169,17 +164,14 @@ namespace club_deportivo.Forms
 
             if (printDialog.ShowDialog() == DialogResult.OK)
             {
-                // Imprimir el documento
                 pd.Print();
             }
 
-            // Volver a hacer visible el botón de impresión
-            btnPrint.Visible = true;
-
-            // Mostrar mensaje de éxito
+            // Mensaje de éxito
             MessageBox.Show("Operación exitosa", "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
         }
-
-
     }
 }
