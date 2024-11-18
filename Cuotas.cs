@@ -113,5 +113,60 @@ namespace club_deportivo.Datos
                 return false;
             }
         }
+
+        // Método para listar todas las cuotas vencidas
+        public static List<Cuotas> ObtenerCuotasVencidas()
+        {
+            List<Cuotas> listaCuotas = new List<Cuotas>();
+        
+            try
+            {
+                using (MySqlConnection conn = Conexion.getInstancia().CrearConexion())
+                {
+                    conn.Open();
+                   
+                    string query = @"
+                        SELECT 
+                            s.socioID, 
+                            cl.nombre, 
+                            cl.apellido, 
+                            cu.fechaVencimiento, 
+                            cu.importe
+                        FROM 
+                            Cuota cu
+                        INNER JOIN 
+                            Socio s ON cu.socioID = s.socioID
+                        INNER JOIN 
+                            Cliente cl ON s.clienteID = cl.clienteID
+                        WHERE 
+                            cu.fechaVencimiento < CURDATE() 
+                            AND cu.fechaPago IS NULL";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Cuotas cuota = new Cuotas
+                            {
+                                SocioID = reader.GetInt32("socioID"),
+                                Nombre = reader.GetString("nombre"),
+                                Apellido = reader.GetString("apellido"),
+                                FechaVencimiento = reader.GetDateTime("fechaVencimiento"),
+                                Importe = reader.GetDecimal("importe"),
+                                FechaPago = null // No se requiere ya que son cuotas vencidas
+                            };
+                            listaCuotas.Add(cuota);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al obtener cuotas vencidas: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return listaCuotas;
+        }
     }
 }

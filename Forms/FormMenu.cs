@@ -37,11 +37,8 @@ namespace club_deportivo
             this.Hide();
         }
 
-        private void btnConsultar_Click(object sender, EventArgs e)
-        {
 
-        }
-
+       
         private void btnAbonar_Click(object sender, EventArgs e)
         {
             // Crea una nueva instancia de FormConsultarCuota
@@ -63,12 +60,31 @@ namespace club_deportivo
         {
             // Crea una nueva instancia de FormActividadSocio
             FormActividadSocio formActividadSocio = new FormActividadSocio();
-           
+
             // Muestra el formulario
             formActividadSocio.Show();
 
             // Ocultar el formulario actual:
             this.Hide();
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Crear instancia del formulario formCuotasVencidas
+                FormConsultarCuotasVencidas cuotasVencidasForm = new FormConsultarCuotasVencidas();
+
+                // Llamar al método para cargar las cuotas vencidas
+                cuotasVencidasForm.CargarCuotasVencidas();
+
+                // Mostrar el formulario formCuotasVencidas
+                cuotasVencidasForm.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir el formulario de cuotas vencidas: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
