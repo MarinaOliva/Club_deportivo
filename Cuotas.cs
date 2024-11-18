@@ -61,8 +61,8 @@ namespace club_deportivo.Datos
                                 FechaVencimiento = reader.GetDateTime("fechaVencimiento"),
                                 FechaPago = reader["fechaPago"] != DBNull.Value ? (DateTime?)reader.GetDateTime("fechaPago") : null,
                                 Importe = reader.GetDecimal("importe"),
-                                Nombre = reader.GetString("nombre"),  // Obtener el nombre del socio
-                                Apellido = reader.GetString("apellido")  // Obtener el apellido del socio
+                                Nombre = reader.GetString("nombre"), 
+                                Apellido = reader.GetString("apellido")  
                             };
                         }
                     }
@@ -103,7 +103,7 @@ namespace club_deportivo.Datos
                     cmd.Parameters.AddWithValue("@socioID", socioId);
 
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    //MessageBox.Show($"Pago registrado para el socio {socioId}, filas afectadas: {rowsAffected}");
+                    
                     return rowsAffected > 0;
                 }
             }

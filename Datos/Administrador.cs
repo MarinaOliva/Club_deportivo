@@ -21,7 +21,7 @@ namespace club_deportivo.Datos
                 MySqlCommand comando = new MySqlCommand("IngresoLogin", sqlCon);
                 comando.CommandType = CommandType.StoredProcedure;
 
-                // Cambiar los nombres de los parámetros a los nuevos
+                // Asignar nombres a los parámetros
                 comando.Parameters.Add("usuarioNombre", MySqlDbType.VarChar).Value = L_Adm;
                 comando.Parameters.Add("usuarioContrasena", MySqlDbType.VarChar).Value = P_Adm;
 

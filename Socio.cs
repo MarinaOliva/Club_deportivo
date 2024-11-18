@@ -70,7 +70,7 @@ public class Socio : Cliente
                     {
                         cmdCuota.Parameters.AddWithValue("@socioID", SocioID);
                         cmdCuota.Parameters.AddWithValue("@fechaVencimiento", DateTime.Now.AddMonths(1)); // Fecha de vencimiento a un mes
-                        cmdCuota.Parameters.AddWithValue("@importe", 23000.00m); // Importe de la cuota mensual
+                        cmdCuota.Parameters.AddWithValue("@importe", 23000.00m); 
 
                         int cuotaRowsAffected = cmdCuota.ExecuteNonQuery();
                         //MessageBox.Show($"Cuota insertada, filas afectadas: {cuotaRowsAffected}");

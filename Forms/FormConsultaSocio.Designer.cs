@@ -46,6 +46,7 @@
             // Consulta
             // 
             Consulta.BackColor = SystemColors.ButtonHighlight;
+            Consulta.FlatStyle = FlatStyle.Flat;
             Consulta.Location = new Point(118, 286);
             Consulta.Name = "Consulta";
             Consulta.Size = new Size(131, 54);

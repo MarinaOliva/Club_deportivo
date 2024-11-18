@@ -54,7 +54,7 @@
             btn_Act.Name = "btn_Act";
             btn_Act.Size = new Size(155, 85);
             btn_Act.TabIndex = 1;
-            btn_Act.Text = "Elegir Actividad Guiada";
+            btn_Act.Text = "Elegir Actividad";
             btn_Act.UseVisualStyleBackColor = false;
             // 
             // label_dniIng

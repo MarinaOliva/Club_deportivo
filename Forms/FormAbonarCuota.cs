@@ -9,11 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-using club_deportivo.Datos;
-using System;
-using System.Windows.Forms;
-
 namespace club_deportivo.Forms
 {
     public partial class FormAbonarCuota : Form

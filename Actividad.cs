@@ -39,10 +39,16 @@ namespace club_deportivo
                 object result = cmd.ExecuteScalar();
                 conexion.Close();
 
-                if (result != null && Convert.ToInt32(result) > 0)
+                // Si cuposDisponibles es NULL, permite la inscripción
+                if (result == null || result == DBNull.Value)
                 {
-                    return true;  // Hay cupos disponibles
+                    return true; // Inscripción permitida (cupo ilimitado)
                 }
+
+                int cuposDisponibles = Convert.ToInt32(result);
+
+                // Permite la inscripción solo si hay cupos disponibles (> 0)
+                return cuposDisponibles > 0;
             }
             catch (Exception ex)
             {
@@ -65,26 +71,41 @@ namespace club_deportivo
                 string query = "SELECT cuposDisponibles FROM Actividad WHERE idActividad = @idActividad";
                 MySqlCommand cmd = new MySqlCommand(query, conexion);
                 cmd.Parameters.AddWithValue("@idActividad", this.IdActividad);
-                int cuposDisponibles = Convert.ToInt32(cmd.ExecuteScalar());
+                object result = cmd.ExecuteScalar();
 
-                // Si hay cupos disponibles, restamos uno
+                // Si cuposDisponibles es NULL, no actualizamos nada, pero la inscripción fue exitosa
+                if (result == null || result == DBNull.Value)
+                {
+                    MessageBox.Show("Inscripción exitosa.");
+                    conexion.Close();
+                    return;
+                }
+
+                int cuposDisponibles = Convert.ToInt32(result);
+
+                // Si hay cupos disponibles (> 0), actualizamos
                 if (cuposDisponibles > 0)
                 {
                     string updateQuery = "UPDATE Actividad SET cuposDisponibles = cuposDisponibles - 1 WHERE idActividad = @idActividad";
                     MySqlCommand updateCmd = new MySqlCommand(updateQuery, conexion);
                     updateCmd.Parameters.AddWithValue("@idActividad", this.IdActividad);
                     updateCmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Inscripción exitosa. Cupo actualizado.");
                 }
                 else
                 {
                     MessageBox.Show("No hay cupos disponibles para esta actividad.");
                 }
+
+                conexion.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al actualizar los cupos: " + ex.Message);
             }
         }
+        
 
         // Método para obtener el ID de una actividad desde su nombre
         public static int ObtenerIdActividad(string nombreActividad)
@@ -124,7 +145,7 @@ namespace club_deportivo
             try
             {
                 // Verificar si hay cupos disponibles
-                Actividad actividad = new Actividad(actividadID); //{ IdActividad = actividadID };
+                Actividad actividad = new Actividad(actividadID); 
                 if (actividad.HayCuposDisponibles())
                 {
                     // Insertar la relación en la tabla intermedia SocioActividad
@@ -150,7 +171,7 @@ namespace club_deportivo
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al inscribir al socio: "); //+ ex.Message);
+                MessageBox.Show("Error al inscribir al socio: "); 
                 return false;
             }
         }

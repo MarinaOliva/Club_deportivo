@@ -22,6 +22,10 @@ namespace club_deportivo.Forms
             { "Pilates", 2500 },
             { "Yoga", 2300 },
             { "Zumba", 2200 },
+            { "Aikido", 3500 },
+            { "Acrobacia en tela", 2500 },
+            { "Natación", 3000 },
+            { "Musculación y aparatos", 2000 }
 
         };
 

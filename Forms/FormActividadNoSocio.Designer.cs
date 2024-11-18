@@ -109,7 +109,7 @@
             cboAct.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cboAct.AutoCompleteSource = AutoCompleteSource.ListItems;
             cboAct.FormattingEnabled = true;
-            cboAct.Items.AddRange(new object[] { "Pilates", "Yoga", "Zumba" });
+            cboAct.Items.AddRange(new object[] { "Acrobacia en tela", "Aikido", "Musculación y Aparatos", "Natación", "Pilates", "Yoga", "Zumba" });
             cboAct.Location = new Point(259, 43);
             cboAct.Name = "cboAct";
             cboAct.Size = new Size(151, 31);
@@ -146,7 +146,7 @@
             cboMonto.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cboMonto.AutoCompleteSource = AutoCompleteSource.ListItems;
             cboMonto.FormattingEnabled = true;
-            cboMonto.Items.AddRange(new object[] { "2500", "2300", "2200" });
+            cboMonto.Items.AddRange(new object[] { "2500.00", "3500.00", "2000.00", "3000.00", "2500.00", "2300.00", "2200.00" });
             cboMonto.Location = new Point(259, 98);
             cboMonto.Name = "cboMonto";
             cboMonto.Size = new Size(151, 31);
@@ -195,7 +195,7 @@
             Controls.Add(lblEleccionActividad);
             Controls.Add(lblNombre);
             Name = "FormActividadNoSocio";
-            Text = "Inscripción a Actividad Guiada";
+            Text = "Inscripción a Actividad";
             ResumeLayout(false);
             PerformLayout();
         }
