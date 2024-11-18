@@ -1,4 +1,5 @@
 ﻿using club_deportivo.Datos;
+using club_deportivo.Forms;
 using System;
 using System.Windows.Forms;
 
@@ -42,9 +43,16 @@ namespace club_deportivo
             nuevoSocio.GuardarSocio();
             MessageBox.Show("Socio registrado con éxito.");
 
-            FormMenu menu = new FormMenu();
-            menu.Show();
-            this.Hide();
+            string nombre = "Nombre: " + nuevoSocio.Nombre;
+            string apellido = "Apellido : " + nuevoSocio.Apellido;
+            string numeroSocio = "Num Socio: " + nuevoSocio.SocioID.ToString();
+
+            // Crear una instancia de FormCarnet
+            FormCarnet formCarnet = new FormCarnet(nombre, apellido, numeroSocio);
+
+            // Mostrar el formulario de carnet
+            formCarnet.Show();
+                
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)

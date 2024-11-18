@@ -4,6 +4,9 @@
     <Compile Update="Forms\FormAbonarCuota.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FormActividadSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\FormCarnet.cs">
       <SubType>Form</SubType>
     </Compile>

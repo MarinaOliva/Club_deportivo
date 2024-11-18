@@ -71,6 +71,8 @@ VALUES
     ('Pilates', 2500.00, 25),
     ('Yoga', 2300.00, 25),
     ('Zumba', 2200.00, 25);
+	('Aikido', 2700.00, 10);
+	('Acrobacia en tela', 3000.00, 7);
 
 -- Tabla para las cuotas
 CREATE TABLE Cuota (

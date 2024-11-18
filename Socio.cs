@@ -171,6 +171,7 @@ public class Socio : Cliente
         }
     }
 
+    // Método para cargar los datos que van a aparecer en el carnet
     public (string Nombre, string Apellido, string NumeroSocio) ObtenerDatosCarnet()
     {
         return ($"Nombre: {Nombre}", $"Apellido: {Apellido}", $"N° Socio: {SocioID}");
