@@ -63,45 +63,32 @@ namespace club_deportivo.Forms
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
-            // Obtener los valores ingresados por el usuario
-            string nombre = txtNombre.Text + " " + txtApellido.Text;
-            string dni = txtDNI.Text;
+            // Crear una instancia de NoSocio con los datos del formulario
+            NoSocio noSocio = new NoSocio
+            {
+                Nombre = txtNombre.Text,
+                Apellido = txtApellido.Text,
+                DNI = txtDNI.Text
+            };
+
             string actividadSeleccionada = cboAct.SelectedItem?.ToString();
-            decimal monto = 0.0m;
-            if (cboMonto.SelectedItem != null)
+            decimal monto = cboMonto.SelectedItem != null ? Convert.ToDecimal(cboMonto.SelectedItem) : 0.0m;
+            DateTime fechaPago = DateTime.Now;
+
+            // Intentar inscribir al no socio en la actividad
+            if (noSocio.InscribirseEnActividad(actividadSeleccionada, monto, out string mensaje))
             {
-                monto = Convert.ToDecimal(cboMonto.SelectedItem);
+                // Si la inscripción fue exitosa, mostrar un comprobante
+                FormComprobante comprobante = new FormComprobante(noSocio.NombreCompleto, noSocio.DNI, monto, fechaPago);
+                comprobante.Show();
             }
-
-            DateTime fechaPago = DateTime.Now;  // Fecha actual como fecha de pago
-
-            // Obtener el id de la actividad seleccionada desde la clase Actividad
-            int idActividadSeleccionada = Actividad.ObtenerIdActividad(actividadSeleccionada);
-
-            // Verificar si hay cupos disponibles para la actividad seleccionada
-            if (idActividadSeleccionada != -1)
+            else
             {
-                // Crear una instancia de Actividad para llamar a los métodos de instancia
-                Actividad actividad = new Actividad(idActividadSeleccionada) { IdActividad = idActividadSeleccionada };
-
-                if (actividad.HayCuposDisponibles()) // Llamar al método de instancia
-                {
-                    // Crear una nueva instancia de FormComprobante y pasar los datos
-                    FormComprobante comprobante = new FormComprobante(nombre, dni, monto, fechaPago);
-
-                    // Mostrar el formulario de comprobante
-                    comprobante.Show();
-
-                    // Llamar al método de instancia para actualizar los cupos
-                    actividad.ActualizarCupos();
-                }
-                else
-                {
-                    // Mostrar un mensaje si no hay cupos disponibles
-                    MessageBox.Show("No hay cupos disponibles para esta actividad. Por favor, elija otra.");
-                }
+                // Si hubo algún problema, mostrar el mensaje de error
+                MessageBox.Show(mensaje);
             }
         }
+
 
         private void lblApellido_Click(object sender, EventArgs e)
         {
