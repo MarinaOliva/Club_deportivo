@@ -3,11 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formactividadsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formactividadsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\forms\\formactividadsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formactividadsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\forms\\formconectarbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconectarbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconsultasocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -17,22 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\forms\\formnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formactividadnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formactividadnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formactividadnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formactividadnosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\forms\\formactividadsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formactividadsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\nosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formabonarcuota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|c:\\users\\eien_\\escritorio\\club_deportivo\\forms\\formconectarbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB8E8DF4-0ABA-4C5A-AFD3-FB992DF93F4C}|club_deportivo.csproj|solutionrelative:forms\\formconectarbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -82,71 +74,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "FormActividadSocio.cs",
+              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormActividadSocio.cs",
+              "RelativeDocumentMoniker": "Forms\\FormActividadSocio.cs",
+              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormActividadSocio.cs",
+              "RelativeToolTip": "Forms\\FormActividadSocio.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADQAAAC7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T12:09:22.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "FormConsultaSocio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConsultaSocio.cs",
               "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
               "RelativeToolTip": "Forms\\FormConsultaSocio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T11:54:01.991Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-18T11:54:01.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "FormActividadSocio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormActividadSocio.cs",
               "RelativeDocumentMoniker": "Forms\\FormActividadSocio.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormActividadSocio.cs [Dise\u00F1o]",
               "RelativeToolTip": "Forms\\FormActividadSocio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T11:35:00.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormActividadNoSocio.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormActividadNoSocio.cs",
-              "RelativeDocumentMoniker": "Forms\\FormActividadNoSocio.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormActividadNoSocio.cs",
-              "RelativeToolTip": "Forms\\FormActividadNoSocio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T11:20:37.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormActividadNoSocio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormActividadNoSocio.cs",
-              "RelativeDocumentMoniker": "Forms\\FormActividadNoSocio.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormActividadNoSocio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\FormActividadNoSocio.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T11:20:34.385Z",
+              "WhenOpened": "2024-11-18T11:35:00.367Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "FormNoSocio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormNoSocio.cs",
               "RelativeDocumentMoniker": "Forms\\FormNoSocio.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormNoSocio.cs [Dise\u00F1o]",
               "RelativeToolTip": "Forms\\FormNoSocio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T11:20:26.796Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-18T11:20:26.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "NoSocio.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\NoSocio.cs",
               "RelativeDocumentMoniker": "NoSocio.cs",
@@ -158,44 +137,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Actividad.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Actividad.cs",
               "RelativeDocumentMoniker": "Actividad.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Actividad.cs",
               "RelativeToolTip": "Actividad.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAE4AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAM0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T11:16:32.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FormAbonarCuota.cs",
-              "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormAbonarCuota.cs",
-              "RelativeDocumentMoniker": "Forms\\FormAbonarCuota.cs",
-              "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormAbonarCuota.cs",
-              "RelativeToolTip": "Forms\\FormAbonarCuota.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T11:13:33.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FormConectarBD.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConectarBD.cs",
               "RelativeDocumentMoniker": "Forms\\FormConectarBD.cs",
               "ToolTip": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConectarBD.cs [Dise\u00F1o]",
               "RelativeToolTip": "Forms\\FormConectarBD.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T11:09:02.244Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-18T11:09:02.244Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Socio.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Socio.cs",
               "RelativeDocumentMoniker": "Socio.cs",
@@ -207,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "FormConsultaSocio.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConsultaSocio.cs",
               "RelativeDocumentMoniker": "Forms\\FormConsultaSocio.cs",
@@ -215,12 +181,11 @@
               "RelativeToolTip": "Forms\\FormConsultaSocio.cs",
               "ViewState": "AgIAABoAAAAAAAAAAIA/wCMAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T11:05:14.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T11:05:14.726Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "Cuotas.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Cuotas.cs",
               "RelativeDocumentMoniker": "Cuotas.cs",
@@ -232,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Cliente.cs",
               "RelativeDocumentMoniker": "Cliente.cs",
@@ -244,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "FormConectarBD.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormConectarBD.cs",
               "RelativeDocumentMoniker": "Forms\\FormConectarBD.cs",
@@ -256,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "Conexion.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Datos\\Conexion.cs",
               "RelativeDocumentMoniker": "Datos\\Conexion.cs",
@@ -268,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -280,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "FormLogin.cs",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormLogin.cs",
               "RelativeDocumentMoniker": "Forms\\FormLogin.cs",
@@ -293,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "FormLogin.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\eien_\\Escritorio\\Club_Deportivo\\Forms\\FormLogin.cs",
               "RelativeDocumentMoniker": "Forms\\FormLogin.cs",

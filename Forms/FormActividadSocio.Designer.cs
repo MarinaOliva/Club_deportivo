@@ -33,7 +33,7 @@
             btnInscribir = new Button();
             txtNumSocio = new TextBox();
             lblListaAct = new Label();
-            chkAcrobacias = new CheckBox();
+            chkAcrobacia = new CheckBox();
             chkZumba = new CheckBox();
             chkPilates = new CheckBox();
             chkYoga = new CheckBox();
@@ -89,15 +89,15 @@
             lblListaAct.TabIndex = 13;
             lblListaAct.Text = "Seleccione hasta 3 actividades: ";
             // 
-            // chkAcrobacias
+            // chkAcrobacia
             // 
-            chkAcrobacias.AutoSize = true;
-            chkAcrobacias.Location = new Point(82, 380);
-            chkAcrobacias.Name = "chkAcrobacias";
-            chkAcrobacias.Size = new Size(164, 27);
-            chkAcrobacias.TabIndex = 14;
-            chkAcrobacias.Text = "Acrobacia en tela";
-            chkAcrobacias.UseVisualStyleBackColor = true;
+            chkAcrobacia.AutoSize = true;
+            chkAcrobacia.Location = new Point(82, 380);
+            chkAcrobacia.Name = "chkAcrobacia";
+            chkAcrobacia.Size = new Size(164, 27);
+            chkAcrobacia.TabIndex = 14;
+            chkAcrobacia.Text = "Acrobacia en tela";
+            chkAcrobacia.UseVisualStyleBackColor = true;
             // 
             // chkZumba
             // 
@@ -174,7 +174,7 @@
             Controls.Add(chkYoga);
             Controls.Add(chkPilates);
             Controls.Add(chkZumba);
-            Controls.Add(chkAcrobacias);
+            Controls.Add(chkAcrobacia);
             Controls.Add(lblListaAct);
             Controls.Add(txtNumSocio);
             Controls.Add(btnInscribir);
@@ -193,7 +193,7 @@
         private Button btnInscribir;
         private TextBox txtNumSocio;
         private Label lblListaAct;
-        private CheckBox chkAcrobacias;
+        private CheckBox chkAcrobacia;
         private CheckBox chkZumba;
         private CheckBox chkPilates;
         private CheckBox chkYoga;

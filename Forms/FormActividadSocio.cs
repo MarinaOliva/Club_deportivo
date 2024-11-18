@@ -43,112 +43,40 @@ namespace club_deportivo.Forms
             if (chkPilates.Checked) actividadesSeleccionadas++;
             if (chkYoga.Checked) actividadesSeleccionadas++;
             if (chkZumba.Checked) actividadesSeleccionadas++;
+            if (chkAcrobacia.Checked) actividadesSeleccionadas++;
 
-            // Verificar si las actividades seleccionadas junto con las ya inscritas superan el máximo permitido
-            if (actividadesSeleccionadas > maxActividadesPermitidas)
+            // Validar el total de actividades (inscritas + seleccionadas)
+            int totalActividades = actividadesInscritas + actividadesSeleccionadas;
+
+            if (totalActividades > maxActividadesPermitidas)
             {
-                MessageBox.Show($"Solo puede inscribirse a un máximo de {maxActividadesPermitidas} actividades. Elija menos.");
-                return;  // No continuar con la inscripción
+                MessageBox.Show($"El socio ya está inscripto en {actividadesInscritas} actividades. Solo puede inscribirse en un máximo de {maxActividadesPermitidas} actividades en total.");
+                return; // No continuar con la inscripción
             }
 
             bool inscripcionExitosa = true;
             List<int> actividadesInscritasConExito = new List<int>();
 
-            // Verificar qué actividades han sido seleccionadas
+            // Verificar qué actividades han sido seleccionadas y procesarlas
             if (chkAikido.Checked)
             {
-                int actividadID = Actividad.ObtenerIdActividad("Aikido");
-                Actividad actividad = new Actividad(actividadID);
-
-                if (actividad.HayCuposDisponibles())
-                {
-                    if (Actividad.InscribirSocio(socioID, actividadID))
-                    {
-                        actividadesInscritasConExito.Add(actividadID);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error al inscribir en Aikido. Verifique los cupos disponibles.");
-                        inscripcionExitosa = false;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("No hay cupos disponibles para Aikido.");
-                    inscripcionExitosa = false;
-                }
+                if (!InscribirActividad(socioID, "Aikido", actividadesInscritasConExito)) inscripcionExitosa = false;
             }
-
             if (chkPilates.Checked)
             {
-                int actividadID = Actividad.ObtenerIdActividad("Pilates");
-                Actividad actividad = new Actividad(actividadID);
-
-                if (actividad.HayCuposDisponibles())
-                {
-                    if (Actividad.InscribirSocio(socioID, actividadID))
-                    {
-                        actividadesInscritasConExito.Add(actividadID);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error al inscribir en Pilates. Verifique los cupos disponibles.");
-                        inscripcionExitosa = false;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("No hay cupos disponibles para Pilates.");
-                    inscripcionExitosa = false;
-                }
+                if (!InscribirActividad(socioID, "Pilates", actividadesInscritasConExito)) inscripcionExitosa = false;
             }
-
             if (chkYoga.Checked)
             {
-                int actividadID = Actividad.ObtenerIdActividad("Yoga");
-                Actividad actividad = new Actividad(actividadID);
-
-                if (actividad.HayCuposDisponibles())
-                {
-                    if (Actividad.InscribirSocio(socioID, actividadID))
-                    {
-                        actividadesInscritasConExito.Add(actividadID);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error al inscribir en Yoga. Verifique los cupos disponibles.");
-                        inscripcionExitosa = false;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("No hay cupos disponibles para Yoga.");
-                    inscripcionExitosa = false;
-                }
+                if (!InscribirActividad(socioID, "Yoga", actividadesInscritasConExito)) inscripcionExitosa = false;
             }
-
             if (chkZumba.Checked)
             {
-                int actividadID = Actividad.ObtenerIdActividad("Zumba");
-                Actividad actividad = new Actividad(actividadID);
-
-                if (actividad.HayCuposDisponibles())
-                {
-                    if (Actividad.InscribirSocio(socioID, actividadID))
-                    {
-                        actividadesInscritasConExito.Add(actividadID);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error al inscribir en Zumba. Verifique los cupos disponibles.");
-                        inscripcionExitosa = false;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("No hay cupos disponibles para Zumba.");
-                    inscripcionExitosa = false;
-                }
+                if (!InscribirActividad(socioID, "Zumba", actividadesInscritasConExito)) inscripcionExitosa = false;
+            }
+            if (chkAcrobacia.Checked)
+            {
+                if (!InscribirActividad(socioID, "Acrobacia en Tela", actividadesInscritasConExito)) inscripcionExitosa = false;
             }
 
             // Verificar si se logró inscribir en alguna actividad
@@ -161,6 +89,34 @@ namespace club_deportivo.Forms
                 MessageBox.Show("Algunas actividades no pudieron ser inscriptas. Verifique los cupos disponibles.");
             }
         }
+
+        // Método auxiliar para inscribir al socio en una actividad específica
+        private bool InscribirActividad(int socioID, string actividadNombre, List<int> actividadesInscritasConExito)
+        {
+            int actividadID = Actividad.ObtenerIdActividad(actividadNombre);
+            Actividad actividad = new Actividad(actividadID);
+
+            if (actividad.HayCuposDisponibles())
+            {
+                if (Actividad.InscribirSocio(socioID, actividadID))
+                {
+                    actividadesInscritasConExito.Add(actividadID);
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show($"Error al inscribir en {actividadNombre}. Verifique los cupos disponibles.");
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show($"No hay cupos disponibles para {actividadNombre}.");
+                return false;
+            }
+        }
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {

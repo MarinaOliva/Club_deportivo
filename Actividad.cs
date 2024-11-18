@@ -90,8 +90,6 @@ namespace club_deportivo
                     MySqlCommand updateCmd = new MySqlCommand(updateQuery, conexion);
                     updateCmd.Parameters.AddWithValue("@idActividad", this.IdActividad);
                     updateCmd.ExecuteNonQuery();
-
-                    MessageBox.Show("Inscripción exitosa. Cupo actualizado.");
                 }
                 else
                 {
